@@ -15,9 +15,15 @@ const { bigDecimal, comptrollers } = require("./utils/constant");
 const port = process.env.PORT || "8001";
 
 // Using Infura WebSockets
+// const web3 = new Web3(
+//   new Web3.providers.WebsocketProvider(
+//     `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_API_KEY}`
+//   )
+// );
+
 const web3 = new Web3(
-  new Web3.providers.WebsocketProvider(
-    `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_API_KEY}`
+  new Web3.providers.HttpProvider(
+    `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`
   )
 );
 
