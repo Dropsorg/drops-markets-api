@@ -1,8 +1,7 @@
 const Web3 = require("web3");
 const express = require("express");
 const cors = require("cors");
-const dotenv = require("dotenv");
-dotenv.config();
+require('dotenv').config()
 
 const app = express();
 app.use(cors());
@@ -15,14 +14,16 @@ const { bigDecimal, comptrollers } = require("./utils/constant");
 const port = process.env.PORT || "8001";
 
 // Using Infura WebSockets
+// const provider = new Web3.providers.WebsocketProvider(
+//   `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_API_KEY}`
+// )
 const provider = new Web3.providers.WebsocketProvider(
-  `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_API_KEY}`
+  'wss://mainnet.infura.io/ws/v3/0311b6c52e0a48dd97da7a62d4c3bfc0'
 )
-const web3 = new Web3(provider);
 // const provider = new Web3.providers.HttpProvider(
 //   'https://mainnet.infura.io/v3/0311b6c52e0a48dd97da7a62d4c3bfc0'
 // );
-// const web3 = new Web3(provider);
+const web3 = new Web3(provider);
 
 const getMarkets = async (comp, underlyingPriceDecimal = 18) => {
   let result = {};
