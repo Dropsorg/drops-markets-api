@@ -24,7 +24,7 @@ const provider = new Web3.providers.WebsocketProvider(
 //   'https://mainnet.infura.io/v3/0311b6c52e0a48dd97da7a62d4c3bfc0'
 // );
 const web3 = new Web3(provider);
-
+console.log('web3', web3);
 const getMarkets = async (comp, underlyingPriceDecimal = 18) => {
   let result = {};
   result.data = {};
