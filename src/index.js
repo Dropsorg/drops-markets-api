@@ -12,17 +12,13 @@ const { cERC20, erc20, comptroller, priceOracle2 } = require("./abis");
 const { bigDecimal, comptrollers } = require("./utils/constant");
 
 const port = process.env.PORT || "8001";
+const infura_api_key = process.env.INFURA_API_KEY || "0311b6c52e0a48dd97da7a62d4c3bfc0";
 
 // Using Infura WebSockets
-// const provider = new Web3.providers.WebsocketProvider(
-//   `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_API_KEY}`
-// )
 const provider = new Web3.providers.WebsocketProvider(
-  'wss://mainnet.infura.io/ws/v3/0311b6c52e0a48dd97da7a62d4c3bfc0'
+  `wss://mainnet.infura.io/ws/v3/${infura_api_key}`
 )
-// const provider = new Web3.providers.HttpProvider(
-//   'https://mainnet.infura.io/v3/0311b6c52e0a48dd97da7a62d4c3bfc0'
-// );
+
 const web3 = new Web3(provider);
 console.log('web3', web3);
 const getMarkets = async (comp, underlyingPriceDecimal = 18) => {
