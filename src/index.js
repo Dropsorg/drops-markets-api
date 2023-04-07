@@ -29,12 +29,11 @@ const getMarkets = async (comp, underlyingPriceDecimal = 18) => {
   let oracleAddress = await comptrollerContract.methods.oracle().call();
   let oracleContract = new web3.eth.Contract(priceOracle2, oracleAddress);
   let allMarkets = await comptrollerContract.methods.getAllMarkets().call();
-  console.log('aaa---');
+
   await Promise.all(
     allMarkets.map(async (pool) => {
       let market = {};
       let poolContract = new web3.eth.Contract(cERC20, pool);
-console.log('bbb---');
       let tokenDecimals = 18;
       let underlyingContract;
       market.symbol = await poolContract.methods.symbol().call();
@@ -125,11 +124,9 @@ app.get("/main/drops-pool0", async (req, res) => {
 });
 app.get("/main/drops-pool1", async (req, res) => {
   try {
-    console.log('aaa');
     const comptroller = comptrollers[1][1];
-    console.log('bbb');
     const result = await getMarkets(comptroller);
-    console.log('ccc');
+
     res.header("Access-Control-Allow-Origin", "*");
     res.status(200).send(result);
   } catch (err) {
