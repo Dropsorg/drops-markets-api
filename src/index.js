@@ -18,14 +18,8 @@ const port = process.env.PORT || "8001";
 // const provider = new Web3.providers.WebsocketProvider(
 //   `wss://mainnet.infura.io/ws/v3/${infura_api_key}`
 // )
-const alchemy_api_key = process.env.ALCHEMY_API_KEY_MAIN || "FWcWqjwFhs2DWsVa_CMsuCnuUQAKSp40";
-
-// Using Infura WebSockets
-const provider = new Web3.providers.WebsocketProvider(
-  `wss://eth-mainnet.g.alchemy.com/v2/${alchemy_api_key}`
-)
-
-const web3 = new Web3(provider);
+// const web3 = new Web3(provider);
+const web3 = new Web3("https://eth-mainnet.gateway.pokt.network/v1/lb/627b9faa33e8770039fc115e");
 
 const getMarkets = async (comp, underlyingPriceDecimal = 18) => {
   let result = {};
