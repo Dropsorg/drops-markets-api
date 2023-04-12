@@ -12,7 +12,7 @@ const { cERC20, erc20, comptroller, priceOracle2 } = require("./abis");
 const { bigDecimal, comptrollers } = require("./utils/constant");
 
 const port = process.env.PORT || "8001";
-const infura_api_key = process.env.INFURA_API_KEY || "0311b6c52e0a48dd97da7a62d4c3bfc0";
+const infura_api_key = process.env.INFURA_API_KEY || "1181bcdcdbbb4acbb4eaa07e11c33e66";
 
 // Using Infura WebSockets
 const provider = new Web3.providers.WebsocketProvider(
