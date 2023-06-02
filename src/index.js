@@ -1,7 +1,7 @@
 const Web3 = require("web3");
 const express = require("express");
 const cors = require("cors");
-require('dotenv').config()
+require('dotenv').config();
 
 const app = express();
 app.use(cors());
@@ -13,7 +13,6 @@ const { bigDecimal, comptrollers } = require("./utils/constant");
 
 const port = process.env.PORT || "8001";
 const infura_api_key = process.env.INFURA_API_KEY || '1181bcdcdbbb4acbb4eaa07e11c33e66';
-console.log('infura_api_key', infura_api_key);
 
 // Using Infura WebSockets
 const provider = new Web3.providers.WebsocketProvider(
