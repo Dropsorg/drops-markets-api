@@ -1,17 +1,17 @@
-const cERC20 = require("./cERC20.json");
-const cETH = require("./cETH.json");
-const comptroller = require("./comptroller.json");
-const cToken = require("./cToken.json");
-const erc20 = require("./erc20.json");
-const priceOracle = require("./priceOracle.json");
-const priceOracle2 = require("./priceOracle2.json");
+const CERC20ABI = require('./cERC20.json');
+const cETH = require('./cETH.json');
+const ComptrollerABI = require('./comptroller.json');
+const cToken = require('./cToken.json');
+const ERC20ABI = require('./erc20.json');
+const priceOracle = require('./priceOracle.json');
+const PriceOracleV2ABIT = require('./priceOracle2.json');
 
 module.exports = {
-  cERC20,
+  CERC20ABI,
   cETH,
-  comptroller,
+  ComptrollerABI,
   cToken,
-  erc20,
+  ERC20ABI,
   priceOracle,
-  priceOracle2
-}
+  PriceOracleV2ABIT,
+};
