@@ -24,10 +24,10 @@ const comptrollers = {
       tokenDecimals: 18,
     },
   ],
-  5: [
+  4: [
     {
       address: '0x739CC758282dDcB3737af37399E2a23d73FAfdb1',
-      tokenDecimals: 18,
+      tokenDecimals: 0,
     },
     {
       address: '0x7621777B6eDBd5F48a43d7d7e61Ca65Ae91Aec00',
@@ -53,8 +53,6 @@ const comptrollers = {
 };
 
 const paths = {
-  // 1: '../../../drops-is-client/build/status.json',
-  // 4: '../../../drops-stage/build/status.json',
   1: '../drops-is-client/build/status.json',
   4: '../drops-stage/build/status.json',
 };

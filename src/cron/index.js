@@ -1,7 +1,6 @@
 const CronJob = require('node-cron');
 const fs = require('fs');
 
-const allMarkets = require('../data/markets.json');
 const { getAllMarkets } = require('../helper/onchain');
 const { formatMarketsInfo } = require('../helper/status');
 const { paths } = require('../helper/constant');
@@ -13,6 +12,7 @@ const saveSnapshot = async (network) => {
     } else {
       console.log('saveTestSnapShot started');
     }
+    const allMarkets = await getAllMarkets(network);
     const statusData = await formatMarketsInfo(allMarkets, network);
     await fs.writeFileSync(
       paths[network],
@@ -26,7 +26,7 @@ const saveSnapshot = async (network) => {
 exports.initScheduledJobs = () => {
   const scheduledJobFunction = CronJob.schedule('*/30 * * * *', async () => {
     await saveSnapshot(1);
-    await saveSnapshot(5);
+    await saveSnapshot(4);
   });
 
   scheduledJobFunction.start();
