@@ -23,6 +23,10 @@ const comptrollers = {
       address: '0x896b8019f5ea3caaAb23cDA0A09B405ed8361E8b',
       tokenDecimals: 18,
     },
+    {
+      address: '0x48E29b9ddbf3fE6380d7D1ec5b415E97afD14AbB',
+      tokenDecimals: 18,
+    },
   ],
   4: [
     {
