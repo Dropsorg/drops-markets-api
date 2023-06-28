@@ -97,13 +97,14 @@ const getOnChainMarketInfo = async (
       resData.underlyingPriceUSD = ethPriceInUSD;
     } else {
       if (!cTokenData[0].includes('ETH')) {
-        [resData.underlyingName, resData.underlyingSymbol] = await Promise.all([
+        [resData.underlyingName, resData.underlyingSymbol, resData.tokenPrice] = await Promise.all([
           UnderlyingContract.name(),
           UnderlyingContract.symbol(),
+          OracleContract.getUnderlyingPriceView(markets[i])
         ]);
-
-        let tokenPriceUSD =
-          (await OracleContract.getUnderlyingPriceView(markets[i])) / E18;
+        let tokenPriceUSD = resData.tokenPrice / E18;
+        // let tokenPriceUSD =
+        //   (await OracleContract.getUnderlyingPriceView(markets[i])) / E18;
 
         resData.underlyingPrice = tokenPriceUSD / ethPriceInUSD;
         if (!cTokenData[0].includes('USDC')) {
