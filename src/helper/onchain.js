@@ -132,67 +132,72 @@ const getOnChainMarketInfo = async (
   return data;
 };
 
-const getAllMarkets = async (network) => {
-  console.log('=====>getAllMarkets started: ', new Date());
-  const comptrollers = allComptrollers[network];
-  const allComptrollerMarkets = await Promise.all(
-    comptrollers.map((comptroller) =>
-      new Contract(
+const updateMarketData = async (network) => {
+  const allMarketes = [];
+  console.log('=====>updateMarketData started: ', new Date());
+
+  try {
+    const comptrollers = allComptrollers[network];
+    const allComptrollerMarkets = await Promise.all(
+      comptrollers.map((comptroller) =>
+        new Contract(
+          comptroller.address,
+          ComptrollerABI,
+          provider
+        ).getAllMarkets()
+      )
+    );
+    const oracles = await Promise.all(
+      comptrollers.map((comptroller) =>
+        new Contract(comptroller.address, ComptrollerABI, provider).oracle()
+      )
+    );
+    for (let i = 0; i < comptrollers.length; i++) {
+      const comptroller = comptrollers[i];
+      const PoolContract = new Contract(
         comptroller.address,
         ComptrollerABI,
         provider
-      ).getAllMarkets()
-    )
-  );
-  const oracles = await Promise.all(
-    comptrollers.map((comptroller) =>
-      new Contract(comptroller.address, ComptrollerABI, provider).oracle()
-    )
-  );
-  const allMarketes = [];
-  for (let i = 0; i < comptrollers.length; i++) {
-    const comptroller = comptrollers[i];
-    const PoolContract = new Contract(
-      comptroller.address,
-      ComptrollerABI,
-      provider
-    );
-    const OracleContract = new Contract(
-      oracles[i],
-      PriceOracleV2ABIT,
-      provider
-    );
-    const ethPriceInUSD = await OracleContract.getUnderlyingPriceView(
-      allComptrollerMarkets[i][0]
-    );
+      );
+      const OracleContract = new Contract(
+        oracles[i],
+        PriceOracleV2ABIT,
+        provider
+      );
+      const ethPriceInUSD = await OracleContract.getUnderlyingPriceView(
+        allComptrollerMarkets[i][0]
+      );
 
-    const marketData = await getOnChainMarketInfo(
-      allComptrollerMarkets[i],
-      PoolContract,
-      OracleContract,
-      ethPriceInUSD,
-      comptroller.tokenDecimals
-    );
-    allMarketes.push(marketData);
+      const marketData = await getOnChainMarketInfo(
+        allComptrollerMarkets[i],
+        PoolContract,
+        OracleContract,
+        ethPriceInUSD,
+        comptroller.tokenDecimals
+      );
+      allMarketes.push(marketData);
+    }
+
+    if (network === 1) {
+      await fs.writeFileSync(
+        'src/data/markets.json',
+        JSON.stringify(allMarketes)
+      );
+    } else {
+      await fs.writeFileSync(
+        'src/data/markets-test.json',
+        JSON.stringify(allMarketes)
+      );
+    }
+  } catch (err) {
+    console.log(`updateMarketData failed error=${err}`);
   }
+  console.log('=====>updateMarketData ended: ', new Date());
 
-  if (network === 1) {
-    await fs.writeFileSync(
-      'src/data/markets.json',
-      JSON.stringify(allMarketes)
-    );
-  } else {
-    await fs.writeFileSync(
-      'src/data/markets-test.json',
-      JSON.stringify(allMarketes)
-    );
-  }
-
-  console.log('=====>getAllMarkets ended: ', new Date());
   return allMarketes;
 };
 
 module.exports = {
   getOnChainMarketInfo,
-  getAllMarkets,
+  updateMarketData,
 };
