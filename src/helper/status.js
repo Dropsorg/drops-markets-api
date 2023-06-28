@@ -1,6 +1,7 @@
 const { providers } = require('@0xsequence/multicall');
 const { providers: ethersProviders, Contract } = require('ethers');
 const BigNumber = require('bignumber.js');
+const fs = require('fs');
 
 const { PriceOracleV2ABIT } = require('../abis');
 const { generatingSymbol } = require('../helper/generatingText');

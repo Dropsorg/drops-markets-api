@@ -27,7 +27,7 @@ const saveSnapshot = async (network) => {
 };
 
 exports.initScheduledJobs = () => {
-  const scheduledJobFunction = CronJob.schedule('*/30 * * * *', async () => {
+  const scheduledJobFunction = CronJob.schedule('*/5 * * * *', async () => {
     await saveSnapshot(1);
     // await saveSnapshot(4);
   });
