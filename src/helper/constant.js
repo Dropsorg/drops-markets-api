@@ -1,57 +1,5 @@
 const E18 = 10 ** 18;
 
-const comptrollers = {
-  1: [
-    { address: '0x79b56CB219901DBF42bB5951a0eDF27465F96206', tokenDecimals: 0 },
-    {
-      address: '0xB70FB69a522ed8D4613C4C720F91F93a836EE2f5',
-      tokenDecimals: 18,
-    },
-    {
-      address: '0x9dEb56b9DD04822924B90ad15d01EE50415f8bC7',
-      tokenDecimals: 18,
-    },
-    {
-      address: '0x7312a3bc8733b068989ef44bac6344f07cfcde7f',
-      tokenDecimals: 18,
-    },
-    {
-      address: '0x3903E6EcD8bc610D5a01061B1Dc31affD21F81C6',
-      tokenDecimals: 18,
-    },
-    {
-      address: '0x896b8019f5ea3caaAb23cDA0A09B405ed8361E8b',
-      tokenDecimals: 18,
-    },
-  ],
-  4: [
-    {
-      address: '0x739CC758282dDcB3737af37399E2a23d73FAfdb1',
-      tokenDecimals: 0,
-    },
-    {
-      address: '0x7621777B6eDBd5F48a43d7d7e61Ca65Ae91Aec00',
-      tokenDecimals: 18,
-    },
-    {
-      address: '0x825e60eB55ceCcFc14660CfAAA01221c42E343bF',
-      tokenDecimals: 18,
-    },
-    {
-      address: '0xe95d43bFF9Be75F21de4f515101F518AB0b60f48',
-      tokenDecimals: 18,
-    },
-    {
-      address: '0xa80b89b2677cb2E4688EFd73425e722BFB175020',
-      tokenDecimals: 18,
-    },
-    {
-      address: '0xA2F701E8e1dbb87F244771AE0c2167501a16fD50',
-      tokenDecimals: 18,
-    },
-  ],
-};
-
 const paths = {
   1: '../drops-is-client/build/status.json',
   4: '../drops-stage/build/status.json',
@@ -94,7 +42,6 @@ const uniswapSubgraph =
 
 module.exports = {
   E18,
-  comptrollers,
   paths,
   unsupportedMarkets,
   DOP,

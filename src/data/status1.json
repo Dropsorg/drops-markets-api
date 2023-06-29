@@ -1,0 +1,1287 @@
+{
+  "TVL": 2019000.7652967295,
+  "totalSupply": 3191763.1213632906,
+  "totalBorrow": 1172762.3560665606,
+  "pools": [
+    {
+      "TVL": 1412815.565730394,
+      "totalSupply": 2118234.289693889,
+      "totalNFTSupply": 0,
+      "totalBorrow": 705418.7239634949,
+      "markets": {
+        "ETH": {
+          "id": "0x4aE7413182849D062B72518928a4b2DE87F0e411",
+          "supply": 179.5671388473494,
+          "borrow": 177.72880656630142,
+          "reserves": 0.08323453475441436,
+          "priceETH": 1,
+          "priceUSD": 1854.45,
+          "cash": 1.921566815802413,
+          "cashUSD": 3563.449581564785,
+          "collateralFactor": 0.9,
+          "maxLoan": 2726.038929897061,
+          "borrowLimit": 0.765
+        },
+        "USDC": {
+          "id": "0x3fed9C8b527fA6299b3044E5178ACc34eC2e25e2",
+          "supply": 291129.47960499953,
+          "borrow": 297989.64868,
+          "reserves": 6870.169075,
+          "priceETH": 0.0005392434,
+          "priceUSD": 1,
+          "cash": 10,
+          "cashUSD": 10,
+          "collateralFactor": 0.8,
+          "maxLoan": 6.800000000000001,
+          "borrowLimit": 0.68
+        },
+        "WBTC": {
+          "id": "0xdb6994189DB5f14A9261CF0420cC377BADaB03bE",
+          "supply": 2.09953241,
+          "borrow": 1.89746503,
+          "reserves": 0.00767403,
+          "priceETH": 16.4620147203,
+          "priceUSD": 30527.98319808,
+          "cash": 0.20974141,
+          "cashUSD": 6402.982240421608,
+          "collateralFactor": 0.9,
+          "maxLoan": 4898.28141392253,
+          "borrowLimit": 0.765
+        },
+        "ENJ": {
+          "id": "0x28af5F61544916d33C4105eb536c9177f5523b67",
+          "supply": 39328.19503501619,
+          "borrow": 40710.969856771735,
+          "reserves": 1383.2422116122766,
+          "priceETH": 0.0001537451,
+          "priceUSD": 0.28511253251386665,
+          "cash": 0.46738985673873507,
+          "cashUSD": 0.13325870572607407,
+          "collateralFactor": 0.6,
+          "maxLoan": 0.06796193992029778,
+          "borrowLimit": 0.51
+        },
+        "MATIC": {
+          "id": "0x54C312ba0B974d56e2c532Ca407FfDA2c6a14793",
+          "supply": 520.5408685615453,
+          "borrow": 257.97594172172035,
+          "reserves": 13.634627186276397,
+          "priceETH": 0.0003404884,
+          "priceUSD": 0.6314187,
+          "cash": 276.1995540261013,
+          "cashUSD": 174.39756334374064,
+          "collateralFactor": 0.7,
+          "maxLoan": 103.76655018952567,
+          "borrowLimit": 0.595
+        },
+        "DOP": {
+          "id": "0xAa08183a98b10BBAdb9CCAa852319382120D4683",
+          "supply": 3056033.986118748,
+          "borrow": 17545.924070717498,
+          "reserves": 596.4646547101994,
+          "priceETH": 0.000250292,
+          "priceUSD": 0.464154,
+          "cash": 3039084.52670274,
+          "cashUSD": 1410603.2394071838,
+          "collateralFactor": 0.75,
+          "maxLoan": 899259.5651220797,
+          "borrowLimit": 0.6375
+        }
+      },
+      "lendRates": {
+        "ETH": {
+          "apy": 0.242937726224364,
+          "apr": 0.21946036065657815,
+          "tokenSymbol": "ETH"
+        },
+        "USDC": {
+          "apy": 0.41076219701322,
+          "apr": 0.34911203004206737,
+          "tokenSymbol": "USDC"
+        },
+        "WBTC": {
+          "apy": 0.140212149187536,
+          "apr": 0.13193434625343148,
+          "tokenSymbol": "WBTC"
+        },
+        "ENJ": {
+          "apy": 0.37630529569623605,
+          "apr": 0.32369130349892306,
+          "tokenSymbol": "ENJ"
+        },
+        "MATIC": {
+          "apy": 0.013830703834572,
+          "apr": 0.013743796980630663,
+          "tokenSymbol": "MATIC"
+        },
+        "DOP": {
+          "apy": 0.000264955895568,
+          "apr": 0.00026492372526920605,
+          "tokenSymbol": "DOP"
+        }
+      },
+      "borrowRates": {
+        "ETH": {
+          "apy": 0.35064363557718004,
+          "apr": 0.3043774209646184,
+          "tokenSymbol": "ETH"
+        },
+        "USDC": {
+          "apy": 0.401345969173056,
+          "apr": 0.34222217855704784,
+          "tokenSymbol": "USDC"
+        },
+        "WBTC": {
+          "apy": 0.221634012332268,
+          "apr": 0.20186846485822052,
+          "tokenSymbol": "WBTC"
+        },
+        "ENJ": {
+          "apy": 0.519319770357204,
+          "apr": 0.4256374694357712,
+          "tokenSymbol": "ENJ"
+        },
+        "MATIC": {
+          "apy": 0.039867762970944,
+          "apr": 0.03915730270274853,
+          "tokenSymbol": "MATIC"
+        },
+        "DOP": {
+          "apy": 0.076913801147988,
+          "apr": 0.07432861031694937,
+          "tokenSymbol": "DOP"
+        }
+      },
+      "totalMaxLoan": 906994.5199780287,
+      "totalBorrowLimit": 0.6419765905602355
+    },
+    {
+      "TVL": 482567.3432827487,
+      "totalSupply": 911470.000358987,
+      "totalNFTSupply": 424589.30864999996,
+      "totalBorrow": 428902.6570762383,
+      "markets": {
+        "ETH": {
+          "id": "0xD72929e284E8bc2f7458A6302bE961B91bccB339",
+          "supply": 250.70049633853006,
+          "borrow": 220.64088422887556,
+          "reserves": 0.11867670768414137,
+          "priceETH": 1,
+          "priceUSD": 1854.45,
+          "cash": 30.17828881733868,
+          "cashUSD": 55964.127697313714,
+          "collateralFactor": 0.85,
+          "maxLoan": 40434.08226130916,
+          "borrowLimit": 0.7225
+        },
+        "USDC": {
+          "id": "0x7489c6BaAba57d9a431642b26E034aCD191039f7",
+          "supply": 21968.15627399996,
+          "borrow": 19735.169318,
+          "reserves": 42.103186,
+          "priceETH": 0.0005392434,
+          "priceUSD": 1,
+          "cash": 2275.090142,
+          "cashUSD": 2275.090142,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "MOONBIRD": {
+          "id": "0x397d11F822578B37b10582db5BCEb43BF6E7C85b",
+          "supply": 1,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 1.6,
+          "priceUSD": 2967.12,
+          "cash": 1,
+          "cashUSD": 2967.12,
+          "collateralFactor": 0.65,
+          "maxLoan": 1639.3337999999999,
+          "borrowLimit": 0.5525
+        },
+        "FIPUNKS": {
+          "id": "0x3786f8aB0A0652E23C6503A9a44322B3295608fE",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 48.1757697532,
+          "priceUSD": 89339.55621886485,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.75,
+          "maxLoan": 0,
+          "borrowLimit": 0.6375
+        },
+        "BAYC": {
+          "id": "0xC3D8e1fD31e55EDe71aE1453dDf858461E23B59a",
+          "supply": 1,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 37.149,
+          "priceUSD": 68890.96304999999,
+          "cash": 1,
+          "cashUSD": 68890.96304999999,
+          "collateralFactor": 0.75,
+          "maxLoan": 43917.98894437499,
+          "borrowLimit": 0.6375
+        },
+        "MAYC": {
+          "id": "0x397a7E7710F3a074dA1B6823E94047E57A5db896",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 7.39,
+          "priceUSD": 13704.385499999999,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.75,
+          "maxLoan": 0,
+          "borrowLimit": 0.6375
+        },
+        "OTHR": {
+          "id": "0x109D97019EdA5e32B31Cd995Ba3D29FC5A3e7c97",
+          "supply": 4,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.8098,
+          "priceUSD": 1501.73361,
+          "cash": 4,
+          "cashUSD": 6006.93444,
+          "collateralFactor": 0.75,
+          "maxLoan": 3829.4207054999997,
+          "borrowLimit": 0.6375
+        },
+        "LAND": {
+          "id": "0x5188510a48e8F716e80338c2a2AD4FC415aFC290",
+          "supply": 37,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.35,
+          "priceUSD": 649.0575,
+          "cash": 37,
+          "cashUSD": 24015.1275,
+          "collateralFactor": 0.65,
+          "maxLoan": 13268.35794375,
+          "borrowLimit": 0.5525
+        },
+        "CLONEX": {
+          "id": "0x57789a12fc3236b12201fAbCd7c8B7Cbb6A94727",
+          "supply": 2,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 1.9094,
+          "priceUSD": 3540.88683,
+          "cash": 2,
+          "cashUSD": 7081.77366,
+          "collateralFactor": 0.65,
+          "maxLoan": 3912.67994715,
+          "borrowLimit": 0.5525
+        },
+        "⚇": {
+          "id": "0x69de3C627561F6A3A260e89c43C566C1F3c93E23",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 1.4899,
+          "priceUSD": 2762.9450549999997,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.65,
+          "maxLoan": 0,
+          "borrowLimit": 0.5525
+        },
+        "AZUKI": {
+          "id": "0xCfC8AfAC17d92796809a4b38a74A245011a96E83",
+          "supply": 20,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 8.51,
+          "priceUSD": 15781.3695,
+          "cash": 20,
+          "cashUSD": 315627.39,
+          "collateralFactor": 0.7,
+          "maxLoan": 187798.29705,
+          "borrowLimit": 0.595
+        },
+        "DOODLE": {
+          "id": "0x5c2cBa783f2BE59849ee1B01fFbF1ed768B444e0",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 1.989999,
+          "priceUSD": 3690.3536455500002,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.65,
+          "maxLoan": 0,
+          "borrowLimit": 0.5525
+        },
+        "BAKC": {
+          "id": "0x43244977Fae5ae5e2979533d5F0221D80840Fa1A",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 3.1,
+          "priceUSD": 5748.795,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.75,
+          "maxLoan": 0,
+          "borrowLimit": 0.6375
+        },
+        "FRAX": {
+          "id": "0x03e1Eb147aB39d744565Ca1CEc4b03106D21Fa92",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.0005387316,
+          "priceUSD": 0.9990509,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "XPUNK": {
+          "id": "0xfBA58fDDB88203E1D32D0F3E6DbFD9d8b505EC18",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 50.1155767012,
+          "priceUSD": 92936.83121346626,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "XMEEB": {
+          "id": "0x8486B523a32e9D0d021078Fe68a3b98fC765FbaB",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 1.7148769578,
+          "priceUSD": 3180.153574368473,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "XPUNKWETH": {
+          "id": "0x3724891050b8b6F9D0B889Ec1B9c89E1673E3f5a",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 14.5880837961,
+          "priceUSD": 27052.871995744514,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "XMEEBWETH": {
+          "id": "0xd4224B4f05067278221f1651e07a2aa5Ca39590E",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 2.5307910208,
+          "priceUSD": 4693.225408571033,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "DEGODS": {
+          "id": "0x8d39B065BCfA9d86fEDD4CaB6aDa4F6Bc0195D50",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 9.2,
+          "priceUSD": 17060.94,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.7,
+          "maxLoan": 0,
+          "borrowLimit": 0.595
+        },
+        "WPUNKS": {
+          "id": "0xe3c4582C660Ae527023682F43900d8a89F98D392",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 48.1757697532,
+          "priceUSD": 89339.55621886485,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.75,
+          "maxLoan": 0,
+          "borrowLimit": 0.6375
+        },
+        "USDT": {
+          "id": "0xb4F88dc4783D7395bBC1B8cE64C66580Cde3c13A",
+          "supply": 1,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.0005392434,
+          "priceUSD": 1,
+          "cash": 1,
+          "cashUSD": 1,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "REMILIO": {
+          "id": "0x7da479d70245E30Beffd4968d9019953446F9591",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.812188269,
+          "priceUSD": 1506.1625354861064,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.65,
+          "maxLoan": 0,
+          "borrowLimit": 0.5525
+        }
+      },
+      "lendRates": {
+        "ETH": {
+          "apy": 0.128878420389588,
+          "apr": 0.12183896696779506,
+          "tokenSymbol": "ETH"
+        },
+        "USDC": {
+          "apy": 0.154512170977824,
+          "apr": 0.14454147415059726,
+          "tokenSymbol": "USDC"
+        },
+        "MOONBIRD": { "apy": 0, "apr": 0, "tokenSymbol": "MOONBIRD" },
+        "FIPUNKS": { "apy": 0, "apr": 0, "tokenSymbol": "FIPUNKS" },
+        "BAYC": { "apy": 0, "apr": 0, "tokenSymbol": "BAYC" },
+        "MAYC": { "apy": 0, "apr": 0, "tokenSymbol": "MAYC" },
+        "OTHR": { "apy": 0, "apr": 0, "tokenSymbol": "OTHR" },
+        "LAND": { "apy": 0, "apr": 0, "tokenSymbol": "LAND" },
+        "CLONEX": { "apy": 0, "apr": 0, "tokenSymbol": "CLONEX" },
+        "⚇": { "apy": 0, "apr": 0, "tokenSymbol": "⚇" },
+        "AZUKI": { "apy": 0, "apr": 0, "tokenSymbol": "AZUKI" },
+        "DOODLE": { "apy": 0, "apr": 0, "tokenSymbol": "DOODLE" },
+        "BAKC": { "apy": 0, "apr": 0, "tokenSymbol": "BAKC" },
+        "FRAX": { "apy": 0, "apr": 0, "tokenSymbol": "FRAX" },
+        "XPUNK": { "apy": 0, "apr": 0, "tokenSymbol": "XPUNK" },
+        "XMEEB": { "apy": 0, "apr": 0, "tokenSymbol": "XMEEB" },
+        "XPUNKWETH": { "apy": 0, "apr": 0, "tokenSymbol": "XPUNKWETH" },
+        "XMEEBWETH": { "apy": 0, "apr": 0, "tokenSymbol": "XMEEBWETH" },
+        "DEGODS": { "apy": 0, "apr": 0, "tokenSymbol": "DEGODS" },
+        "WPUNKS": { "apy": 0, "apr": 0, "tokenSymbol": "WPUNKS" },
+        "USDT": { "apy": 0, "apr": 0, "tokenSymbol": "USDT" },
+        "REMILIO": { "apy": 0, "apr": 0, "tokenSymbol": "REMILIO" }
+      },
+      "borrowRates": {
+        "ETH": {
+          "apy": 0.209195033124564,
+          "apr": 0.19146629313314456,
+          "tokenSymbol": "ETH"
+        },
+        "USDC": {
+          "apy": 0.245706930869256,
+          "apr": 0.22172674410096604,
+          "tokenSymbol": "USDC"
+        },
+        "MOONBIRD": { "apy": 0, "apr": 0, "tokenSymbol": "MOONBIRD" },
+        "FIPUNKS": { "apy": 0, "apr": 0, "tokenSymbol": "FIPUNKS" },
+        "BAYC": { "apy": 0, "apr": 0, "tokenSymbol": "BAYC" },
+        "MAYC": { "apy": 0, "apr": 0, "tokenSymbol": "MAYC" },
+        "OTHR": { "apy": 0, "apr": 0, "tokenSymbol": "OTHR" },
+        "LAND": { "apy": 0, "apr": 0, "tokenSymbol": "LAND" },
+        "CLONEX": { "apy": 0, "apr": 0, "tokenSymbol": "CLONEX" },
+        "⚇": { "apy": 0, "apr": 0, "tokenSymbol": "⚇" },
+        "AZUKI": { "apy": 0, "apr": 0, "tokenSymbol": "AZUKI" },
+        "DOODLE": { "apy": 0, "apr": 0, "tokenSymbol": "DOODLE" },
+        "BAKC": { "apy": 0, "apr": 0, "tokenSymbol": "BAKC" },
+        "FRAX": {
+          "apy": 0.02499999999966,
+          "apr": 0.024718035237782487,
+          "tokenSymbol": "FRAX"
+        },
+        "XPUNK": {
+          "apy": 0.07499999999898,
+          "apr": 0.0725390282905467,
+          "tokenSymbol": "XPUNK"
+        },
+        "XMEEB": {
+          "apy": 0.07499999999898,
+          "apr": 0.0725390282905467,
+          "tokenSymbol": "XMEEB"
+        },
+        "XPUNKWETH": {
+          "apy": 0.07499999999898,
+          "apr": 0.0725390282905467,
+          "tokenSymbol": "XPUNKWETH"
+        },
+        "XMEEBWETH": {
+          "apy": 0.07499999999898,
+          "apr": 0.0725390282905467,
+          "tokenSymbol": "XMEEBWETH"
+        },
+        "DEGODS": { "apy": 0, "apr": 0, "tokenSymbol": "DEGODS" },
+        "WPUNKS": { "apy": 0, "apr": 0, "tokenSymbol": "WPUNKS" },
+        "USDT": {
+          "apy": 0.02499999999966,
+          "apr": 0.024718035237782487,
+          "tokenSymbol": "USDT"
+        },
+        "REMILIO": { "apy": 0, "apr": 0, "tokenSymbol": "REMILIO" }
+      },
+      "totalMaxLoan": 294800.16065208416,
+      "totalBorrowLimit": 0.6108995247101773
+    },
+    {
+      "TVL": 67795.24942773647,
+      "totalSupply": 97943.30593602092,
+      "totalNFTSupply": 48106.35553668553,
+      "totalBorrow": 30148.056508284437,
+      "markets": {
+        "ETH": {
+          "id": "0x0a1EF7feD1B691253F9367daf682BA08A9D2fD9C",
+          "supply": 26.874248644792466,
+          "borrow": 16.257141744605914,
+          "reserves": 0.10078157047354314,
+          "priceETH": 1,
+          "priceUSD": 1854.45,
+          "cash": 10.717888470660093,
+          "cashUSD": 19875.78827441561,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "CYBERBROKERS": {
+          "id": "0x83355362ebb2180873844523044c866170f9D99C",
+          "supply": 36,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.2878106772,
+          "priceUSD": 533.7305103184259,
+          "cash": 36,
+          "cashUSD": 19214.298371463334,
+          "collateralFactor": 0.55,
+          "maxLoan": 8982.68448865911,
+          "borrowLimit": 0.4675000000000001
+        },
+        "GOBLIN": {
+          "id": "0x65DA0A824269E43A2Fc9586Ef2fFE2aE722C33Be",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.3199,
+          "priceUSD": 593.2385549999999,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "LOBS": {
+          "id": "0xCE072AAAEE46FDb3B0aA0Be0516b9491aD88eC57",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.8959999,
+          "priceUSD": 1661.5870145550002,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "TOADZ": {
+          "id": "0xE9E374eF997D9ee38D705caBAC5B94f469506966",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.6767060019,
+          "priceUSD": 1254.9174452940258,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "BEANZ": {
+          "id": "0xe63D394953908c3EDA007Cf4A94F9352Bb22dEC0",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.5899,
+          "priceUSD": 1093.940055,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.55,
+          "maxLoan": 0,
+          "borrowLimit": 0.4675000000000001
+        },
+        "WIZARDS": {
+          "id": "0x777a91c5E1CAE1533e32Fe8eD5667022A1E0fbB6",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 1.3879,
+          "priceUSD": 2573.791155,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.5,
+          "maxLoan": 0,
+          "borrowLimit": 0.425
+        },
+        "CDB": {
+          "id": "0xB589a8E4D5c47B721fd7e3dEF994c819Ab8718C4",
+          "supply": 6,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 1.0878,
+          "priceUSD": 2017.27071,
+          "cash": 6,
+          "cashUSD": 12103.62426,
+          "collateralFactor": 0.5,
+          "maxLoan": 5144.0403105000005,
+          "borrowLimit": 0.425
+        },
+        "USDC": {
+          "id": "0xDf55F91f8f13F6b3754bf07C6eBDF16C99f83198",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.0005392434,
+          "priceUSD": 1,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "FRAX": {
+          "id": "0x140128b2e6562713051df4858ff52f26795B8920",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.0005387316,
+          "priceUSD": 0.9990509,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "MIL": {
+          "id": "0x5dAaBd53214046c108BDdC91766FFFee9397cEE4",
+          "supply": 3,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 3.0176841121,
+          "priceUSD": 5596.144301740732,
+          "cash": 3,
+          "cashUSD": 16788.432905222195,
+          "collateralFactor": 0.65,
+          "maxLoan": 9275.609180135263,
+          "borrowLimit": 0.5525
+        },
+        "XMILADY": {
+          "id": "0x67c06bc0E1C1c4E4617cd293D1F3bcB39244A859",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 5.0747472906,
+          "priceUSD": 9410.86511309722,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "XWIZARD": {
+          "id": "0xF19e040255f3842c009237e0be5A73283371C8df",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.9480264651,
+          "priceUSD": 1758.0676781665973,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "XMILADYWETH": {
+          "id": "0x09dC75D014876381Ef04D1Ef791Af4318f758eBE",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 3.8343266102,
+          "priceUSD": 7110.566982363291,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "XWIZARDWETH": {
+          "id": "0x92B9CA3F147B485Dae876AC3585cAaDB58962baF",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 1.8937165178,
+          "priceUSD": 3511.8025964100093,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        }
+      },
+      "lendRates": {
+        "ETH": {
+          "apy": 0.018271185068952,
+          "apr": 0.01811993945337509,
+          "tokenSymbol": "ETH"
+        },
+        "CYBERBROKERS": { "apy": 0, "apr": 0, "tokenSymbol": "CYBERBROKERS" },
+        "GOBLIN": { "apy": 0, "apr": 0, "tokenSymbol": "GOBLIN" },
+        "LOBS": { "apy": 0, "apr": 0, "tokenSymbol": "LOBS" },
+        "TOADZ": { "apy": 0, "apr": 0, "tokenSymbol": "TOADZ" },
+        "BEANZ": { "apy": 0, "apr": 0, "tokenSymbol": "BEANZ" },
+        "WIZARDS": { "apy": 0, "apr": 0, "tokenSymbol": "WIZARDS" },
+        "CDB": { "apy": 0, "apr": 0, "tokenSymbol": "CDB" },
+        "USDC": { "apy": 0, "apr": 0, "tokenSymbol": "USDC" },
+        "FRAX": { "apy": 0, "apr": 0, "tokenSymbol": "FRAX" },
+        "MIL": { "apy": 0, "apr": 0, "tokenSymbol": "MIL" },
+        "XMILADY": { "apy": 0, "apr": 0, "tokenSymbol": "XMILADY" },
+        "XWIZARD": { "apy": 0, "apr": 0, "tokenSymbol": "XWIZARD" },
+        "XMILADYWETH": { "apy": 0, "apr": 0, "tokenSymbol": "XMILADYWETH" },
+        "XWIZARDWETH": { "apy": 0, "apr": 0, "tokenSymbol": "XWIZARDWETH" }
+      },
+      "borrowRates": {
+        "ETH": {
+          "apy": 0.043148014432488,
+          "apr": 0.04231751871744738,
+          "tokenSymbol": "ETH"
+        },
+        "CYBERBROKERS": { "apy": 0, "apr": 0, "tokenSymbol": "CYBERBROKERS" },
+        "GOBLIN": { "apy": 0, "apr": 0, "tokenSymbol": "GOBLIN" },
+        "LOBS": { "apy": 0, "apr": 0, "tokenSymbol": "LOBS" },
+        "TOADZ": { "apy": 0, "apr": 0, "tokenSymbol": "TOADZ" },
+        "BEANZ": { "apy": 0, "apr": 0, "tokenSymbol": "BEANZ" },
+        "WIZARDS": { "apy": 0, "apr": 0, "tokenSymbol": "WIZARDS" },
+        "CDB": { "apy": 0, "apr": 0, "tokenSymbol": "CDB" },
+        "USDC": {
+          "apy": 0.02499999999966,
+          "apr": 0.024718035237782487,
+          "tokenSymbol": "USDC"
+        },
+        "FRAX": {
+          "apy": 0.02499999999966,
+          "apr": 0.024718035237782487,
+          "tokenSymbol": "FRAX"
+        },
+        "MIL": { "apy": 0, "apr": 0, "tokenSymbol": "MIL" },
+        "XMILADY": {
+          "apy": 0.07499999999898,
+          "apr": 0.0725390282905467,
+          "tokenSymbol": "XMILADY"
+        },
+        "XWIZARD": {
+          "apy": 0.07499999999898,
+          "apr": 0.0725390282905467,
+          "tokenSymbol": "XWIZARD"
+        },
+        "XMILADYWETH": {
+          "apy": 0.07499999999898,
+          "apr": 0.0725390282905467,
+          "tokenSymbol": "XMILADYWETH"
+        },
+        "XWIZARDWETH": {
+          "apy": 0.07499999999898,
+          "apr": 0.0725390282905467,
+          "tokenSymbol": "XWIZARDWETH"
+        }
+      },
+      "totalMaxLoan": 23402.333979294373,
+      "totalBorrowLimit": 0.3451913545098631
+    },
+    {
+      "TVL": 54035.66726601465,
+      "totalSupply": 62318.64161813876,
+      "totalNFTSupply": 24259.56545473197,
+      "totalBorrow": 8282.97435212411,
+      "markets": {
+        "ETH": {
+          "id": "0x05231980914B702083B9Ac08002325654F6eb95B",
+          "supply": 20.523107208825685,
+          "borrow": 4.466539595095101,
+          "reserves": 0.002230355658795591,
+          "priceETH": 1,
+          "priceUSD": 1854.45,
+          "cash": 16.058797969389378,
+          "cashUSD": 29780.237894334132,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "VFT": {
+          "id": "0x780F467401430632ed0529f497C20806b2793dfF",
+          "supply": 2,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 1.82,
+          "priceUSD": 3375.099,
+          "cash": 2,
+          "cashUSD": 6750.198,
+          "collateralFactor": 0.6,
+          "maxLoan": 3442.60098,
+          "borrowLimit": 0.51
+        },
+        "NOUN": {
+          "id": "0x5Ce3d90E359A0F5e841ac8696e736E6EBF8bf2f0",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 27.6,
+          "priceUSD": 51182.81999999999,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "PPG": {
+          "id": "0xdA8c9777FEBAb8577a33f4750D165bc13b07B93d",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 4.23,
+          "priceUSD": 7844.3234999999995,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.6,
+          "maxLoan": 0,
+          "borrowLimit": 0.51
+        },
+        "COOL": {
+          "id": "0x5A5D79e75016330F8b2a02B4f33b5E12003a63D7",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.7889123243,
+          "priceUSD": 1462.998459775724,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "WOW": {
+          "id": "0x47919D0b513C88e6ddFEEAD4ea0729c08003dAEE",
+          "supply": 14,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.6744151117,
+          "priceUSD": 1250.6691039094264,
+          "cash": 14,
+          "cashUSD": 17509.36745473197,
+          "collateralFactor": 0.6,
+          "maxLoan": 8929.777401913305,
+          "borrowLimit": 0.51
+        },
+        "USDC": {
+          "id": "0x0A494b848d4bE5D58B0fde9f80C9b25592a2D3b2",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.0005392434,
+          "priceUSD": 1,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "FRAX": {
+          "id": "0x0039fEc5e1D91741e251d82d9E83859C8E79013d",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.0005387316,
+          "priceUSD": 0.9990509,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        }
+      },
+      "lendRates": {
+        "ETH": {
+          "apy": 0.008234174527236,
+          "apr": 0.008203261285708585,
+          "tokenSymbol": "ETH"
+        },
+        "VFT": { "apy": 0, "apr": 0, "tokenSymbol": "VFT" },
+        "NOUN": { "apy": 0, "apr": 0, "tokenSymbol": "NOUN" },
+        "PPG": { "apy": 0, "apr": 0, "tokenSymbol": "PPG" },
+        "COOL": { "apy": 0, "apr": 0, "tokenSymbol": "COOL" },
+        "WOW": { "apy": 0, "apr": 0, "tokenSymbol": "WOW" },
+        "USDC": { "apy": 0, "apr": 0, "tokenSymbol": "USDC" },
+        "FRAX": { "apy": 0, "apr": 0, "tokenSymbol": "FRAX" }
+      },
+      "borrowRates": {
+        "ETH": {
+          "apy": 0.063058079993832,
+          "apr": 0.06130580442249123,
+          "tokenSymbol": "ETH"
+        },
+        "VFT": { "apy": 0, "apr": 0, "tokenSymbol": "VFT" },
+        "NOUN": { "apy": 0, "apr": 0, "tokenSymbol": "NOUN" },
+        "PPG": { "apy": 0, "apr": 0, "tokenSymbol": "PPG" },
+        "COOL": { "apy": 0, "apr": 0, "tokenSymbol": "COOL" },
+        "WOW": { "apy": 0, "apr": 0, "tokenSymbol": "WOW" },
+        "USDC": {
+          "apy": 0.04999999999932,
+          "apr": 0.048889485403130095,
+          "tokenSymbol": "USDC"
+        },
+        "FRAX": {
+          "apy": 0.04999999999932,
+          "apr": 0.048889485403130095,
+          "tokenSymbol": "FRAX"
+        }
+      },
+      "totalMaxLoan": 12372.378381913306,
+      "totalBorrowLimit": 0.2289668844284787
+    },
+    {
+      "TVL": 1403.4219270377116,
+      "totalSupply": 1412.6955664566276,
+      "totalNFTSupply": 0,
+      "totalBorrow": 9.27363941891593,
+      "markets": {
+        "ETH": {
+          "id": "0x588C13e685e44B22DC6647937481C816E5FeE086",
+          "supply": 0.7617868189795506,
+          "borrow": 0.005000749235037844,
+          "reserves": 0.019739458116980517,
+          "priceETH": 1,
+          "priceUSD": 1854.45,
+          "cash": 0.7765255278614932,
+          "cashUSD": 1440.0277651427461,
+          "collateralFactor": 0.85,
+          "maxLoan": 1040.4200603156341,
+          "borrowLimit": 0.7225
+        },
+        "SQUIGGLES": {
+          "id": "0x30C40201f7Af91C1B1EeF6C7b4504669602a82f5",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 10.8584119894,
+          "priceUSD": 20136.38211377905,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "USDC": {
+          "id": "0xE7D7B65DBe5577d9DA4286367031F5BcCB020674",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.0005392434,
+          "priceUSD": 1,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "FRAX": {
+          "id": "0xf00DE3D44228856B2cA1D4550C2eacba153dAca7",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.0005387316,
+          "priceUSD": 0.9990509,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "RINGERS": {
+          "id": "0xEf8f2D14104cE88Ad8E1B27C77878c8C9a92bB80",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 42,
+          "priceUSD": 77886.9,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "FIDENZA": {
+          "id": "0x21897f9694D94F7F3ddCf60FD32b14DB55376b00",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 66,
+          "priceUSD": 122393.70000000001,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "XSQGL": {
+          "id": "0x8B7cfB541cCfEBFeADb699C5e70550B165383685",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 11.5148465235,
+          "priceUSD": 21353.70713549045,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "XSQGLWETH": {
+          "id": "0x3bFe965147Df3e8BEDf30AD7FE4741bD977f4D06",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 6.9924712913,
+          "priceUSD": 12967.188386173631,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        }
+      },
+      "lendRates": {
+        "ETH": {
+          "apy": 0.000231567373692,
+          "apr": 0.00023154279991466353,
+          "tokenSymbol": "ETH"
+        },
+        "SQUIGGLES": { "apy": 0, "apr": 0, "tokenSymbol": "SQUIGGLES" },
+        "USDC": { "apy": 0, "apr": 0, "tokenSymbol": "USDC" },
+        "FRAX": { "apy": 0, "apr": 0, "tokenSymbol": "FRAX" },
+        "RINGERS": { "apy": 0, "apr": 0, "tokenSymbol": "RINGERS" },
+        "FIDENZA": { "apy": 0, "apr": 0, "tokenSymbol": "FIDENZA" },
+        "XSQGL": { "apy": 0, "apr": 0, "tokenSymbol": "XSQGL" },
+        "XSQGLWETH": { "apy": 0, "apr": 0, "tokenSymbol": "XSQGLWETH" }
+      },
+      "borrowRates": {
+        "ETH": {
+          "apy": 0.050393869972452,
+          "apr": 0.04926606318554061,
+          "tokenSymbol": "ETH"
+        },
+        "SQUIGGLES": { "apy": 0, "apr": 0, "tokenSymbol": "SQUIGGLES" },
+        "USDC": {
+          "apy": 0.04999999999932,
+          "apr": 0.048889485403130095,
+          "tokenSymbol": "USDC"
+        },
+        "FRAX": {
+          "apy": 0.04999999999932,
+          "apr": 0.048889485403130095,
+          "tokenSymbol": "FRAX"
+        },
+        "RINGERS": { "apy": 0, "apr": 0, "tokenSymbol": "RINGERS" },
+        "FIDENZA": { "apy": 0, "apr": 0, "tokenSymbol": "FIDENZA" },
+        "XSQGL": {
+          "apy": 0.07499999999898,
+          "apr": 0.0725390282905467,
+          "tokenSymbol": "XSQGL"
+        },
+        "XSQGLWETH": {
+          "apy": 0.07499999999898,
+          "apr": 0.0725390282905467,
+          "tokenSymbol": "XSQGLWETH"
+        }
+      },
+      "totalMaxLoan": 1040.4200603156341,
+      "totalBorrowLimit": 0.7413451651790224
+    },
+    {
+      "TVL": 383.5176627978586,
+      "totalSupply": 384.1881897978617,
+      "totalNFTSupply": 278.16749999999996,
+      "totalBorrow": 0.6705270000031562,
+      "markets": {
+        "ETH": {
+          "id": "0x777ECcD3fCf4FfA3b12f45a384852608DF2619a0",
+          "supply": 0.000052839816582822004,
+          "borrow": 1.702e-15,
+          "reserves": 0.3860845086186163,
+          "priceETH": 1,
+          "priceUSD": 1854.45,
+          "cash": 0.3861373484351974,
+          "cashUSD": 716.0724058056519,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "USDC": {
+          "id": "0x0eaBea97c25bd4DfcAd294d82404C7DF3b26a2Cc",
+          "supply": 105.92270099999975,
+          "borrow": 0.670527,
+          "reserves": 269.250948,
+          "priceETH": 0.0005392434,
+          "priceUSD": 1,
+          "cash": 374.503122,
+          "cashUSD": 374.503122,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "BAYC": {
+          "id": "0x550A4a2bE23c3a78979BBd0C02D588445B385c1b",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 37.149,
+          "priceUSD": 68890.96304999999,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.75,
+          "maxLoan": 0,
+          "borrowLimit": 0.6375
+        },
+        "MAYC": {
+          "id": "0x6d2527d6cf23016D46Ce7D0F409C59e8E34D0854",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 7.39,
+          "priceUSD": 13704.385499999999,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.75,
+          "maxLoan": 0,
+          "borrowLimit": 0.6375
+        },
+        "OTHR": {
+          "id": "0xB49655Bc75b61E6482B71c76e269eF8a342283Ba",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.8098,
+          "priceUSD": 1501.73361,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.5,
+          "maxLoan": 0,
+          "borrowLimit": 0.425
+        },
+        "BAKC": {
+          "id": "0xE751e2e8dcdcB5Ed043419529ba9311Fa7CCDd3E",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 3.1,
+          "priceUSD": 5748.795,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.5,
+          "maxLoan": 0,
+          "borrowLimit": 0.425
+        },
+        "FRAX": {
+          "id": "0xFB0Fceb2f620009C7E29F9e770Ab7CF1d7956ecC",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.0005387316,
+          "priceUSD": 0.9990509,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0,
+          "maxLoan": 0,
+          "borrowLimit": 0
+        },
+        "MHC": {
+          "id": "0xEDAFa6c38ee44810367A77D38D9b99FDAFEE8513",
+          "supply": 0,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.28,
+          "priceUSD": 519.2460000000001,
+          "cash": 0,
+          "cashUSD": 0,
+          "collateralFactor": 0.7,
+          "maxLoan": 0,
+          "borrowLimit": 0.595
+        },
+        "MH": {
+          "id": "0x9a045B76beB1713f4bC5e28a2747D1d484dB4DB4",
+          "supply": 1,
+          "borrow": 0,
+          "reserves": 0,
+          "priceETH": 0.15,
+          "priceUSD": 278.16749999999996,
+          "cash": 1,
+          "cashUSD": 278.16749999999996,
+          "collateralFactor": 0.5,
+          "maxLoan": 118.22118749999998,
+          "borrowLimit": 0.425
+        }
+      },
+      "lendRates": {
+        "ETH": { "apy": 0, "apr": 0, "tokenSymbol": "ETH" },
+        "USDC": {
+          "apy": 0.00013554164916,
+          "apr": 0.00013553322959936054,
+          "tokenSymbol": "USDC"
+        },
+        "BAYC": { "apy": 0, "apr": 0, "tokenSymbol": "BAYC" },
+        "MAYC": { "apy": 0, "apr": 0, "tokenSymbol": "MAYC" },
+        "OTHR": { "apy": 0, "apr": 0, "tokenSymbol": "OTHR" },
+        "BAKC": { "apy": 0, "apr": 0, "tokenSymbol": "BAKC" },
+        "FRAX": { "apy": 0, "apr": 0, "tokenSymbol": "FRAX" },
+        "MHC": { "apy": 0, "apr": 0, "tokenSymbol": "MHC" },
+        "MH": { "apy": 0, "apr": 0, "tokenSymbol": "MH" }
+      },
+      "borrowRates": {
+        "ETH": {
+          "apy": 0.02499999999966,
+          "apr": 0.024718035237782487,
+          "tokenSymbol": "ETH"
+        },
+        "USDC": {
+          "apy": 0.025189910280468,
+          "apr": 0.024903679439295168,
+          "tokenSymbol": "USDC"
+        },
+        "BAYC": { "apy": 0, "apr": 0, "tokenSymbol": "BAYC" },
+        "MAYC": { "apy": 0, "apr": 0, "tokenSymbol": "MAYC" },
+        "OTHR": { "apy": 0, "apr": 0, "tokenSymbol": "OTHR" },
+        "BAKC": { "apy": 0, "apr": 0, "tokenSymbol": "BAKC" },
+        "FRAX": {
+          "apy": 0.02499999999966,
+          "apr": 0.024718035237782487,
+          "tokenSymbol": "FRAX"
+        },
+        "MHC": { "apy": 0, "apr": 0, "tokenSymbol": "MHC" },
+        "MH": { "apy": 0, "apr": 0, "tokenSymbol": "MH" }
+      },
+      "totalMaxLoan": 118.22118749999998,
+      "totalBorrowLimit": 0.3082548705515841
+    }
+  ]
+}
