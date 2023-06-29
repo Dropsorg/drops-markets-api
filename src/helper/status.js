@@ -81,7 +81,7 @@ const updateProtocolStatusData = async (allMarkets, network) => {
         return a;
       },
       {
-        id: markets[index].poolAddr,
+        id: markets[0].poolAddr,
         TVL: new BigNumber(0),
         totalSupply: new BigNumber(0),
         totalNFTSupply: new BigNumber(0),
@@ -96,11 +96,11 @@ const updateProtocolStatusData = async (allMarkets, network) => {
     metadata.totalNFTSupply = metadata.totalNFTSupply.toNumber();
     metadata.totalBorrow = metadata.totalBorrow.toNumber();
 
-    Object.entries(metadata.markets).map(([symbol, market]) => {
-      metadata.markets[symbol].priceETH = Number(
-        (metadata.markets[symbol].priceUSD / ethPrice).toFixed(10)
-      );
-    });
+    // Object.entries(metadata.markets).map(([symbol, market]) => {
+    //   metadata.markets[symbol].priceETH = Number(
+    //     (metadata.markets[symbol].priceUSD / ethPrice).toFixed(10)
+    //   );
+    // });
 
     return metadata;
   });
