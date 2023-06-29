@@ -3,8 +3,8 @@ const { providers: ethersProviders, Contract } = require('ethers');
 const { providers } = require('@0xsequence/multicall');
 
 const { getTokenPriceUSD } = require('./price');
-const { E18 } = require('./constant');
-const { CERC20ABI, ComptrollerABI, PriceOracleABI, DOP } = require('../abis');
+const { E18, DOP } = require('./constant');
+const { CERC20ABI, ComptrollerABI, PriceOracleABI } = require('../abis');
 const comptrollerData = require('../data/comptroller.json');
 
 const provider = new providers.MulticallProvider(
@@ -155,9 +155,7 @@ const updateMarketData = async (network) => {
       console.log(`${i}th comptrolloer ended: `, new Date());
     }
 
-    console.log('path?');
-    await fs.writeFileSync(marketPath, JSON.stringify(allMarketes));
-    console.log('path failed');
+    fs.writeFileSync(marketPath, JSON.stringify(allMarketes));
     return allMarketes;
   } catch (err) {
     console.log(`updateMarketData failed error=${err}`);
