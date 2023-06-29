@@ -14,6 +14,7 @@ const getMarketDetails = async (markets) => {
   );
 
   for (let i = 0; i < markets.length; i++) {
+    const id = markets[i];
     const name = await MarketContracts[i].name();
     const symbol = await MarketContracts[i].symbol();
 
@@ -51,6 +52,7 @@ const getMarketDetails = async (markets) => {
     }
 
     const d = {
+      id,
       name,
       symbol,
       decimals: Number(decimals),
