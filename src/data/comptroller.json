@@ -836,5 +836,29 @@
     ],
     "oracleAddr": "0x6734a196b66E21884C115f54dD7e28Ee5C23678d",
     "poolAddr": "0x896b8019f5ea3caaAb23cDA0A09B405ed8361E8b"
+  },
+  {
+    "markets": [
+      {
+        "name": "Drops-6 aura-wstETH-ETH",
+        "symbol": "D6-aura-wstETH-ETH",
+        "decimals": 8,
+        "underlyingAddress": "0x0000000000000000000000000000000000000000",
+        "underlyingName": "Ether",
+        "underlyingSymbol": "ETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "name": "Drops-6 yvUSDC",
+        "symbol": "D6-yvUSDC",
+        "decimals": 8,
+        "underlyingAddress": "0xa354F35829Ae975e850e23e9615b11Da1B3dC4DE",
+        "underlyingName": "USDC yVault",
+        "underlyingSymbol": "yvUSDC",
+        "underlyingDecimals": 6
+      }
+    ],
+    "oracleAddr": "0x24a57ddD412d35c0a9b7c220c3A5af35c1EBF7a7",
+    "poolAddr": "0x48E29b9ddbf3fE6380d7D1ec5b415E97afD14AbB"
   }
 ]

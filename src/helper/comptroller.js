@@ -1,5 +1,6 @@
 const { providers: ethersProviders, Contract } = require('ethers');
 const { providers } = require('@0xsequence/multicall');
+const { ComptrollerABI, CERC20ABI, ERC20ABI } = require('../abis');
 
 const provider = new providers.MulticallProvider(
   new ethersProviders.JsonRpcProvider('https://cloudflare-eth.com/')
@@ -9,11 +10,12 @@ const getMarketDetails = async (markets) => {
   const data = [];
 
   const MarketContracts = markets.map(
-    (market) => new Contract(market.address, CERC20ABI, provider)
+    (market) => new Contract(market, CERC20ABI, provider)
   );
 
   for (let i = 0; i < markets.length; i++) {
-    const { name, symbol } = markets[i];
+    const name = await MarketContracts[i].name();
+    const symbol = await MarketContracts[i].symbol();
 
     let underlyingAddress = '';
     let underlyingDecimals = '';
@@ -66,10 +68,11 @@ const getMarketDetails = async (markets) => {
 
 const generateComptrollerData = async (comptroller) => {
   const ComptrollerContract = new Contract(
-    comptroller.address,
+    comptroller,
     ComptrollerABI,
     provider
   );
+
   const markets = await ComptrollerContract.getAllMarkets();
   const oracleAddr = await ComptrollerContract.oracle();
   const marketsData = await getMarketDetails(markets);
