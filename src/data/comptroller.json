@@ -277,7 +277,6 @@
         "underlyingSymbol": "xMEEB",
         "underlyingDecimals": 18
       },
-
       {
         "id": "0x3724891050b8b6F9D0B889Ec1B9c89E1673E3f5a",
         "symbol": "D1-xPUNKWETH",
@@ -298,7 +297,6 @@
         "underlyingSymbol": "xMEEBWETH",
         "underlyingDecimals": 18
       },
-
       {
         "id": "0x8d39B065BCfA9d86fEDD4CaB6aDa4F6Bc0195D50",
         "symbol": "D1-DEGODS-fl-v2",
@@ -840,6 +838,7 @@
   {
     "markets": [
       {
+        "id": "0x1a84831Ac2c42613c6eBb079aE8Bd01335b6207e",
         "name": "Drops-6 aura-wstETH-ETH",
         "symbol": "D6-aura-wstETH-ETH",
         "decimals": 8,
@@ -849,6 +848,7 @@
         "underlyingDecimals": 18
       },
       {
+        "id": "0xA3a1A7598060Ac3ca11d7604019F3fFc32bCE7Ec",
         "name": "Drops-6 yvUSDC",
         "symbol": "D6-yvUSDC",
         "decimals": 8,
