@@ -1,6 +1,10 @@
 const CronJob = require('node-cron');
 const fs = require('fs');
-const { updateMarketData, updateProtocolStatusData } = require('../helper');
+const {
+  updateMarketData,
+  updateProtocolStatusData,
+  paths,
+} = require('../helper');
 
 const saveSnapshot = async (network) => {
   console.log(`snapshot started with network=${network}: `, new Date());
