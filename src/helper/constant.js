@@ -1,8 +1,8 @@
 const E18 = 10 ** 18;
 
 const paths = {
-  1: '../drops-is-client/build/status.json',
-  4: '../drops-stage/build/status.json',
+  1: '/home/ec2-user/drops-is-client/build/status.json',
+  4: '/home/ec2-user/drops-stage/build/status.json',
 };
 
 const unsupportedMarkets = {

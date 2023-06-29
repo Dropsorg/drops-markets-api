@@ -12,14 +12,15 @@ const saveSnapshot = async (network) => {
   try {
     const allMarkets = await updateMarketData(network);
     const statusData = await updateProtocolStatusData(allMarkets, network);
+    console.log('path', process.cwd());
     // store in project
-    await fs.writeFileSync(
-      `src/data/status${network}.json`,
+    fs.writeFileSync(
+      `${process.cwd()}/data/status${network}.json`,
       JSON.stringify(statusData)
     );
-
+console.log('Success stored data');
     // store in public place
-    await fs.writeFileSync(
+    fs.writeFileSync(
       paths[network],
       JSON.stringify(statusData, null, '\t')
     );
@@ -30,7 +31,8 @@ const saveSnapshot = async (network) => {
   console.log(`snapshot ended with network=${network}: `, new Date());
 };
 
-exports.initScheduledJobs = () => {
+exports.initScheduledJobs = async () => {
+  await saveSnapshot(1);
   const scheduledJobFunction = CronJob.schedule('*/5 * * * *', async () => {
     await saveSnapshot(1);
     // await saveSnapshot(4);

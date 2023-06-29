@@ -60,15 +60,9 @@ const updateProtocolStatusData = async (allMarkets, network) => {
           collateralFactor:
             (a.markets[symbol]?.collateralFactor || 0) +
             Number(collateralFactor),
-          maxLoan:
-            ((a.markets[symbol]?.cashUSD || 0) + marketCash * priceUSD) *
-            ((a.markets[symbol]?.collateralFactor || 0) +
-              Number(collateralFactor)),
         };
         a.markets[symbol].borrowLimit =
           (a.markets[symbol].collateralFactor * 85) / 100; // 85% of the collateral factor
-        a.markets[symbol].maxLoan =
-          a.markets[symbol].cashUSD * a.markets[symbol].borrowLimit;
 
         const lendPeriodicRate = Math.pow(1 + +supplyRatePerBlock, 1 / 12) - 1;
         const borrowPeriodicRate =
@@ -102,16 +96,11 @@ const updateProtocolStatusData = async (allMarkets, network) => {
     metadata.totalNFTSupply = metadata.totalNFTSupply.toNumber();
     metadata.totalBorrow = metadata.totalBorrow.toNumber();
 
-    let totalMaxLoan = 0;
     Object.entries(metadata.markets).map(([symbol, market]) => {
       metadata.markets[symbol].priceETH = Number(
         (metadata.markets[symbol].priceUSD / ethPrice).toFixed(10)
       );
-      totalMaxLoan += metadata.markets[symbol].maxLoan;
     });
-
-    metadata.totalMaxLoan = totalMaxLoan;
-    metadata.totalBorrowLimit = metadata.totalMaxLoan / metadata.TVL;
 
     return metadata;
   });

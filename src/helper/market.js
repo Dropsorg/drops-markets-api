@@ -72,7 +72,6 @@ const getMarketData = async (markets, poolAddr, oracleAddr, ethPriceInUSD) => {
   );
 
   for (let i = 0; i < marketData.length; i++) {
-    console.log('====>i', i);
     const {
       name,
       id: marketAddr,
@@ -135,7 +134,7 @@ const getMarketData = async (markets, poolAddr, oracleAddr, ethPriceInUSD) => {
 };
 
 const updateMarketData = async (network) => {
-  const marketPath = `src/data/markets${network}.json`;
+  const marketPath = `${process.cwd()}/data/markets${network}.json`;
   try {
     const ethPriceInUSD = await getTokenPriceUSD(
       '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
@@ -156,8 +155,9 @@ const updateMarketData = async (network) => {
       console.log(`${i}th comptrolloer ended: `, new Date());
     }
 
+    console.log('path?');
     await fs.writeFileSync(marketPath, JSON.stringify(allMarketes));
-
+    console.log('path failed');
     return allMarketes;
   } catch (err) {
     console.log(`updateMarketData failed error=${err}`);
