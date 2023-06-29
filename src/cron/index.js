@@ -9,19 +9,23 @@ const {
 const saveSnapshot = async (network) => {
   console.log(`snapshot started with network=${network}: `, new Date());
 
-  const allMarkets = await updateMarketData(network);
-  const statusData = await updateProtocolStatusData(allMarkets, network);
-  // store in project
-  await fs.writeFileSync(
-    `src/data/status${network}.json`,
-    JSON.stringify(statusData)
-  );
+  try {
+    const allMarkets = await updateMarketData(network);
+    const statusData = await updateProtocolStatusData(allMarkets, network);
+    // store in project
+    await fs.writeFileSync(
+      `src/data/status${network}.json`,
+      JSON.stringify(statusData)
+    );
 
-  // store in public place
-  await fs.writeFileSync(
-    paths[network],
-    JSON.stringify(statusData, null, '\t')
-  );
+    // store in public place
+    await fs.writeFileSync(
+      paths[network],
+      JSON.stringify(statusData, null, '\t')
+    );
+  } catch (err) {
+    console.log(`failed to process data on network=${network} error=${err}`);
+  }
 
   console.log(`snapshot ended with network=${network}: `, new Date());
 };
