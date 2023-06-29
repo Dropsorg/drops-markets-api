@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
-const marketsData = require('./data/markets.json');
-const marketsTestnetworkData = require('./data/markets-test.json');
+const marketsData = require('./data/markets1.json');
+const marketsTestnetworkData = require('./data/markets4.json');
 const scheduledFunctions = require('./cron');
 
 require('dotenv').config();

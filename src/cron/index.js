@@ -1,29 +1,25 @@
 const CronJob = require('node-cron');
 const fs = require('fs');
-
-const { updateMarketData } = require('../helper/onchain');
-const { updateProtocolStatusData } = require('../helper/status');
-const { paths } = require('../helper/constant');
+const { updateMarketData, updateProtocolStatusData } = require('../helper');
 
 const saveSnapshot = async (network) => {
-  try {
-    if (network === 1) {
-      console.log('saveProductionSnapshot started');
-    } else {
-      console.log('saveTestSnapShot started');
-    }
-    const allMarkets = await updateMarketData(network);
-    const statusData = await updateProtocolStatusData(allMarkets, network);
+  console.log(`snapshot started with network=${network}: `, new Date());
 
-    if (statusData && statusData.pools && statusData.pools.length > 0) {
-      await fs.writeFileSync(
-        paths[network],
-        JSON.stringify(statusData, null, '\t')
-      );
-    }
-  } catch (err) {
-    console.log(`network=${network}, error=${err}`);
-  }
+  const allMarkets = await updateMarketData(network);
+  const statusData = await updateProtocolStatusData(allMarkets, network);
+  // store in project
+  await fs.writeFileSync(
+    `src/data/status${network}.json`,
+    JSON.stringify(statusData)
+  );
+
+  // store in public place
+  await fs.writeFileSync(
+    paths[network],
+    JSON.stringify(statusData, null, '\t')
+  );
+
+  console.log(`snapshot ended with network=${network}: `, new Date());
 };
 
 exports.initScheduledJobs = () => {

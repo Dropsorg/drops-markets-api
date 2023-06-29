@@ -1,124 +1,840 @@
 [
   {
     "markets": [
-      "0x4aE7413182849D062B72518928a4b2DE87F0e411",
-      "0x3fed9C8b527fA6299b3044E5178ACc34eC2e25e2",
-      "0xdb6994189DB5f14A9261CF0420cC377BADaB03bE",
-      "0x28af5F61544916d33C4105eb536c9177f5523b67",
-      "0x54C312ba0B974d56e2c532Ca407FfDA2c6a14793",
-      "0xAa08183a98b10BBAdb9CCAa852319382120D4683"
+      {
+        "id": "0x4aE7413182849D062B72518928a4b2DE87F0e411",
+        "name": "CEther",
+        "symbol": "dETH",
+        "decimals": 8,
+        "underlyingAddress": "0x0000000000000000000000000000000000000000",
+        "underlyingName": "Ether",
+        "underlyingSymbol": "ETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x3fed9C8b527fA6299b3044E5178ACc34eC2e25e2",
+        "symbol": "dUSDC",
+        "name": "Drops NFT Loans USDC",
+        "decimals": 8,
+        "underlyingAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "underlyingName": "USD Coin",
+        "underlyingSymbol": "USDC",
+        "underlyingDecimals": 6
+      },
+      {
+        "id": "0xdb6994189DB5f14A9261CF0420cC377BADaB03bE",
+        "symbol": "dWBTC",
+        "name": "Drops NFT Loans WBTC",
+        "decimals": 8,
+        "underlyingAddress": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+        "underlyingName": "Wrapped BTC ",
+        "underlyingSymbol": "WBTC",
+        "underlyingDecimals": 8
+      },
+      {
+        "id": "0x28af5F61544916d33C4105eb536c9177f5523b67",
+        "symbol": "dENJ",
+        "name": "Drops NFT Loans ENJ",
+        "decimals": 8,
+        "underlyingAddress": "0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c",
+        "underlyingName": "Enjin Coin",
+        "underlyingSymbol": "ENJ",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x54C312ba0B974d56e2c532Ca407FfDA2c6a14793",
+        "symbol": "dMATIC",
+        "name": "Drops MATIC 1 - ETH",
+        "decimals": 8,
+        "underlyingAddress": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0",
+        "underlyingName": "Matic Token",
+        "underlyingSymbol": "MATIC",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0xAa08183a98b10BBAdb9CCAa852319382120D4683",
+        "symbol": "dDOP",
+        "name": "Drops NFT Loans DOP",
+        "decimals": 8,
+        "underlyingAddress": "0x6bB61215298F296C55b19Ad842D3Df69021DA2ef",
+        "underlyingName": "Drops Ownership Power",
+        "underlyingSymbol": "DOP",
+        "underlyingDecimals": 18
+      }
     ],
     "oracleAddr": "0x96711774D26bA726C98eBe6512c6EfF954a2e575",
-    "poolAddr": "0x79b56CB219901DBF42bB5951a0eDF27465F96206",
-    "comptrollerDecimals": 0
+    "poolAddr": "0x79b56CB219901DBF42bB5951a0eDF27465F96206"
   },
   {
     "markets": [
-      "0xD72929e284E8bc2f7458A6302bE961B91bccB339",
-      "0x7489c6BaAba57d9a431642b26E034aCD191039f7",
-      "0xdF6602D43871b88d993B604d81731fd8a90cF645",
-      "0x8c1CfaE7866fA2CD4C82fEa9a660cfB0FAa7578F",
-      "0xd56c42e2ADc844080eB7E13Ad66AdE8600470179",
-      "0xD0f97bE2F6b0ce5Af703c11d09082e1a0a3855Be",
-      "0x397d11F822578B37b10582db5BCEb43BF6E7C85b",
-      "0x3786f8aB0A0652E23C6503A9a44322B3295608fE",
-      "0xC3D8e1fD31e55EDe71aE1453dDf858461E23B59a",
-      "0x397a7E7710F3a074dA1B6823E94047E57A5db896",
-      "0x109D97019EdA5e32B31Cd995Ba3D29FC5A3e7c97",
-      "0x3D60134Fa81876f5afbaD18a7520Aa8596Ba07CA",
-      "0x5188510a48e8F716e80338c2a2AD4FC415aFC290",
-      "0x57789a12fc3236b12201fAbCd7c8B7Cbb6A94727",
-      "0x69de3C627561F6A3A260e89c43C566C1F3c93E23",
-      "0xCfC8AfAC17d92796809a4b38a74A245011a96E83",
-      "0x5c2cBa783f2BE59849ee1B01fFbF1ed768B444e0",
-      "0x43244977Fae5ae5e2979533d5F0221D80840Fa1A",
-      "0x03e1Eb147aB39d744565Ca1CEc4b03106D21Fa92",
-      "0xfBA58fDDB88203E1D32D0F3E6DbFD9d8b505EC18",
-      "0x8486B523a32e9D0d021078Fe68a3b98fC765FbaB",
-      "0x3724891050b8b6F9D0B889Ec1B9c89E1673E3f5a",
-      "0xd4224B4f05067278221f1651e07a2aa5Ca39590E",
-      "0x8d39B065BCfA9d86fEDD4CaB6aDa4F6Bc0195D50",
-      "0xe3c4582C660Ae527023682F43900d8a89F98D392",
-      "0xb4F88dc4783D7395bBC1B8cE64C66580Cde3c13A",
-      "0x7da479d70245E30Beffd4968d9019953446F9591"
+      {
+        "id": "0xD72929e284E8bc2f7458A6302bE961B91bccB339",
+        "symbol": "D1-ETH",
+        "name": "Drops-1 ETH",
+        "decimals": 8,
+        "underlyingAddress": "0x0000000000000000000000000000000000000000",
+        "underlyingName": "Ether",
+        "underlyingSymbol": "ETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x7489c6BaAba57d9a431642b26E034aCD191039f7",
+        "symbol": "D1-USDC",
+        "name": "Drops-1 USDC",
+        "decimals": 8,
+        "underlyingAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "underlyingName": "Coin USDC",
+        "underlyingSymbol": "USD",
+        "underlyingDecimals": 6
+      },
+      {
+        "id": "0xdF6602D43871b88d993B604d81731fd8a90cF645",
+        "symbol": "D1-fiPUNKS-fl",
+        "name": "Drops-1 fiPUNKS Floor",
+        "underlyingAddress": "0x458FCD33AD32DE55875578da8cF1248B8765EC95",
+        "underlyingName": "Financial Cryptopunks",
+        "underlyingSymbol": "fiPUNKS",
+        "decimals": 0,
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x8c1CfaE7866fA2CD4C82fEa9a660cfB0FAa7578F",
+        "symbol": "D1-BAYC-fl",
+        "name": "Drops-1 BAYC Floor",
+        "underlyingAddress": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D",
+        "underlyingName": "BoredApeYachtClub",
+        "underlyingSymbol": "BAYC",
+        "decimals": 0,
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xd56c42e2ADc844080eB7E13Ad66AdE8600470179",
+        "symbol": "D1-MAYC-fl",
+        "name": "Drops-1 MAYC Floor",
+        "underlyingAddress": "0x60E4d786628Fea6478F785A6d7e704777c86a7c6",
+        "underlyingName": "MutantApeYachtClub",
+        "underlyingSymbol": "MutantApeYachtClub",
+        "decimals": 0,
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xD0f97bE2F6b0ce5Af703c11d09082e1a0a3855Be",
+        "symbol": "D1-OTHR-fl",
+        "name": "Drops-1 OTHR Floor",
+        "underlyingAddress": "0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258",
+        "underlyingName": "Otherdeed",
+        "underlyingSymbol": "OTHR",
+        "decimals": 0,
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x397d11F822578B37b10582db5BCEb43BF6E7C85b",
+        "symbol": "D1-MOONBIRD-fl-v2",
+        "name": "Drops-1 MOONBIRD Floor (V2)",
+        "underlyingAddress": "0x23581767a106ae21c074b2276D25e5C3e136a68b",
+        "underlyingName": "Moonbirds",
+        "underlyingSymbol": "MOONBIRD",
+        "decimals": 0,
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x3786f8aB0A0652E23C6503A9a44322B3295608fE",
+        "symbol": "D1-fiPUNKS-fl-v2",
+        "name": "Drops-1 fiPUNKS Floor (V2)",
+        "underlyingAddress": "0x458FCD33AD32DE55875578da8cF1248B8765EC95",
+        "underlyingName": "Financial Cryptopunks",
+        "underlyingSymbol": "fiPUNKS",
+        "decimals": 0,
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xC3D8e1fD31e55EDe71aE1453dDf858461E23B59a",
+        "symbol": "D1-BAYC-fl-v2",
+        "name": "Drops-1 BAYC Floor (V2)",
+        "underlyingAddress": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D",
+        "underlyingName": "BoredApeYachtClub",
+        "underlyingSymbol": "BAYC",
+        "decimals": 0,
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x397a7E7710F3a074dA1B6823E94047E57A5db896",
+        "symbol": "D1-MAYC-fl-v2",
+        "name": "Drops-1 MAYC Floor (V2)",
+        "underlyingAddress": "0x60E4d786628Fea6478F785A6d7e704777c86a7c6",
+        "underlyingName": "MutantApeYachtClub",
+        "underlyingSymbol": "MAYC",
+        "decimals": 0,
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x109D97019EdA5e32B31Cd995Ba3D29FC5A3e7c97",
+        "symbol": "D1-OTHR-fl-v2",
+        "name": "Drops-1 OTHR Floor (V2)",
+        "underlyingAddress": "0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258",
+        "underlyingName": "Otherdeed",
+        "underlyingSymbol": "OTHR",
+        "underlyingDecimals": 0,
+        "decimals": 0
+      },
+      {
+        "id": "0x3D60134Fa81876f5afbaD18a7520Aa8596Ba07CA",
+        "symbol": "D1-SANDBOX-fl-v2",
+        "name": "Drops-1 SANDBOX Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x5CC5B05a8A13E3fBDB0BB9FcCd98D38e50F90c38",
+        "underlyingName": "Sandbox's LANDs",
+        "underlyingSymbol": "LAND",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x5188510a48e8F716e80338c2a2AD4FC415aFC290",
+        "symbol": "D1-LAND-fl-v2",
+        "name": "Drops-1 LAND Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x5CC5B05a8A13E3fBDB0BB9FcCd98D38e50F90c38",
+        "underlyingName": "Sandbox's LANDs",
+        "underlyingSymbol": "LAND",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x57789a12fc3236b12201fAbCd7c8B7Cbb6A94727",
+        "symbol": "D1-CloneX-fl-v2",
+        "name": "Drops-1 CloneX Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x49cF6f5d44E70224e2E23fDcdd2C053F30aDA28B",
+        "underlyingName": "CloneX",
+        "underlyingSymbol": "CloneX",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x69de3C627561F6A3A260e89c43C566C1F3c93E23",
+        "symbol": "D1-⚇-fl-v2",
+        "name": "Drops-1 ⚇ Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x7Bd29408f11D2bFC23c34f18275bBf23bB716Bc7",
+        "underlyingName": "Meebits",
+        "underlyingSymbol": "⚇",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xCfC8AfAC17d92796809a4b38a74A245011a96E83",
+        "symbol": "D1-AZUKI-fl-v2",
+        "name": "Drops-1 AZUKI Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xED5AF388653567Af2F388E6224dC7C4b3241C544",
+        "underlyingName": "Azuki",
+        "underlyingSymbol": "AZUKI",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x5c2cBa783f2BE59849ee1B01fFbF1ed768B444e0",
+        "symbol": "D1-DOODLE-fl-v2",
+        "name": "Drops-1 DOODLE Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x8a90CAb2b38dba80c64b7734e58Ee1dB38B8992e",
+        "underlyingName": "Doodles",
+        "underlyingSymbol": "DOODLE",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x43244977Fae5ae5e2979533d5F0221D80840Fa1A",
+        "symbol": "D1-BAKC-fl-v2",
+        "name": "Drops-1 BAKC Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xba30E5F9Bb24caa003E9f2f0497Ad287FDF95623",
+        "underlyingName": "BoredApeKennelClub",
+        "underlyingSymbol": "BAKC",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x03e1Eb147aB39d744565Ca1CEc4b03106D21Fa92",
+        "symbol": "D1-FRAX",
+        "name": "Drops-1 FRAX",
+        "decimals": 8,
+        "underlyingAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
+        "underlyingName": "Frax",
+        "underlyingSymbol": "FRAX",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0xfBA58fDDB88203E1D32D0F3E6DbFD9d8b505EC18",
+        "symbol": "D1-xPUNK",
+        "name": "Drops-1 xPUNK",
+        "decimals": 18,
+        "underlyingAddress": "0x08765C76C758Da951DC73D3a8863B34752Dd76FB",
+        "underlyingName": "xPUNK",
+        "underlyingSymbol": "xPUNK",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x8486B523a32e9D0d021078Fe68a3b98fC765FbaB",
+        "symbol": "D1-xMEEB",
+        "name": "Drops-1 xMEEB",
+        "decimals": 18,
+        "underlyingAddress": "0x11Df658567e615f69D23289BE8A27a9C260cE297",
+        "underlyingName": "xMEEB",
+        "underlyingSymbol": "xMEEB",
+        "underlyingDecimals": 18
+      },
+
+      {
+        "id": "0x3724891050b8b6F9D0B889Ec1B9c89E1673E3f5a",
+        "symbol": "D1-xPUNKWETH",
+        "name": "Drops-1 xPUNKWETH",
+        "decimals": 18,
+        "underlyingAddress": "0xFB2f1C0e0086Bcef24757C3b9bfE91585b1A280f",
+        "underlyingName": "xPUNKWETH",
+        "underlyingSymbol": "xPUNKWETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0xd4224B4f05067278221f1651e07a2aa5Ca39590E",
+        "symbol": "D1-xMEEBWETH",
+        "name": "Drops-1 xMEEBWETH",
+        "decimals": 18,
+        "underlyingAddress": "0xF7226c650ffF7d078F603078F119aC64e5035cb6",
+        "underlyingName": "xMEEBWETH",
+        "underlyingSymbol": "xMEEBWETH",
+        "underlyingDecimals": 18
+      },
+
+      {
+        "id": "0x8d39B065BCfA9d86fEDD4CaB6aDa4F6Bc0195D50",
+        "symbol": "D1-DEGODS-fl-v2",
+        "name": "Drops-1-DeGods Floor (v2)",
+        "decimals": 0,
+        "underlyingAddress": "0x8821BeE2ba0dF28761AffF119D66390D594CD280",
+        "underlyingName": "DeGods",
+        "underlyingSymbol": "DEGODS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xe3c4582C660Ae527023682F43900d8a89F98D392",
+        "symbol": "D1-WPUNKS-fl-v2",
+        "name": "Drops-1-wCryptopunks Floor (v2)",
+        "decimals": 0,
+        "underlyingAddress": "0xb7F7F6C52F2e2fdb1963Eab30438024864c313F6",
+        "underlyingName": "Wrapped Cryptopunks",
+        "underlyingSymbol": "WPUNKS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xb4F88dc4783D7395bBC1B8cE64C66580Cde3c13A",
+        "symbol": "D1-USDT",
+        "name": "Drops-1 USDT",
+        "decimals": 8,
+        "underlyingAddress": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+        "underlyingName": "Tether USD",
+        "underlyingSymbol": "USDT",
+        "underlyingDecimals": 6
+      },
+      {
+        "id": "0x7da479d70245E30Beffd4968d9019953446F9591",
+        "symbol": "D1-REMILIO-fl-v2",
+        "name": "Drops-1 REMILIO Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xD3D9ddd0CF0A5F0BFB8f7fcEAe075DF687eAEBaB",
+        "underlyingName": "TEST NFT",
+        "underlyingSymbol": "TEST",
+        "underlyingDecimals": 0
+      }
     ],
     "oracleAddr": "0x79B994AeA4Fd6Dea9b6EE807c2704Fa36219b5f6",
-    "poolAddr": "0xB70FB69a522ed8D4613C4C720F91F93a836EE2f5",
-    "comptrollerDecimals": 18
+    "poolAddr": "0xB70FB69a522ed8D4613C4C720F91F93a836EE2f5"
   },
   {
     "markets": [
-      "0x0a1EF7feD1B691253F9367daf682BA08A9D2fD9C",
-      "0xF6dc34c07EDa4855B5075463DCCFFAB42598415b",
-      "0x83355362ebb2180873844523044c866170f9D99C",
-      "0x65DA0A824269E43A2Fc9586Ef2fFE2aE722C33Be",
-      "0xCE072AAAEE46FDb3B0aA0Be0516b9491aD88eC57",
-      "0xE9E374eF997D9ee38D705caBAC5B94f469506966",
-      "0xe63D394953908c3EDA007Cf4A94F9352Bb22dEC0",
-      "0xf1c97D0C0f303B0aAFe3974d36ed656B0a26CF99",
-      "0xB589a8E4D5c47B721fd7e3dEF994c819Ab8718C4",
-      "0x777a91c5E1CAE1533e32Fe8eD5667022A1E0fbB6",
-      "0xDf55F91f8f13F6b3754bf07C6eBDF16C99f83198",
-      "0x140128b2e6562713051df4858ff52f26795B8920",
-      "0x5dAaBd53214046c108BDdC91766FFFee9397cEE4",
-      "0x67c06bc0E1C1c4E4617cd293D1F3bcB39244A859",
-      "0xF19e040255f3842c009237e0be5A73283371C8df",
-      "0x09dC75D014876381Ef04D1Ef791Af4318f758eBE",
-      "0x92B9CA3F147B485Dae876AC3585cAaDB58962baF"
+      {
+        "id": "0x0a1EF7feD1B691253F9367daf682BA08A9D2fD9C",
+        "symbol": "D2-ETH",
+        "name": "Drops-2 ETH",
+        "decimals": 8,
+        "underlyingAddress": "0x0000000000000000000000000000000000000000",
+        "underlyingName": "Ether",
+        "underlyingSymbol": "ETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0xF6dc34c07EDa4855B5075463DCCFFAB42598415b",
+        "symbol": "D2-CYBERBROKERS-fl",
+        "name": "Drops-2 CYBERBROKERS Floor",
+        "decimals": 0,
+        "underlyingAddress": "0x892848074ddeA461A15f337250Da3ce55580CA85",
+        "underlyingName": "CyberBrokers",
+        "underlyingSymbol": "CYBERBROKERS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x83355362ebb2180873844523044c866170f9D99C",
+        "symbol": "D2-CYBERBROKERS-fl-v2",
+        "name": "Drops-2 CYBERBROKERS Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x892848074ddeA461A15f337250Da3ce55580CA85",
+        "underlyingName": "CyberBrokers",
+        "underlyingSymbol": "CYBERBROKERS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x65DA0A824269E43A2Fc9586Ef2fFE2aE722C33Be",
+        "symbol": "D2-GOBLIN-fl-v2",
+        "name": "Drops-2 GOBLIN Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xbCe3781ae7Ca1a5e050Bd9C4c77369867eBc307e",
+        "underlyingName": "goblintown",
+        "underlyingSymbol": "GOBLIN",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xCE072AAAEE46FDb3B0aA0Be0516b9491aD88eC57",
+        "symbol": "D2-LOBS-fl-v2",
+        "name": "Drops-2 LOBS Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x026224A2940bFE258D0dbE947919B62fE321F042",
+        "underlyingName": "lobsterdao",
+        "underlyingSymbol": "LOBS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xE9E374eF997D9ee38D705caBAC5B94f469506966",
+        "symbol": "D2-TOADZ-fl-v2",
+        "name": "Drops-2 TOADZ Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x1CB1A5e65610AEFF2551A50f76a87a7d3fB649C6",
+        "underlyingName": "Cryptoadz",
+        "underlyingSymbol": "TOADZ",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xe63D394953908c3EDA007Cf4A94F9352Bb22dEC0",
+        "symbol": "D2-BEANZ-fl-v2",
+        "name": "Drops-2 BEANZ Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x306b1ea3ecdf94aB739F1910bbda052Ed4A9f949",
+        "underlyingName": "Beanz",
+        "underlyingSymbol": "BEANZ",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xf1c97D0C0f303B0aAFe3974d36ed656B0a26CF99",
+        "symbol": "D2-WIZARDS-fl-v2",
+        "name": "Drops-2 WIZARDS Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x306b1ea3ecdf94aB739F1910bbda052Ed4A9f949",
+        "underlyingName": "Beanz",
+        "underlyingSymbol": "BEANZ",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xB589a8E4D5c47B721fd7e3dEF994c819Ab8718C4",
+        "symbol": "D2-CDB-fl-v2",
+        "name": "Drops-2 CDB Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x42069ABFE407C60cf4ae4112bEDEaD391dBa1cdB",
+        "underlyingName": "CryptoDickbutts S3",
+        "underlyingSymbol": "CDB",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x777a91c5E1CAE1533e32Fe8eD5667022A1E0fbB6",
+        "symbol": "D2-WIZARDS-fl-v2",
+        "name": "Drops-2 WIZARDS Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x521f9C7505005CFA19A8E5786a9c3c9c9F5e6f42",
+        "underlyingName": "ForgottenRunesWizardsCult",
+        "underlyingSymbol": "WIZARDS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xDf55F91f8f13F6b3754bf07C6eBDF16C99f83198",
+        "symbol": "D2-USDC",
+        "name": "Drops-2 USDC",
+        "decimals": 8,
+        "underlyingAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "underlyingName": "USD Coin",
+        "underlyingSymbol": "USDC",
+        "underlyingDecimals": 6
+      },
+      {
+        "id": "0x140128b2e6562713051df4858ff52f26795B8920",
+        "symbol": "D2-FRAX",
+        "name": "Drops-2 FRAX",
+        "decimals": 8,
+        "underlyingAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
+        "underlyingName": "Frax",
+        "underlyingSymbol": "FRAX",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x5dAaBd53214046c108BDdC91766FFFee9397cEE4",
+        "symbol": "D2-MIL-fl-v2",
+        "name": "Drops-2 MIL Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x5Af0D9827E0c53E4799BB226655A1de152A425a5",
+        "underlyingName": "Milady",
+        "underlyingSymbol": "MIL",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x67c06bc0E1C1c4E4617cd293D1F3bcB39244A859",
+        "symbol": "D2-xMILADY",
+        "name": "Drops-2 xMILADY",
+        "decimals": 18,
+        "underlyingAddress": "0x5D1C5Dee420004767d3e2fb7AA7C75AA92c33117",
+        "underlyingName": "xMILADY",
+        "underlyingSymbol": "xMILADY",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0xF19e040255f3842c009237e0be5A73283371C8df",
+        "symbol": "D2-xWIZARD",
+        "name": "Drops-2 xWIZARD",
+        "decimals": 18,
+        "underlyingAddress": "0x1EA1ccFecc55938A71c67150C41e7eBA0743e94c",
+        "underlyingName": "xWIZARD",
+        "underlyingSymbol": "xWIZARD",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x09dC75D014876381Ef04D1Ef791Af4318f758eBE",
+        "symbol": "D2-xMILADYWETH",
+        "name": "Drops-2 xMILADYWETH",
+        "decimals": 18,
+        "underlyingAddress": "0x6c6BCe43323f6941FD6febe8ff3208436e8e0Dc7",
+        "underlyingName": "xMILADYWETH",
+        "underlyingSymbol": "xMILADYWETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x92B9CA3F147B485Dae876AC3585cAaDB58962baF",
+        "symbol": "D2-xWIZARDWETH",
+        "name": "Drops-2 xWIZARDWETH",
+        "decimals": 18,
+        "underlyingAddress": "0x7BBec59e6b6Bd75Df4F57927C3c6A42D9d39728E",
+        "underlyingName": "xWIZARDWETH",
+        "underlyingSymbol": "xWIZARDWETH",
+        "underlyingDecimals": 18
+      }
     ],
     "oracleAddr": "0xdA12A24515E4BA722103A8FF648ba11fAF7992E1",
-    "poolAddr": "0x9dEb56b9DD04822924B90ad15d01EE50415f8bC7",
-    "comptrollerDecimals": 18
+    "poolAddr": "0x9dEb56b9DD04822924B90ad15d01EE50415f8bC7"
   },
   {
     "markets": [
-      "0x05231980914B702083B9Ac08002325654F6eb95B",
-      "0x5F5df50c011D527E19e50B1EaC8A18e7827Ed23B",
-      "0xEE2Ed59082a60c0AF4bB2132B90d581134ea1fD5",
-      "0x7BB678A6c5daDb6b03032EF46c6263ff09bB2799",
-      "0x780F467401430632ed0529f497C20806b2793dfF",
-      "0x5Ce3d90E359A0F5e841ac8696e736E6EBF8bf2f0",
-      "0xdA8c9777FEBAb8577a33f4750D165bc13b07B93d",
-      "0x5A5D79e75016330F8b2a02B4f33b5E12003a63D7",
-      "0x47919D0b513C88e6ddFEEAD4ea0729c08003dAEE",
-      "0x0A494b848d4bE5D58B0fde9f80C9b25592a2D3b2",
-      "0x0039fEc5e1D91741e251d82d9E83859C8E79013d"
+      {
+        "id": "0x05231980914B702083B9Ac08002325654F6eb95B",
+        "symbol": "D3-ETH",
+        "name": "Drops-3 ETH",
+        "decimals": 8,
+        "underlyingAddress": "0x0000000000000000000000000000000000000000",
+        "underlyingName": "Ether",
+        "underlyingSymbol": "ETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x5F5df50c011D527E19e50B1EaC8A18e7827Ed23B",
+        "symbol": "D3-MOONBIRD-fl",
+        "name": "Drops-3 MOONBIRD Floor",
+        "decimals": 0,
+        "underlyingAddress": "0x23581767a106ae21c074b2276D25e5C3e136a68b",
+        "underlyingName": "Moonbirds",
+        "underlyingSymbol": "MOONBIRD",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xEE2Ed59082a60c0AF4bB2132B90d581134ea1fD5",
+        "symbol": "D3-MOONBIRDV2-fl",
+        "name": "Drops-3 MOONBIRDV2 Floor",
+        "decimals": 0,
+        "underlyingAddress": "0x23581767a106ae21c074b2276D25e5C3e136a68b",
+        "underlyingName": "Moonbirds",
+        "underlyingSymbol": "MOONBIRD",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x7BB678A6c5daDb6b03032EF46c6263ff09bB2799",
+        "symbol": "D3-MOONBIRDV3-fl",
+        "name": "Drops-3 MOONBIRDV3 Floor",
+        "decimals": 0,
+        "underlyingAddress": "0x23581767a106ae21c074b2276D25e5C3e136a68b",
+        "underlyingName": "Moonbirds",
+        "underlyingSymbol": "MOONBIRD",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x780F467401430632ed0529f497C20806b2793dfF",
+        "symbol": "D3-VFT-fl-v2",
+        "name": "Drops-3 VFT Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xa3AEe8BcE55BEeA1951EF834b99f3Ac60d1ABeeB",
+        "underlyingName": "VeeFriends",
+        "underlyingSymbol": "VFT",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x5Ce3d90E359A0F5e841ac8696e736E6EBF8bf2f0",
+        "symbol": "D3-NOUN-fl-v2",
+        "name": "Drops-3 NOUN Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x9C8fF314C9Bc7F6e59A9d9225Fb22946427eDC03",
+        "underlyingName": "Nouns",
+        "underlyingSymbol": "NOUN",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xdA8c9777FEBAb8577a33f4750D165bc13b07B93d",
+        "symbol": "D3-PPG-fl-v2",
+        "name": "Drops-3 PPG Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xBd3531dA5CF5857e7CfAA92426877b022e612cf8",
+        "underlyingName": "PudgyPenguins",
+        "underlyingSymbol": "PPG",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x5A5D79e75016330F8b2a02B4f33b5E12003a63D7",
+        "symbol": "D3-COOL-fl-v2",
+        "name": "Drops-3 COOL Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x1A92f7381B9F03921564a437210bB9396471050C",
+        "underlyingName": "Cool Cats",
+        "underlyingSymbol": "COOL",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x47919D0b513C88e6ddFEEAD4ea0729c08003dAEE",
+        "symbol": "D3-WOW-fl-v2",
+        "name": "Drops-3 WOW Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xe785E82358879F061BC3dcAC6f0444462D4b5330",
+        "underlyingName": "World Of Women",
+        "underlyingSymbol": "WOW",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x0A494b848d4bE5D58B0fde9f80C9b25592a2D3b2",
+        "symbol": "D3-USDC",
+        "name": "Drops-3 USDC",
+        "decimals": 8,
+        "underlyingAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "underlyingName": "USD Coin",
+        "underlyingSymbol": "USDC",
+        "underlyingDecimals": 6
+      },
+      {
+        "id": "0x0039fEc5e1D91741e251d82d9E83859C8E79013d",
+        "symbol": "D3-FRAX",
+        "name": "Drops-3 FRAX",
+        "decimals": 8,
+        "underlyingAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
+        "underlyingName": "Frax",
+        "underlyingSymbol": "FRAX",
+        "underlyingDecimals": 18
+      }
     ],
     "oracleAddr": "0x97ffEaCd62bdeA0b6E3B167FFd3cc25f8A8fc47f",
-    "poolAddr": "0x7312a3bc8733b068989ef44bac6344f07cfcde7f",
-    "comptrollerDecimals": 18
+    "poolAddr": "0x7312a3bc8733b068989ef44bac6344f07cfcde7f"
   },
   {
     "markets": [
-      "0x588C13e685e44B22DC6647937481C816E5FeE086",
-      "0xA7B06C501e89a963AC9b33a41A571AD23FfEb502",
-      "0x30C40201f7Af91C1B1EeF6C7b4504669602a82f5",
-      "0xE7D7B65DBe5577d9DA4286367031F5BcCB020674",
-      "0xf00DE3D44228856B2cA1D4550C2eacba153dAca7",
-      "0xEf8f2D14104cE88Ad8E1B27C77878c8C9a92bB80",
-      "0xA0bda1407b2686987A3aAe553D2eDE657a1D472b",
-      "0x21897f9694D94F7F3ddCf60FD32b14DB55376b00",
-      "0x8B7cfB541cCfEBFeADb699C5e70550B165383685",
-      "0x3bFe965147Df3e8BEDf30AD7FE4741bD977f4D06"
+      {
+        "id": "0x588C13e685e44B22DC6647937481C816E5FeE086",
+        "symbol": "D4-ETH",
+        "name": "Drops-4 ETH",
+        "decimals": 8,
+        "underlyingAddress": "0x0000000000000000000000000000000000000000",
+        "underlyingName": "Ether",
+        "underlyingSymbol": "ETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0xA7B06C501e89a963AC9b33a41A571AD23FfEb502",
+        "symbol": "D4-SQUIGGLES-fl",
+        "name": "Drops-4 SQUIGGLES Floor",
+        "decimals": 0,
+        "underlyingAddress": "0x059EDD72Cd353dF5106D2B9cC5ab83a52287aC3a",
+        "underlyingName": "Art Blocks",
+        "underlyingSymbol": "BLOCKS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x30C40201f7Af91C1B1EeF6C7b4504669602a82f5",
+        "symbol": "D4-SQUIGGLES-fl-v2",
+        "name": "Drops-4 SQUIGGLES Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x059EDD72Cd353dF5106D2B9cC5ab83a52287aC3a",
+        "underlyingName": "Art Blocks",
+        "underlyingSymbol": "BLOCKS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xE7D7B65DBe5577d9DA4286367031F5BcCB020674",
+        "symbol": "D4-USDC",
+        "name": "Drops-4 USDC",
+        "decimals": 8,
+        "underlyingAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "underlyingName": "USD Coin",
+        "underlyingSymbol": "USDC",
+        "underlyingDecimals": 6
+      },
+      {
+        "id": "0xf00DE3D44228856B2cA1D4550C2eacba153dAca7",
+        "symbol": "D4-FRAX",
+        "name": "Drops-4 FRAX",
+        "decimals": 8,
+        "underlyingAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
+        "underlyingName": "Frax",
+        "underlyingSymbol": "FRAX",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0xEf8f2D14104cE88Ad8E1B27C77878c8C9a92bB80",
+        "symbol": "D4-Ringers-fl-v2",
+        "name": "Drops-4 Ringers Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xa7d8d9ef8D8Ce8992Df33D8b8CF4Aebabd5bD270",
+        "underlyingName": "Art Blocks",
+        "underlyingSymbol": "BLOCKS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xA0bda1407b2686987A3aAe553D2eDE657a1D472b",
+        "symbol": "D4-Findeza-fl-v2",
+        "name": "Drops-4 Findeza Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xa7d8d9ef8D8Ce8992Df33D8b8CF4Aebabd5bD270",
+        "underlyingName": "Art Blocks",
+        "underlyingSymbol": "BLOCKS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x21897f9694D94F7F3ddCf60FD32b14DB55376b00",
+        "symbol": "D4-Fidenza-fl-v2",
+        "name": "Drops-4 Fidenza Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xa7d8d9ef8D8Ce8992Df33D8b8CF4Aebabd5bD270",
+        "underlyingName": "Art Blocks",
+        "underlyingSymbol": "BLOCKS",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x8B7cfB541cCfEBFeADb699C5e70550B165383685",
+        "symbol": "D4-xSQGL",
+        "name": "Drops-4 xSQGL",
+        "decimals": 18,
+        "underlyingAddress": "0x929Fd5879847F41f05B6Cf3746b4343f38b8741B",
+        "underlyingName": "xSQGL",
+        "underlyingSymbol": "xSQGL",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x3bFe965147Df3e8BEDf30AD7FE4741bD977f4D06",
+        "symbol": "D4-xSQGLWETH",
+        "name": "Drops-4 xSQGLWETH",
+        "decimals": 18,
+        "underlyingAddress": "0xC7eC3aC4c4014384Bb6B09e01400CEFF6D1961E6",
+        "underlyingName": "xSQGLWETH",
+        "underlyingSymbol": "xSQGLWETH",
+        "underlyingDecimals": 18
+      }
     ],
     "oracleAddr": "0xfde76511A27A7a5b8C802E5Fda14CC0F879bC2C6",
-    "poolAddr": "0x3903E6EcD8bc610D5a01061B1Dc31affD21F81C6",
-    "comptrollerDecimals": 18
+    "poolAddr": "0x3903E6EcD8bc610D5a01061B1Dc31affD21F81C6"
   },
   {
     "markets": [
-      "0x777ECcD3fCf4FfA3b12f45a384852608DF2619a0",
-      "0x0eaBea97c25bd4DfcAd294d82404C7DF3b26a2Cc",
-      "0x550A4a2bE23c3a78979BBd0C02D588445B385c1b",
-      "0x6d2527d6cf23016D46Ce7D0F409C59e8E34D0854",
-      "0xB49655Bc75b61E6482B71c76e269eF8a342283Ba",
-      "0xE751e2e8dcdcB5Ed043419529ba9311Fa7CCDd3E",
-      "0xFB0Fceb2f620009C7E29F9e770Ab7CF1d7956ecC",
-      "0xEDAFa6c38ee44810367A77D38D9b99FDAFEE8513",
-      "0x9a045B76beB1713f4bC5e28a2747D1d484dB4DB4"
+      {
+        "id": "0x777ECcD3fCf4FfA3b12f45a384852608DF2619a0",
+        "symbol": "D5-ETH",
+        "name": "Drops-5 ETH",
+        "decimals": 8,
+        "underlyingAddress": "0x0000000000000000000000000000000000000000",
+        "underlyingName": "Ether",
+        "underlyingSymbol": "ETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x0eaBea97c25bd4DfcAd294d82404C7DF3b26a2Cc",
+        "symbol": "D5-USDC",
+        "name": "Drops-5 USDC",
+        "decimals": 8,
+        "underlyingAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+        "underlyingName": "USD Coin",
+        "underlyingSymbol": "USDC",
+        "underlyingDecimals": 6
+      },
+      {
+        "id": "0x550A4a2bE23c3a78979BBd0C02D588445B385c1b",
+        "symbol": "D5-BAYC-fl-v2",
+        "name": "Drops-5 BAYC Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D",
+        "underlyingName": "BoredApeYachtClub",
+        "underlyingSymbol": "BAYC",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x6d2527d6cf23016D46Ce7D0F409C59e8E34D0854",
+        "symbol": "D5-MAYC-fl-v2",
+        "name": "Drops-5 MAYC Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x60E4d786628Fea6478F785A6d7e704777c86a7c6",
+        "underlyingName": "MutantApeYachtClub",
+        "underlyingSymbol": "MAYC",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xB49655Bc75b61E6482B71c76e269eF8a342283Ba",
+        "symbol": "D5-OTHR-fl-v2",
+        "name": "Drops-5 OTHR Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x34d85c9CDeB23FA97cb08333b511ac86E1C4E258",
+        "underlyingName": "Otherdeed",
+        "underlyingSymbol": "OTHR",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xE751e2e8dcdcB5Ed043419529ba9311Fa7CCDd3E",
+        "symbol": "D5-BAKC-fl-v2",
+        "name": "Drops-5 BAKC Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xba30E5F9Bb24caa003E9f2f0497Ad287FDF95623",
+        "underlyingName": "BoredApeKennelClub",
+        "underlyingSymbol": "BAKC",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0xFB0Fceb2f620009C7E29F9e770Ab7CF1d7956ecC",
+        "symbol": "D5-FRAX",
+        "name": "Drops-5 FRAX",
+        "decimals": 8,
+        "underlyingAddress": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
+        "underlyingName": "Frax",
+        "underlyingSymbol": "FRAX",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0xEDAFa6c38ee44810367A77D38D9b99FDAFEE8513",
+        "symbol": "D5-MHC-fl-v2",
+        "name": "Drops-5 MHC Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0xaE99a698156eE8F8d07Cbe7F271c31EeaaC07087",
+        "underlyingName": "Mutant Hound Collars",
+        "underlyingSymbol": "MHC",
+        "underlyingDecimals": 0
+      },
+      {
+        "id": "0x9a045B76beB1713f4bC5e28a2747D1d484dB4DB4",
+        "symbol": "D5-MH-fl-v2",
+        "name": "Drops-5 MH Floor (V2)",
+        "decimals": 0,
+        "underlyingAddress": "0x354634c4621cDfb7a25E6486cCA1E019777D841B",
+        "underlyingName": "Mutant Hounds",
+        "underlyingSymbol": "MH",
+        "underlyingDecimals": 0
+      }
     ],
     "oracleAddr": "0x6734a196b66E21884C115f54dD7e28Ee5C23678d",
-    "poolAddr": "0x896b8019f5ea3caaAb23cDA0A09B405ed8361E8b",
-    "comptrollerDecimals": 18
+    "poolAddr": "0x896b8019f5ea3caaAb23cDA0A09B405ed8361E8b"
   }
 ]

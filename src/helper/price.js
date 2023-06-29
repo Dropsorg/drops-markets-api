@@ -1,5 +1,14 @@
 const BigNumber = require('bignumber.js');
+const fetch = require('node-fetch');
+const { providers: ethersProviders, Contract } = require('ethers');
+const { providers } = require('@0xsequence/multicall');
+
+const { ETHUSDOracle } = require('../abis');
 const { uniswapSubgraph } = require('../helper/constant');
+
+const provider = new providers.MulticallProvider(
+  new ethersProviders.JsonRpcProvider('https://cloudflare-eth.com/')
+);
 
 const getTokenPriceUSD = async (tokenAddress) => {
   return fetch(uniswapSubgraph, {
@@ -27,6 +36,7 @@ const getTokenPriceUSD = async (tokenAddress) => {
       const result = new BigNumber(derivedETH || 0)
         .multipliedBy(ethPrice || 0)
         .toString();
+      console.log('=====>getTokenPriceUSD', Number(result));
       return Number(result);
     });
 };
