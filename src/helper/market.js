@@ -12,21 +12,21 @@ const provider = new providers.MulticallProvider(
 );
 
 const getTokenPriceBySymbol = async (
-  symbol,
   oracleAddr,
   marketAddr,
   ethPriceInUSD,
+  underlyingSymbol,
   underlyingDecimals
 ) => {
   const OracleContract = new Contract(oracleAddr, PriceOracleABI, provider);
 
   if (
-    symbol.endsWith('USDC') ||
-    symbol.endsWith('DAI') ||
-    symbol.endsWith('USDT')
+    underlyingSymbol === 'USDC' ||
+    underlyingSymbol === 'DAI' ||
+    underlyingSymbol === 'USDT'
   ) {
     underlyingPriceUSD = 1;
-  } else if (symbol === 'DOP') {
+  } else if (underlyingSymbol === 'DOP') {
     underlyingPriceUSD = await getTokenPriceUSD(DOP);
   } else {
     underlyingPriceUSD =
@@ -61,10 +61,10 @@ const getMarketData = async (markets, poolAddr, oracleAddr, ethPriceInUSD) => {
         MarketContract.reserveFactorMantissa(), // 8
         PoolContract.markets(market.id), // 9
         getTokenPriceBySymbol(
-          market.symbol,
           oracleAddr,
           market.id,
           ethPriceInUSD,
+          market.underlyingSymbol,
           market.underlyingDecimals
         ), // 10
       ];
