@@ -67,6 +67,15 @@ app.get('/main/drops-pool5', async (req, res) => {
     res.status(400).send(err);
   }
 });
+app.get('/main/drops-pool6', async (req, res) => {
+  try {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.status(200).send(marketsData[6] || []);
+  } catch (err) {
+    console.log(err);
+    res.status(400).send(err);
+  }
+});
 
 // Goerli testnet - chain id 5
 app.get('/test/drops-pool0', async (req, res) => {
