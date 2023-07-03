@@ -26,4 +26,5 @@ npm run start
 /main/drops-pool3
 /main/drops-pool4
 /main/drops-pool5
+/main/drops-pool6
 ```
