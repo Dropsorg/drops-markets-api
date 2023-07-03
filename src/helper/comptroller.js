@@ -82,7 +82,7 @@ const generateComptrollerData = async (comptroller) => {
   return {
     markets: marketsData,
     oracleAddr,
-    poolAddr: comptroller,
+    comptroller: comptroller,
   };
 };
 

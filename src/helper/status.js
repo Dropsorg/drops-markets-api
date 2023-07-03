@@ -81,7 +81,7 @@ const updateProtocolStatusData = async (allMarkets, network) => {
         return a;
       },
       {
-        id: markets[0].poolAddr,
+        id: markets[0].comptroller,
         TVL: new BigNumber(0),
         totalSupply: new BigNumber(0),
         totalNFTSupply: new BigNumber(0),
