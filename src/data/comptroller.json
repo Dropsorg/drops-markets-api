@@ -63,7 +63,7 @@
       }
     ],
     "oracleAddr": "0x96711774D26bA726C98eBe6512c6EfF954a2e575",
-    "poolAddr": "0x79b56CB219901DBF42bB5951a0eDF27465F96206"
+    "comptroller": "0x79b56CB219901DBF42bB5951a0eDF27465F96206"
   },
   {
     "markets": [
@@ -339,7 +339,7 @@
       }
     ],
     "oracleAddr": "0x79B994AeA4Fd6Dea9b6EE807c2704Fa36219b5f6",
-    "poolAddr": "0xB70FB69a522ed8D4613C4C720F91F93a836EE2f5"
+    "comptroller": "0xB70FB69a522ed8D4613C4C720F91F93a836EE2f5"
   },
   {
     "markets": [
@@ -515,7 +515,7 @@
       }
     ],
     "oracleAddr": "0xdA12A24515E4BA722103A8FF648ba11fAF7992E1",
-    "poolAddr": "0x9dEb56b9DD04822924B90ad15d01EE50415f8bC7"
+    "comptroller": "0x9dEb56b9DD04822924B90ad15d01EE50415f8bC7"
   },
   {
     "markets": [
@@ -631,7 +631,7 @@
       }
     ],
     "oracleAddr": "0x97ffEaCd62bdeA0b6E3B167FFd3cc25f8A8fc47f",
-    "poolAddr": "0x7312a3bc8733b068989ef44bac6344f07cfcde7f"
+    "comptroller": "0x7312a3bc8733b068989ef44bac6344f07cfcde7f"
   },
   {
     "markets": [
@@ -737,7 +737,7 @@
       }
     ],
     "oracleAddr": "0xfde76511A27A7a5b8C802E5Fda14CC0F879bC2C6",
-    "poolAddr": "0x3903E6EcD8bc610D5a01061B1Dc31affD21F81C6"
+    "comptroller": "0x3903E6EcD8bc610D5a01061B1Dc31affD21F81C6"
   },
   {
     "markets": [
@@ -833,7 +833,7 @@
       }
     ],
     "oracleAddr": "0x6734a196b66E21884C115f54dD7e28Ee5C23678d",
-    "poolAddr": "0x896b8019f5ea3caaAb23cDA0A09B405ed8361E8b"
+    "comptroller": "0x896b8019f5ea3caaAb23cDA0A09B405ed8361E8b"
   },
   {
     "markets": [
@@ -859,6 +859,6 @@
       }
     ],
     "oracleAddr": "0x24a57ddD412d35c0a9b7c220c3A5af35c1EBF7a7",
-    "poolAddr": "0x48E29b9ddbf3fE6380d7D1ec5b415E97afD14AbB"
+    "comptroller": "0x48E29b9ddbf3fE6380d7D1ec5b415E97afD14AbB"
   }
 ]

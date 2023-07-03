@@ -42,10 +42,10 @@ const getTokenPriceBySymbol = async (
   };
 };
 
-const getMarketData = async (markets, poolAddr, oracleAddr, ethPriceInUSD) => {
+const getMarketData = async (markets, comptroller, oracleAddr, ethPriceInUSD) => {
   const data = [];
 
-  const PoolContract = new Contract(poolAddr, ComptrollerABI, provider);
+  const PoolContract = new Contract(comptroller, ComptrollerABI, provider);
   const marketData = await Promise.all(
     markets.map((market) => {
       const MarketContract = new Contract(market.id, CERC20ABI, provider);
@@ -122,7 +122,7 @@ const getMarketData = async (markets, poolAddr, oracleAddr, ethPriceInUSD) => {
       underlyingPriceETH: Number(prices.underlyingPriceETH),
       collateralFactor,
       priceOracle: oracleAddr,
-      poolAddr,
+      comptroller,
       // accrualBlockNumber: Number(accrualBlockNumber),
       // borrowIndex: Number(borrowIndex) / E18,
     };
@@ -147,7 +147,7 @@ const updateMarketData = async (network) => {
       console.log(`${i}th comptrolloer started: `, new Date());
       const marketData = await getMarketData(
         comptrollerData[i].markets,
-        comptrollerData[i].poolAddr,
+        comptrollerData[i].comptroller,
         comptrollerData[i].oracleAddr,
         Number(ethPriceInUSD)
       );
