@@ -856,6 +856,16 @@
         "underlyingName": "USDC yVault",
         "underlyingSymbol": "yvUSDC",
         "underlyingDecimals": 6
+      },
+      {
+        "id": "0xb97A79FcbC3867Bb68247F5f76359448ed3eBCa3",
+        "name": "Drops6-Governance OHM",
+        "symbol": "D6-gOHM",
+        "decimals": 8,
+        "underlyingAddress": "0x0ab87046fBb341D058F17CBC4c1133F25a20a52f",
+        "underlyingName": "Governance OHM",
+        "underlyingSymbol": "gOHM",
+        "underlyingDecimals": 18
       }
     ],
     "oracleAddr": "0x24a57ddD412d35c0a9b7c220c3A5af35c1EBF7a7",
