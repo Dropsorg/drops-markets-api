@@ -60,6 +60,16 @@
         "underlyingName": "Drops Ownership Power",
         "underlyingSymbol": "DOP",
         "underlyingDecimals": 18
+      },
+      {
+        "id": "0x6020D8630DD312748023b5D0263a49f5de729BF6",
+        "symbol": "D0-gOHM",
+        "name": "Drops-0 Governance OHM",
+        "decimals": 8,
+        "underlyingAddress": "0x0ab87046fBb341D058F17CBC4c1133F25a20a52f",
+        "underlyingName": "Governance OHM",
+        "underlyingSymbol": "gOHM",
+        "underlyingDecimals": 18
       }
     ],
     "oracleAddr": "0x96711774D26bA726C98eBe6512c6EfF954a2e575",
