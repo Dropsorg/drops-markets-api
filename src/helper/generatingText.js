@@ -4,7 +4,7 @@ const generatingSymbol = (symbol) => {
    * ex: D2-CYBERBROKERS-fl => CYBERBROKERS, D4-FRAX => FRAX, D5-BAYC-fl-v2 => BAYC
    */
   let result = symbol.replace(
-    /D1|D2|D3|D4|D5|D6|D7|D8|D9|-|fl|floor|v2|v3|v4/g,
+    /D0|D1|D2|D3|D4|D5|D6|D7|D8|D9|-|fl|floor|v2|v3|v4/g,
     ''
   );
   /**
