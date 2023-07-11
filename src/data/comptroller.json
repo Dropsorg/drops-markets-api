@@ -876,6 +876,36 @@
         "underlyingName": "Governance OHM",
         "underlyingSymbol": "gOHM",
         "underlyingDecimals": 18
+      },
+      {
+        "id": "0x367144a75577f7FBE80E69854046F6169eF080aC",
+        "name": "Drops-6 DAI yVault",
+        "symbol": "D6-yvDAI",
+        "decimals": 8,
+        "underlyingAddress": "0xdA816459F1AB5631232FE5e97a05BBBb94970c95",
+        "underlyingName": "DAI yVault",
+        "underlyingSymbol": "yvDAI",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x72ab6843D4c988D74Dd8D5cdF16eF49301d87952",
+        "name": "Drops-6 WETH yVault",
+        "symbol": "D6-yvWETH",
+        "decimals": 8,
+        "underlyingAddress": "0xa258C4606Ca8206D8aA700cE2143D7db854D168c",
+        "underlyingName": "WETH yVault",
+        "underlyingSymbol": "yvWETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0xF63f89F6463550Ce4ce5B6Ca6b1323B39C90E9cB",
+        "name": "Drops-6 USDT yVault",
+        "symbol": "D6-yvUSDT",
+        "decimals": 8,
+        "underlyingAddress": "0x3B27F92C0e212C671EA351827EDF93DB27cc0c65",
+        "underlyingName": "USDT yVault",
+        "underlyingSymbol": "yvUSDT",
+        "underlyingDecimals": 6
       }
     ],
     "oracleAddr": "0x24a57ddD412d35c0a9b7c220c3A5af35c1EBF7a7",
