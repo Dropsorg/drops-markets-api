@@ -852,9 +852,9 @@
         "name": "Drops-6 aura-wstETH-ETH",
         "symbol": "D6-aura-wstETH-ETH",
         "decimals": 8,
-        "underlyingAddress": "0x0000000000000000000000000000000000000000",
-        "underlyingName": "Ether",
-        "underlyingSymbol": "ETH",
+        "underlyingAddress": "0xe9738c244aB22071cA81E5553Ffe2aC94898C01c",
+        "underlyingName": "Drops Aura wstETH-ETH",
+        "underlyingSymbol": "D-Aura-wstETH-ETH",
         "underlyingDecimals": 18
       },
       {
@@ -906,6 +906,26 @@
         "underlyingName": "USDT yVault",
         "underlyingSymbol": "yvUSDT",
         "underlyingDecimals": 6
+      },
+      {
+        "id": "0xa2EDFd267e9e2f76cd54bD720927a176FAdC19A8",
+        "name": "Drops-6 Drops Aura wstETH-rETH-sfrxETH",
+        "symbol": "D6-D-Aura-wstETH-rETH-sfrxETH",
+        "decimals": 8,
+        "underlyingAddress": "0xb535b34609F23173257d196f96C34cf55961BAC2",
+        "underlyingName": "Drops Aura wstETH-rETH-sfrxETH",
+        "underlyingSymbol": "D-Aura-wstETH-rETH-sfrxETH",
+        "underlyingDecimals": 18
+      },
+      {
+        "id": "0x04a083C48EAAC049964129e5a3eF7d48e0f7a7e7",
+        "name": "Drops-6 Drops Aura rETH-ETH",
+        "symbol": "D6-D-Aura-rETH-ETH",
+        "decimals": 8,
+        "underlyingAddress": "0x83fEE6fFdcc669dB9CCef9Fa452FF0984422d740",
+        "underlyingName": "Drops Aura rETH-ETH",
+        "underlyingSymbol": "D-Aura-rETH-ETH",
+        "underlyingDecimals": 18
       }
     ],
     "oracleAddr": "0x24a57ddD412d35c0a9b7c220c3A5af35c1EBF7a7",
