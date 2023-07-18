@@ -50,6 +50,7 @@ const updateProtocolStatusData = async (allMarkets, network) => {
         a.totalBorrow = a.totalBorrow.plus(borrow.times(priceUSD));
         a.markets[symbol] = {
           id,
+          exchangeRate,
           supply: (a.markets[symbol]?.supply || 0) + supply.toNumber(),
           borrow: (a.markets[symbol]?.borrow || 0) + borrow.toNumber(),
           reserves: (a.markets[symbol]?.reserves || 0) + Number(reserves),
