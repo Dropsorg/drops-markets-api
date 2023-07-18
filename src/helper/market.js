@@ -2,8 +2,8 @@ const fs = require('fs');
 const { providers: ethersProviders, Contract } = require('ethers');
 const { providers } = require('@0xsequence/multicall');
 
-const { getTokenPriceUSD } = require('./price');
 const { E18, DOP } = require('./constant');
+const { storeMarketData } = require('./store');
 const { CERC20ABI, ComptrollerABI, PriceOracleABI } = require('../abis');
 const comptrollerData = require('../data/comptroller.json');
 
@@ -16,7 +16,8 @@ const getTokenPriceBySymbol = async (
   marketAddr,
   ethPriceInUSD,
   underlyingSymbol,
-  underlyingDecimals
+  underlyingDecimals,
+  dopPriceInUSD
 ) => {
   const OracleContract = new Contract(oracleAddr, PriceOracleABI, provider);
 
@@ -27,7 +28,7 @@ const getTokenPriceBySymbol = async (
   ) {
     underlyingPriceUSD = 1;
   } else if (underlyingSymbol === 'DOP') {
-    underlyingPriceUSD = await getTokenPriceUSD(DOP);
+    underlyingPriceUSD = dopPriceInUSD;
   } else {
     underlyingPriceUSD =
       Number(await OracleContract.getUnderlyingPriceView(marketAddr)) / E18;
@@ -42,7 +43,13 @@ const getTokenPriceBySymbol = async (
   };
 };
 
-const getMarketData = async (markets, comptroller, oracleAddr, ethPriceInUSD) => {
+const getMarketData = async (
+  markets,
+  comptroller,
+  oracleAddr,
+  ethPriceInUSD,
+  dopPriceInUSD
+) => {
   const data = [];
 
   const PoolContract = new Contract(comptroller, ComptrollerABI, provider);
@@ -65,7 +72,8 @@ const getMarketData = async (markets, comptroller, oracleAddr, ethPriceInUSD) =>
           market.id,
           ethPriceInUSD,
           market.underlyingSymbol,
-          market.underlyingDecimals
+          market.underlyingDecimals,
+          dopPriceInUSD
         ), // 10
       ];
     })
@@ -133,39 +141,27 @@ const getMarketData = async (markets, comptroller, oracleAddr, ethPriceInUSD) =>
   return data;
 };
 
-const updateMarketData = async (network) => {
-  const marketPath = `${process.cwd()}/data/markets${network}.json`;
+const updateMarketData = async (network, ethPriceInUSD, dopPriceInUSD) => {
+  const allMarketes = [];
+
   try {
-    const ethPriceInUSD = await getTokenPriceUSD(
-      '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2'
-    );
-
-    console.log('===>ethPriceInUSD: ', ethPriceInUSD);
-
-    const allMarketes = [];
     for (let i = 0; i < comptrollerData.length; i++) {
       console.log(`${i}th comptrolloer started: `, new Date());
       const marketData = await getMarketData(
         comptrollerData[i].markets,
         comptrollerData[i].comptroller,
         comptrollerData[i].oracleAddr,
-        Number(ethPriceInUSD)
+        Number(ethPriceInUSD),
+        dopPriceInUSD
       );
       allMarketes.push(marketData);
       console.log(`${i}th comptrolloer ended: `, new Date());
     }
-
-    fs.writeFileSync(marketPath, JSON.stringify(allMarketes));
-    return allMarketes;
   } catch (err) {
     console.log(`updateMarketData failed error=${err}`);
   }
 
-  const prevMarketsData = await fs.readFileSync(marketPath, {
-    encoding: 'utf8',
-  });
-
-  return JSON.parse(prevMarketsData);
+  return await storeMarketData(allMarketes);
 };
 
 module.exports = {
