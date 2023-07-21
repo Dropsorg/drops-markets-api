@@ -7,7 +7,7 @@ const E18 = 10 ** 18;
  * We need to update this logic with env variable
  * Don't change "/home/ec2-user/drops-is-client/build/status.json" path when merging main branch
  */
-const paths = {
+const prodBuildPaths = {
   1: '/home/ec2-user/drops-is-client/build/status.json',
   4: '/home/ec2-user/drops-stage/build/status.json',
 };
@@ -47,7 +47,7 @@ const DOP = '0x6bb61215298f296c55b19ad842d3df69021da2ef';
 
 module.exports = {
   E18,
-  paths,
+  prodBuildPaths,
   unsupportedMarkets,
   DOP,
 };

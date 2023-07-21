@@ -3,9 +3,15 @@ const { providers: ethersProviders, Contract } = require('ethers');
 const { providers } = require('@0xsequence/multicall');
 
 const { E18, DOP } = require('./constant');
-const { storeMarketData } = require('./store');
-const { CERC20ABI, ComptrollerABI, PriceOracleABI } = require('../abis');
 const comptrollerData = require('../data/comptroller.json');
+const { storeMarketData } = require('./store');
+const {
+  CERC20ABI,
+  ComptrollerABI,
+  ComptrollerABI2,
+  PriceOracleABI,
+} = require('../abis');
+const { getAPYs } = require('./apy');
 
 const provider = new providers.MulticallProvider(
   new ethersProviders.JsonRpcProvider('https://cloudflare-eth.com/')
@@ -48,11 +54,18 @@ const getMarketData = async (
   comptroller,
   oracleAddr,
   ethPriceInUSD,
-  dopPriceInUSD
+  dopPriceInUSD,
+  supportCompBorrowSpeeds,
+  network = 1
 ) => {
   const data = [];
 
-  const PoolContract = new Contract(comptroller, ComptrollerABI, provider);
+  const PoolContract = new Contract(
+    comptroller,
+    supportCompBorrowSpeeds ? ComptrollerABI2 : ComptrollerABI,
+    provider
+  );
+
   const marketData = await Promise.all(
     markets.map((market) => {
       const MarketContract = new Contract(market.id, CERC20ABI, provider);
@@ -64,9 +77,8 @@ const getMarketData = async (
         MarketContract.totalBorrows(), // 4
         MarketContract.totalSupply(), // 5
         MarketContract.getCash(), // 6
-        MarketContract.interestRateModel(), // 7
-        MarketContract.reserveFactorMantissa(), // 8
-        PoolContract.markets(market.id), // 9
+        MarketContract.reserveFactorMantissa(), // 7
+        PoolContract.markets(market.id), // 8
         getTokenPriceBySymbol(
           oracleAddr,
           market.id,
@@ -74,8 +86,15 @@ const getMarketData = async (
           market.underlyingSymbol,
           market.underlyingDecimals,
           dopPriceInUSD
-        ), // 10
-      ];
+        ), // 9
+      ].concat(
+        supportCompBorrowSpeeds
+          ? [
+              PoolContract.compBorrowSpeeds(market.id), // 10
+              PoolContract.compSupplySpeeds(market.id), // 11
+            ]
+          : [PoolContract.compSpeeds(market.id)] // 10
+      );
     })
   );
 
@@ -91,34 +110,36 @@ const getMarketData = async (
       underlyingSymbol,
     } = markets[i];
 
-    const borrowRatePerBlock = await marketData[i][0];
-    const exchangeRateStored = await marketData[i][1];
-    const totalReserves = await marketData[i][2];
-    const supplyRatePerBlock = await marketData[i][3];
-    const totalBorrows = await marketData[i][4];
-    const totalSupply = await marketData[i][5];
-    const cash = await marketData[i][6];
-    const interestRateModel = await marketData[i][7];
-    const reserveFactorMantissa = await marketData[i][8];
-    const cf = await marketData[i][9];
-    const prices = await marketData[i][10];
+    const compBorrowSpeeds = Number(await marketData[i][10]);
+    const compSupplySpeeds = !supportCompBorrowSpeeds
+      ? compBorrowSpeeds
+      : Number(await marketData[i][11]);
 
-    collateralFactor = Number(cf.collateralFactorMantissa) / E18;
+    const collateralFactor =
+      Number((await marketData[i][8]).collateralFactorMantissa) / E18;
+    const borrowRate = (Number(await marketData[i][0]) * 2628000) / E18;
+    const supplyRate = (Number(await marketData[i][3]) * 2628000) / E18;
+    const exchangeRate =
+      Number(await marketData[i][1]) / 10 ** (10 + underlyingDecimals);
+    const reserves = Number(await marketData[i][2]) / 10 ** underlyingDecimals;
+    const cash = Number(await marketData[i][6]) / 10 ** underlyingDecimals;
+    const totalBorrows =
+      Number(await marketData[i][4]) / 10 ** underlyingDecimals;
+    const totalSupply = Number(await marketData[i][5]) / 10 ** 8;
+    const reserveFactor = Number(await marketData[i][7]);
+
+    const prices = await marketData[i][9];
+    const underlyingPriceUSD = Number(prices.underlyingPriceUSD);
+    const underlyingPriceETH = Number(prices.underlyingPriceETH);
 
     const row = {
+      compBorrowSpeeds: Number(compBorrowSpeeds) / 10 ** 18,
+      compSupplySpeeds: Number(compSupplySpeeds) / 10 ** 18,
+      priceOracle: oracleAddr,
+      comptroller,
       id: marketAddr,
       symbol,
       name: name.replace('Drops NFT Loans', '').trim(),
-      reserves: Number(totalReserves) / 10 ** underlyingDecimals,
-      cash: Number(cash) / 10 ** underlyingDecimals,
-      totalBorrows: Number(totalBorrows) / 10 ** underlyingDecimals,
-      totalSupply: Number(totalSupply) / 10 ** 8,
-      borrowRate: (Number(borrowRatePerBlock) * 2628000) / E18,
-      supplyRate: (Number(supplyRatePerBlock) * 2628000) / E18,
-      exchangeRate:
-        Number(exchangeRateStored) / 10 ** (10 + underlyingDecimals),
-      interestRateModelAddress: interestRateModel,
-      reserveFactor: Number(reserveFactorMantissa),
       underlyingAddress,
       underlyingName,
       underlyingSymbol: underlyingSymbol
@@ -126,14 +147,21 @@ const getMarketData = async (
         .replace(/mock/gi, '')
         .trim(),
       underlyingDecimals,
-      underlyingPriceUSD: Number(prices.underlyingPriceUSD),
-      underlyingPriceETH: Number(prices.underlyingPriceETH),
+      underlyingPriceUSD,
+      underlyingPriceETH,
       collateralFactor,
-      priceOracle: oracleAddr,
-      comptroller,
-      // accrualBlockNumber: Number(accrualBlockNumber),
-      // borrowIndex: Number(borrowIndex) / E18,
+      reserves,
+      cash,
+      totalBorrows,
+      totalSupply,
+      borrowRate,
+      supplyRate,
+      exchangeRate,
+      reserveFactor,
     };
+
+    const apys = await getAPYs(row, dopPriceInUSD);
+    row.apys = apys;
 
     data.push(row);
   }
@@ -152,7 +180,9 @@ const updateMarketData = async (network, ethPriceInUSD, dopPriceInUSD) => {
         comptrollerData[i].comptroller,
         comptrollerData[i].oracleAddr,
         Number(ethPriceInUSD),
-        dopPriceInUSD
+        Number(dopPriceInUSD),
+        comptrollerData[i].supportCompBorrowSpeeds,
+        1
       );
       allMarketes.push(marketData);
       console.log(`${i}th comptrolloer ended: `, new Date());
@@ -166,4 +196,5 @@ const updateMarketData = async (network, ethPriceInUSD, dopPriceInUSD) => {
 
 module.exports = {
   updateMarketData,
+  getMarketData,
 };

@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { paths } = require('./constant');
+const { prodBuildPaths } = require('./constant');
 
 const isDev = process.env.NODE_ENV === 'development';
 
@@ -11,16 +11,10 @@ const storeStatusData = async (statusData, network = 1) => {
       JSON.stringify(statusData, null, '\t')
     );
   } else {
-    await fs.writeFileSync(
-      `${process.cwd()}/data/status${network}.json`,
-      JSON.stringify(statusData, null, '\t')
-    );
-
     // store in project
     /**
      * TODO: different the path of server and local
      * server path: `${process.cwd()}/data/status${network}.json`
-     * local path: `src/data/status${network}.json`
      * We need to update this logic with env variable
      * Don't change ${process.cwd()}/data path when merging main branch
      */
@@ -31,7 +25,7 @@ const storeStatusData = async (statusData, network = 1) => {
 
     // store in public place
     await fs.writeFileSync(
-      paths[network],
+      prodBuildPaths[network],
       JSON.stringify(statusData, null, '\t')
     );
   }
