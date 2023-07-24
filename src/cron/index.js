@@ -4,25 +4,27 @@ const {
   updateProtocolStatusData,
   getWETHPrice,
   getDOPPrice,
-  // generateComptrollerData,
+  generateComptrollerData,
   storeStatusData,
+  updateVaultAPY,
+  getMarketData,
 } = require('../helper');
 
 const saveSnapshot = async (network) => {
   console.log(`snapshot started with network=${network}: `, new Date());
 
   try {
+    await updateVaultAPY(network);
+
     const ethPriceInUSD = await getWETHPrice();
     const dopPriceInUSD = await getDOPPrice(ethPriceInUSD);
-
     const allMarkets = await updateMarketData(
       network,
       ethPriceInUSD,
       dopPriceInUSD
     );
     const statusData = await updateProtocolStatusData(allMarkets, network);
-
-    await storeStatusData(statusData); // TODO, uncomment before merge
+    await storeStatusData(statusData);
   } catch (err) {
     console.log(`failed to process data on network=${network} error=${err}`);
   }
@@ -31,12 +33,9 @@ const saveSnapshot = async (network) => {
 };
 
 exports.initScheduledJobs = async () => {
-  await saveSnapshot(1);
-
   const scheduledJobFunction = CronJob.schedule('*/10 * * * *', async () => {
     await saveSnapshot(1);
     // await saveSnapshot(4);
   });
-
   scheduledJobFunction.start();
 };

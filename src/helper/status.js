@@ -5,42 +5,36 @@ const { unsupportedMarkets } = require('./constant');
 
 const updateProtocolStatusData = async (allMarkets, network) => {
   const pools = allMarkets.map((markets, index) => {
-    let ethPrice;
     const metadata = markets.reduce(
       (
         a,
         {
           id,
-          totalSupply,
-          totalBorrows,
-          cash: marketCash,
-          collateralFactor,
-          exchangeRate,
           symbol: collectionSymbol,
-          underlyingPriceETH: priceETH,
-          underlyingPriceUSD: priceUSD,
-          underlyingDecimals: decimals,
-          supplyRate: supplyRatePerBlock,
-          borrowRate: borrowRatePerBlock,
           reserves,
+          cash: marketCash,
+          totalBorrows,
+          totalSupply,
+          exchangeRate,
+          underlyingDecimals: decimals,
+          underlyingPriceUSD: priceUSD,
+          underlyingPriceETH: priceETH,
+          collateralFactor,
+          apys,
         }
       ) => {
         a = a;
 
-        const unsupportedContracts = unsupportedMarkets[network].map(
-          (contract) => contract.toLowerCase()
-        );
-        if (unsupportedContracts.includes(id.toLowerCase())) return a;
+        if (
+          unsupportedMarkets[network]
+            .map((contract) => contract.toLowerCase())
+            .includes(id.toLowerCase())
+        )
+          return a;
 
-        let symbol = generatingSymbol(collectionSymbol);
-
+        const symbol = generatingSymbol(collectionSymbol);
         const supply = new BigNumber(totalSupply).times(exchangeRate);
         const borrow = new BigNumber(totalBorrows);
-
-        if (symbol === 'ETH') {
-          ethPrice = priceUSD;
-        }
-
         const cash = supply.minus(borrow).times(priceUSD);
         a.TVL = a.TVL.plus(cash);
         a.totalSupply = a.totalSupply.plus(supply.times(priceUSD));
@@ -65,19 +59,13 @@ const updateProtocolStatusData = async (allMarkets, network) => {
         a.markets[symbol].borrowLimit =
           (a.markets[symbol].collateralFactor * 85) / 100; // 85% of the collateral factor
 
-        const lendPeriodicRate = Math.pow(1 + +supplyRatePerBlock, 1 / 12) - 1;
-        const borrowPeriodicRate =
-          Math.pow(1 + +borrowRatePerBlock, 1 / 12) - 1;
-
         a.lendRates[symbol] = {
-          apy: supplyRatePerBlock,
-          apr: lendPeriodicRate * 12,
           tokenSymbol: symbol,
+          ...apys.lendRates,
         };
         a.borrowRates[symbol] = {
-          apy: borrowRatePerBlock,
-          apr: borrowPeriodicRate * 12,
           tokenSymbol: symbol,
+          ...apys.borrowRates,
         };
         return a;
       },
@@ -96,12 +84,6 @@ const updateProtocolStatusData = async (allMarkets, network) => {
     metadata.totalSupply = metadata.totalSupply.toNumber();
     metadata.totalNFTSupply = metadata.totalNFTSupply.toNumber();
     metadata.totalBorrow = metadata.totalBorrow.toNumber();
-
-    // Object.entries(metadata.markets).map(([symbol, market]) => {
-    //   metadata.markets[symbol].priceETH = Number(
-    //     (metadata.markets[symbol].priceUSD / ethPrice).toFixed(10)
-    //   );
-    // });
 
     return metadata;
   });
