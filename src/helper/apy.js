@@ -2,6 +2,8 @@ const { default: axios } = require('axios');
 const fs = require('fs');
 const BLOCKS_PER_DAY = 5 * 60 * 24;
 
+const isDev = process.env.NODE_ENV === 'development';
+
 const updateVaultAPY = async (network) => {
   let data = {};
   try {
@@ -110,8 +112,8 @@ const getInterestAPY = (market) => {
 
   return {
     borrowAPY,
-    borrowAPR,
     supplyAPY,
+    borrowAPR,
     supplyAPR,
   };
 };
@@ -120,23 +122,29 @@ const getAPYs = async (market, dopPriceInUSD, network = 1) => {
   const vaultAPY = await getVaultAPY(market, network);
   const dropsAPY = getDropsAPY(market);
   const interestAPY = getInterestAPY(market);
-
-  // lend APY: (1 + Vault APY) * (1 + Supply interest APY) -1 + dropsAPY
-  const supplyAPY =
+  const netSupplyAPY =
     (1 + vaultAPY) * (1 + interestAPY.supplyAPY) - 1 + dropsAPY.supply;
-
-  // Borrow APY: (1 + Vault APY) * (1 + Borrow interest APY) -1 - dropsAPY
-  const borrowAPY =
+  const netBorrowAPY =
     (1 + vaultAPY) * (1 + interestAPY.borrowAPY) - 1 - dropsAPY.borrow;
 
+  const lendRates = {
+    apy: interestAPY.supplyAPY,
+    apr: interestAPY.supplyAPR,
+    vaultAPY,
+    dopAPY: dropsAPY.supply,
+    netAPY: netSupplyAPY,
+  };
+  const borrowRates = {
+    apy: interestAPY.borrowAPY,
+    apr: interestAPY.borrowAPR,
+    vaultAPY,
+    dopAPY: dropsAPY.borrow,
+    netAPY: netBorrowAPY,
+  };
+
   return {
-    vault: vaultAPY,
-    drops: dropsAPY,
-    interest: interestAPY,
-    total: {
-      supplyAPY,
-      borrowAPY,
-    },
+    lendRates,
+    borrowRates,
   };
 };
 

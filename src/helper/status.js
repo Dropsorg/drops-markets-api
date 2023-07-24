@@ -25,15 +25,16 @@ const updateProtocolStatusData = async (allMarkets, network) => {
       ) => {
         a = a;
 
-        const unsupportedContracts = unsupportedMarkets[network].map(
-          (contract) => contract.toLowerCase()
-        );
-        if (unsupportedContracts.includes(id.toLowerCase())) return a;
+        if (
+          unsupportedMarkets[network]
+            .map((contract) => contract.toLowerCase())
+            .includes(id.toLowerCase())
+        )
+          return a;
 
         const symbol = generatingSymbol(collectionSymbol);
         const supply = new BigNumber(totalSupply).times(exchangeRate);
         const borrow = new BigNumber(totalBorrows);
-
         const cash = supply.minus(borrow).times(priceUSD);
         a.TVL = a.TVL.plus(cash);
         a.totalSupply = a.totalSupply.plus(supply.times(priceUSD));
@@ -57,8 +58,15 @@ const updateProtocolStatusData = async (allMarkets, network) => {
         };
         a.markets[symbol].borrowLimit =
           (a.markets[symbol].collateralFactor * 85) / 100; // 85% of the collateral factor
-        a.borrowRates[symbol] = apys.total.borrowAPY;
-        a.lendRates[symbol] = apys.total.supplyAPY;
+
+        a.lendRates[symbol] = {
+          tokenSymbol: symbol,
+          ...apys.lendRates,
+        };
+        a.borrowRates[symbol] = {
+          tokenSymbol: symbol,
+          ...apys.borrowRates,
+        };
         return a;
       },
       {
