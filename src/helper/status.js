@@ -3,7 +3,7 @@ const BigNumber = require('bignumber.js');
 const { generatingSymbol } = require('./generatingText');
 const { unsupportedMarkets } = require('./constant');
 
-const updateProtocolStatusData = async (allMarkets, network) => {
+const updateProtocolStatusData = (allMarkets, network) => {
   const pools = allMarkets.map((markets, index) => {
     const metadata = markets.reduce(
       (

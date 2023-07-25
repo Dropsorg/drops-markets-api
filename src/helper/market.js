@@ -1,8 +1,7 @@
-const fs = require('fs');
 const { providers: ethersProviders, Contract } = require('ethers');
 const { providers } = require('@0xsequence/multicall');
 
-const { E18, DOP } = require('./constant');
+const { E18 } = require('./constant');
 const comptrollerData = require('../data/comptroller.json');
 const { storeMarketData } = require('./store');
 const {
@@ -11,7 +10,7 @@ const {
   ComptrollerABI2,
   PriceOracleABI,
 } = require('../abis');
-const { getAPYs } = require('./apy');
+const { getAPYs, readVaultAPYData } = require('./apy');
 
 const provider = new providers.MulticallProvider(
   new ethersProviders.JsonRpcProvider('https://cloudflare-eth.com/')
@@ -56,6 +55,7 @@ const getMarketData = async (
   ethPriceInUSD,
   dopPriceInUSD,
   supportCompBorrowSpeeds,
+  vaultAPYData,
   network = 1
 ) => {
   const data = [];
@@ -159,8 +159,7 @@ const getMarketData = async (
       exchangeRate,
       reserveFactor,
     };
-
-    const apys = await getAPYs(row, dopPriceInUSD);
+    const apys = getAPYs(row, dopPriceInUSD, vaultAPYData, network);
     row.apys = apys;
 
     data.push(row);
@@ -169,8 +168,9 @@ const getMarketData = async (
   return data;
 };
 
-const updateMarketData = async (network, ethPriceInUSD, dopPriceInUSD) => {
+const updateMarketData = async (ethPriceInUSD, dopPriceInUSD, network = 1) => {
   const allMarketes = [];
+  const vaultAPYData = await readVaultAPYData(network);
 
   try {
     for (let i = 0; i < comptrollerData.length; i++) {
@@ -182,6 +182,7 @@ const updateMarketData = async (network, ethPriceInUSD, dopPriceInUSD) => {
         Number(ethPriceInUSD),
         Number(dopPriceInUSD),
         comptrollerData[i].supportCompBorrowSpeeds,
+        vaultAPYData,
         1
       );
       allMarketes.push(marketData);
@@ -191,7 +192,8 @@ const updateMarketData = async (network, ethPriceInUSD, dopPriceInUSD) => {
     console.log(`updateMarketData failed error=${err}`);
   }
 
-  return await storeMarketData(allMarketes);
+  const data = await storeMarketData(allMarketes);
+  return data;
 };
 
 module.exports = {

@@ -1,1 +1,330 @@
-{"aura-wsteth-eth":{"apy":0.010047832351034043,"type":"Aura Beefy Vault"},"0xe9738c244aB22071cA81E5553Ffe2aC94898C01c":{"apy":0.010047832351034043,"type":"Aura Beefy Vault"},"aura-ohm-dai":{"apy":0.001954323771911959,"type":"Aura Beefy Vault"},"0x5E352cbBAde3f30EF03B17cd540B86B9C862b1a7":{"apy":0.0019512306392686085,"type":"Aura Beefy Vault"},"aura-reth-weth":{"apy":0.009750648916553117,"type":"Aura Beefy Vault"},"0x83fEE6fFdcc669dB9CCef9Fa452FF0984422d740":{"apy":0.009750648916553117,"type":"Aura Beefy Vault"},"aura-wsteth-reth-sfrxeth-v2":{"apy":0.04418426103678523,"type":"Aura Beefy Vault"},"0xb535b34609F23173257d196f96C34cf55961BAC2":{"apy":0.000005152429277233139,"type":"Aura Beefy Vault"},"aura-r-dai":{"apy":0.11635802493649794,"type":"Aura Beefy Vault"},"0x98a054435D0A55582b5B0eC7180eaf3e66553070":{"apy":0.00039271502433524397,"type":"Aura Beefy Vault"},"aura-aurabal":{"apy":0.31347950498766375,"type":"Aura Beefy Vault"},"pslp":{"apy":0.01169493749359599,"type":"Yearn Vault"},"yvecrv-dao":{"apy":0.06171466739631151,"type":"Yearn Vault"},"yusdc":{"apy":8.75544081679891e-12,"type":"Yearn Vault"},"yydai+yusdc+yusdt+ytusd":{"apy":361193.9541727588,"type":"Yearn Vault"},"ytusd":{"apy":0.04972283438430303,"type":"Yearn Vault"},"ydai":{"apy":0.05425684737828851,"type":"Yearn Vault"},"yusdt":{"apy":0.036318646590953074,"type":"Yearn Vault"},"yyfi":{"apy":0.005555116291742657,"type":"Yearn Vault"},"yydai+yusdc+yusdt+ybusd":{"apy":0.15712902932700468,"type":"Yearn Vault"},"ycrvrenwsbtc":{"apy":0.0018656403365777674,"type":"Yearn Vault"},"yweth":{"apy":0.005178172069784104,"type":"Yearn Vault"},"y3crv":{"apy":0.015221590938553575,"type":"Yearn Vault"},"ygusd":{"apy":-1,"type":"Yearn Vault"},"yvcdai+cusdc":{"apy":0.04395374831892296,"type":"Yearn Vault"},"yvmusd3crv":{"apy":0.06740981351387587,"type":"Yearn Vault"},"yvgusd3crv":{"apy":0.07091691432692504,"type":"Yearn Vault"},"yveurscrv":{"apy":0.0031688399543698953,"type":"Yearn Vault"},"yvmusd":{"apy":0.23420243009354236,"type":"Yearn Vault"},"yvcrvrenwbtc":{"apy":0.003329391060675091,"type":"Yearn Vault"},"yvusdn3crv":{"apy":0.0001665884743555779,"type":"Yearn Vault"},"yvust3crv":{"apy":0.0004457592543700706,"type":"Yearn Vault"},"yvbbtc/sbtccrv":{"apy":0.002458576925862044,"type":"Yearn Vault"},"yvtbtc/sbtccrv":{"apy":0.0003111252229341943,"type":"Yearn Vault"},"yvobtc/sbtccrv":{"apy":0.00008648008162026599,"type":"Yearn Vault"},"yvpbtc/sbtccrv":{"apy":0.00026819875047601194,"type":"Yearn Vault"},"yvhcrv":{"apy":0.017810245527539514,"type":"Yearn Vault"},"yvcrvplain3andsusd":{"apy":0.02301935000385713,"type":"Yearn Vault"},"yvhusd3crv":{"apy":0.0001959656275922761,"type":"Yearn Vault"},"yvdusd3crv":{"apy":0.03634291933633027,"type":"Yearn Vault"},"yva3crv":{"apy":0.030244000638635304,"type":"Yearn Vault"},"yvankrcrv":{"apy":0.004888142640415705,"type":"Yearn Vault"},"yvsacrv":{"apy":0.025044610248473376,"type":"Yearn Vault"},"yvusdp3crv":{"apy":0.005429735206271102,"type":"Yearn Vault"},"yvlinkcrv":{"apy":0.0028461533869050815,"type":"Yearn Vault"},"yvdai":{"apy":0.050487349701338946,"type":"Yearn Vault"},"yvusdc":{"apy":0.031656953737126514,"type":"Yearn Vault"},"yvhegic":{"apy":0.002836183610311016,"type":"Yearn Vault"},"yvcurve-steth":{"apy":0.001157817997085031,"type":"Yearn Vault"},"yvwbtc":{"apy":0.0029224670459491175,"type":"Yearn Vault"},"yvcurve-seth":{"apy":-0.005728230768489606,"type":"Yearn Vault"},"yvweth":{"apy":0.02788590103281985,"type":"Yearn Vault"},"yvyfi":{"apy":0,"type":"Yearn Vault"},"yv1inch":{"apy":0,"type":"Yearn Vault"},"yvcurve-ironbank":{"apy":0.06050427097125377,"type":"Yearn Vault"},"yvcurve-hbtc":{"apy":0.008871786178008101,"type":"Yearn Vault"},"yvboost":{"apy":0,"type":"Yearn Vault"},"yvcurve-sbtc":{"apy":0,"type":"Yearn Vault"},"yvcurve-renbtc":{"apy":0,"type":"Yearn Vault"},"yvcurve-saave":{"apy":0.00435985371476133,"type":"Yearn Vault"},"yvcurve-obtc":{"apy":0,"type":"Yearn Vault"},"yvcurve-pbtc":{"apy":0,"type":"Yearn Vault"},"yvcurve-lusd":{"apy":0,"type":"Yearn Vault"},"yvcurve-bbtc":{"apy":0,"type":"Yearn Vault"},"yvcurve-tbtc":{"apy":0,"type":"Yearn Vault"},"yvusdt":{"apy":0.020803185641481647,"type":"Yearn Vault"},"yvcurve-frax":{"apy":0.001386919237962303,"type":"Yearn Vault"},"yvuni":{"apy":0,"type":"Yearn Vault"},"yvcurve-ybusd":{"apy":0,"type":"Yearn Vault"},"yvcurve-compound":{"apy":0.02352666607910825,"type":"Yearn Vault"},"yvcurve-gusd":{"apy":0.026416881826192506,"type":"Yearn Vault"},"yusd":{"apy":0,"type":"Yearn Vault"},"yvcurve-3pool":{"apy":0,"type":"Yearn Vault"},"yvcurve-tusd":{"apy":0,"type":"Yearn Vault"},"yvcurve-busd":{"apy":0.004699276661991325,"type":"Yearn Vault"},"yvcurve-dusd":{"apy":0.0010542937698980737,"type":"Yearn Vault"},"yvcurve-ust":{"apy":0.0989937366343201,"type":"Yearn Vault"},"yvcurve-musd":{"apy":0.01681777131421547,"type":"Yearn Vault"},"yvsusd":{"apy":0,"type":"Yearn Vault"},"yvsnx":{"apy":0.021513817698409543,"type":"Yearn Vault"},"yvcurve-susd":{"apy":0.0029755776809137213,"type":"Yearn Vault"},"yvcurve-link":{"apy":0,"type":"Yearn Vault"},"yvcurve-usdn":{"apy":0,"type":"Yearn Vault"},"yvcurve-usdp":{"apy":0,"type":"Yearn Vault"},"yvcurve-alusd":{"apy":0.014797075673938398,"type":"Yearn Vault"},"yvcurve-reth":{"apy":0.05437438264515815,"type":"Yearn Vault"},"yvcurve-ankreth":{"apy":0.00529184712562758,"type":"Yearn Vault"},"yvcurve-aave":{"apy":0.009798289897274381,"type":"Yearn Vault"},"yvcurve-husd":{"apy":0,"type":"Yearn Vault"},"yvcurve-eurs":{"apy":0,"type":"Yearn Vault"},"yvlink":{"apy":0.006301101335427717,"type":"Yearn Vault"},"yvrai":{"apy":0,"type":"Yearn Vault"},"yvcurve-tricrypto":{"apy":0,"type":"Yearn Vault"},"yvcurve-pax":{"apy":1.0080305261663693,"type":"Yearn Vault"},"yvcurve-usdt":{"apy":0,"type":"Yearn Vault"},"yvcurve-usdk":{"apy":0,"type":"Yearn Vault"},"yvcurve-rsv":{"apy":0,"type":"Yearn Vault"},"yvcurve-3crypto":{"apy":0.050440848523396475,"type":"Yearn Vault"},"yvaave":{"apy":0.0006652079028348634,"type":"Yearn Vault"},"yvcomp":{"apy":0,"type":"Yearn Vault"},"yvsushi":{"apy":0.00024651100833894546,"type":"Yearn Vault"},"yvtusd":{"apy":0,"type":"Yearn Vault"},"yvcurve-eurt":{"apy":0,"type":"Yearn Vault"},"yvcurve-mim":{"apy":0.10616333483740514,"type":"Yearn Vault"},"yvcurve-cvxcrv":{"apy":0.0034193095940096008,"type":"Yearn Vault"},"yvcurve-ibeur":{"apy":0.009539621745596971,"type":"Yearn Vault"},"yvcurve-ibkrw":{"apy":0.02774413446188717,"type":"Yearn Vault"},"yvcurve-ibgbp":{"apy":0.018287711083749825,"type":"Yearn Vault"},"yvcurve-ibaud":{"apy":0.03905046747173402,"type":"Yearn Vault"},"yvcurve-ibchf":{"apy":0.03532906703990313,"type":"Yearn Vault"},"yvcurve-ibjpy":{"apy":0.027626510374728408,"type":"Yearn Vault"},"yvcurve-usdm":{"apy":0,"type":"Yearn Vault"},"yvcurve-aleth":{"apy":0.030131526204014936,"type":"Yearn Vault"},"yvcurve-eurn":{"apy":0,"type":"Yearn Vault"},"yvcurve-mimust":{"apy":0,"type":"Yearn Vault"},"yvcurve-ousd":{"apy":0,"type":"Yearn Vault"},"yvcurve-ibbtc":{"apy":0,"type":"Yearn Vault"},"yvcurve-d3pool":{"apy":0,"type":"Yearn Vault"},"yvcurve-eurtusd":{"apy":0.012783645172744995,"type":"Yearn Vault"},"yvcurve-eursusdc":{"apy":0,"type":"Yearn Vault"},"yvlusd":{"apy":0.022693263558980048,"type":"Yearn Vault"},"yvcurve-3eur":{"apy":0.043633263672458344,"type":"Yearn Vault"},"yvcurve-crveth":{"apy":0.19070801818974648,"type":"Yearn Vault"},"yvcurve-cvxeth":{"apy":0.06919269637837422,"type":"Yearn Vault"},"yvcurve-rai":{"apy":0,"type":"Yearn Vault"},"yvcurve-dola":{"apy":0,"type":"Yearn Vault"},"yvcurve-yfieth":{"apy":0.054559335398139064,"type":"Yearn Vault"},"yvcurve-rethwsteth":{"apy":0,"type":"Yearn Vault"},"yvcurve-steth-weth":{"apy":0.005778010821311463,"type":"Yearn Vault"},"yvkp3reth-f":{"apy":0.030725584774454084,"type":"Yearn Vault"},"yvcurve-ibkrw-usdc":{"apy":0,"type":"Yearn Vault"},"yvcurve-ibjpy-usdc":{"apy":0,"type":"Yearn Vault"},"yvcurve-ibeur-usdc":{"apy":0.04925380477214536,"type":"Yearn Vault"},"yvcurve-ibchf-usdc":{"apy":0,"type":"Yearn Vault"},"yvcurve-ibgbp-usdc":{"apy":0,"type":"Yearn Vault"},"yvcurve-ibaud-usdc":{"apy":0,"type":"Yearn Vault"},"yvcurve-stg-usdc":{"apy":0,"type":"Yearn Vault"},"yvbalancer-boostedaaveusd":{"apy":0,"type":"Yearn Vault"},"st-ycrv":{"apy":0.2764345212063468,"type":"Yearn Vault"},"lp-ycrv":{"apy":0.006854038875045099,"type":"Yearn Vault"},"yvblpfud":{"apy":0,"type":"Yearn Vault"},"yvcurve-steth-f":{"apy":0.021390856414720716,"type":"Yearn Vault"},"yvcurve-ageur-euroc-f":{"apy":0.0931738518829952,"type":"Yearn Vault"},"yvcurve-cbeth-f":{"apy":0.2379532658500707,"type":"Yearn Vault"},"yvcurve-lusd-f":{"apy":0.013642395862313084,"type":"Yearn Vault"},"yvcurve-3crypto-f":{"apy":0.07948324830967679,"type":"Yearn Vault"},"yvcurve-ibeur-f":{"apy":0.03330075313221936,"type":"Yearn Vault"},"yvcurve-cvx-eth-f":{"apy":0.09076262034127969,"type":"Yearn Vault"},"yvcurve-mim-f":{"apy":0.14280142120869077,"type":"Yearn Vault"},"yvcurve-fraxbp-f":{"apy":0.035948403042052046,"type":"Yearn Vault"},"yvcurve-ironbank-f":{"apy":0.08350085000487995,"type":"Yearn Vault"},"yvcurve-usdn-f":{"apy":0,"type":"Yearn Vault"},"yvcurve-crv-eth-f":{"apy":0.214679636593456,"type":"Yearn Vault"},"yvcurve-susd-f":{"apy":0.025170505250725395,"type":"Yearn Vault"},"yvcurve-seth-f":{"apy":0.021891614916978552,"type":"Yearn Vault"},"yvcurve-3eur-f":{"apy":0.06469528933742308,"type":"Yearn Vault"},"yvcurve-frax-f":{"apy":0.023920909954784353,"type":"Yearn Vault"},"yvcurve-alusd-f":{"apy":0.039187086044309094,"type":"Yearn Vault"},"yvcurve-dola-frxbp-f":{"apy":0.24916519251348146,"type":"Yearn Vault"},"yvcurve-multibtc-f":{"apy":0.19910573907202278,"type":"Yearn Vault"},"yvcurve-blusd-f":{"apy":0.08016335253271856,"type":"Yearn Vault"},"yvcurve-sdyfi-f":{"apy":0.007611499890690432,"type":"Yearn Vault"},"yvcurve-apeusd-fbp-f":{"apy":0.00019026155650769816,"type":"Yearn Vault"},"yvcurve-xai-fraxbp-f":{"apy":0.07454972480814392,"type":"Yearn Vault"},"yvcurve-gear-eth-f":{"apy":0.4133031909530027,"type":"Yearn Vault"},"yvcurve-sbtcv2-f":{"apy":0.016889621887483663,"type":"Yearn Vault"},"yvcurve-sdcrv-f":{"apy":0.16500936974396674,"type":"Yearn Vault"},"yvcurve-sdangle-f":{"apy":0.00034742559712919174,"type":"Yearn Vault"},"yvcurve-sdfxs-f":{"apy":0.06689647483956151,"type":"Yearn Vault"},"yvcurve-tryb-f":{"apy":0.0076000851224087285,"type":"Yearn Vault"},"yvcurve-clev-eth-f":{"apy":0.9243493981733355,"type":"Yearn Vault"},"yvcurve-ohm-fraxbp-f":{"apy":0.022097020287913383,"type":"Yearn Vault"},"yvcurve-tbtc-f":{"apy":0.023541099196719317,"type":"Yearn Vault"},"yvcurve-btrfly-eth-f":{"apy":0.017123216230310323,"type":"Yearn Vault"},"yvcurve-matic-eth-f":{"apy":0.005394180963518291,"type":"Yearn Vault"},"yvcurve-peth-f":{"apy":0.21095024730366685,"type":"Yearn Vault"},"yvcurve-ibeur-usdc-f":{"apy":0.14265473071344248,"type":"Yearn Vault"},"yvcurve-msusd-fraxbp-f":{"apy":0.23813842858720058,"type":"Yearn Vault"},"yvcurve-dydx-eth-f":{"apy":0.034496023890309147,"type":"Yearn Vault"},"yvcurve-ibgbp-f":{"apy":0.043253921224549075,"type":"Yearn Vault"},"yvcurve-ibkrw-f":{"apy":0.0540190612382625,"type":"Yearn Vault"},"yvcurve-ibchf-f":{"apy":0.06266147803344979,"type":"Yearn Vault"},"yvcurve-stg-fraxbp-f":{"apy":0.09300515396210352,"type":"Yearn Vault"},"yvwsteth":{"apy":0,"type":"Yearn Vault"},"yvcurve-fxs-eth-f":{"apy":0,"type":"Yearn Vault"},"yvcurve-t-eth-f":{"apy":0.5146333429056615,"type":"Yearn Vault"},"yvcurve-3crv-f":{"apy":0.016883653806932797,"type":"Yearn Vault"},"yvcurve-jpeg-peth-f":{"apy":0.5520541584348373,"type":"Yearn Vault"},"yvcurve-cvxfxs-f":{"apy":0.11191983869068833,"type":"Yearn Vault"},"yvcurve-ctr-eth-f":{"apy":0.4303017583543556,"type":"Yearn Vault"},"yvcurve-usdp-f":{"apy":0.0036436737805087827,"type":"Yearn Vault"},"yvcurve-pal-eth-f":{"apy":0.6616568492088266,"type":"Yearn Vault"},"yvcurve-clevcvx-f":{"apy":0.325770623229819,"type":"Yearn Vault"},"yvcurve-ldo-eth-f":{"apy":0.26875151486683135,"type":"Yearn Vault"},"yvcurve-ohm-eth-f":{"apy":0.17649358815250826,"type":"Yearn Vault"},"st-ybal":{"apy":0,"type":"Yearn Vault"},"lp-ybal":{"apy":0,"type":"Yearn Vault"},"yvcurve-compound-f":{"apy":0.04641511746290017,"type":"Yearn Vault"},"yvcurve-cvxcrvv2-f":{"apy":0.3316922460474596,"type":"Yearn Vault"},"yvcurve-cbeth-frxeth-f":{"apy":0.053353867401715105,"type":"Yearn Vault"},"yvcurve-aleth-frxeth-f":{"apy":0.12575061715550584,"type":"Yearn Vault"},"yvcurve-ankreth-frxeth-f":{"apy":0.0343603301604678,"type":"Yearn Vault"},"yvcurve-reth-frxeth-f":{"apy":0.029464844039014393,"type":"Yearn Vault"},"yvcurve-steth-frxeth-f":{"apy":0.07119067777189159,"type":"Yearn Vault"},"yvcurve-stethv2-f":{"apy":0.04965439411956862,"type":"Yearn Vault"},"yvcurve-alusd-fraxbp-f":{"apy":0.0887331838042773,"type":"Yearn Vault"},"yvcurve-frxeth-f":{"apy":0.03786241806613955,"type":"Yearn Vault"},"lp-ycrvv2":{"apy":0.299954706995879,"type":"Yearn Vault"},"yvbal-steth-f":{"apy":0,"type":"Yearn Vault"},"yvbal-reth-f":{"apy":0,"type":"Yearn Vault"},"yvbal-wsteth-reth-sfrxeth-f":{"apy":0,"type":"Yearn Vault"},"yvbal-cbeth-wsteth-f":{"apy":0,"type":"Yearn Vault"},"yvbal-bb-a-usd-f":{"apy":0,"type":"Yearn Vault"},"yvbal-aurabal-f":{"apy":0,"type":"Yearn Vault"},"yvbal-dola-usdc-f":{"apy":0,"type":"Yearn Vault"},"yvbal-stafieth-f":{"apy":0,"type":"Yearn Vault"},"yvcurve-oeth-f":{"apy":0.06478176897989862,"type":"Yearn Vault"},"yvcurve-3cryptousdt-f":{"apy":0.1447380109502565,"type":"Yearn Vault"},"yvcurve-3cryptousdc-f":{"apy":0.14269022074026916,"type":"Yearn Vault"},"yvcurve-usdc-crvusd-f":{"apy":0.24793045702344618,"type":"Yearn Vault"},"yvcurve-usdt-crvusd-f":{"apy":0.28435548131959454,"type":"Yearn Vault"},"yvcurve-usdp-crvusd-f":{"apy":0.15940513177617266,"type":"Yearn Vault"},"yvcurve-hyusd-eusd-f":{"apy":0.17781811452736074,"type":"Yearn Vault"},"yvcurve-eth+-f":{"apy":0.15234750896405624,"type":"Yearn Vault"},"yvcurve-rsr-fraxbp-f":{"apy":0.03697906438437171,"type":"Yearn Vault"},"yvcurve-stafi-reth-f":{"apy":0.08019979667981003,"type":"Yearn Vault"},"yvcurve-frax-crvusd-f":{"apy":0.09505526732136493,"type":"Yearn Vault"},"yvcurve-stbt-f":{"apy":0.12292011919036594,"type":"Yearn Vault"},"yvcurve-deth-f":{"apy":0.7144333835538015,"type":"Yearn Vault"},"yvbal-usdc-dai-usdt-f":{"apy":0,"type":"Yearn Vault"},"ylqty":{"apy":0,"type":"Yearn Vault"},"yvcurve-ageur-veur-f-f":{"apy":2.6435816021583975,"type":"Yearn Vault"},"yvcurve-crvcrvusdtbtcwsteth-f":{"apy":0.321659154983692,"type":"Yearn Vault"},"yvcurve-crvusdtusd-f-f":{"apy":0.11708243132844642,"type":"Yearn Vault"},"yvcurve-crvusdsusd-f-f":{"apy":0.10951563338451042,"type":"Yearn Vault"}}
+{
+  "aura-wsteth-eth": {
+    "apy": 0.010164609672235562,
+    "type": "Aura Beefy Vault"
+  },
+  "0xe9738c244aB22071cA81E5553Ffe2aC94898C01c": {
+    "apy": 0.010164609672235562,
+    "type": "Aura Beefy Vault"
+  },
+  "aura-ohm-dai": {
+    "apy": 0.0005538136551277439,
+    "type": "Aura Beefy Vault"
+  },
+  "0x5E352cbBAde3f30EF03B17cd540B86B9C862b1a7": {
+    "apy": 0.000550728640566378,
+    "type": "Aura Beefy Vault"
+  },
+  "aura-reth-weth": {
+    "apy": 0.00897370845331549,
+    "type": "Aura Beefy Vault"
+  },
+  "0x83fEE6fFdcc669dB9CCef9Fa452FF0984422d740": {
+    "apy": 0.00897370845331549,
+    "type": "Aura Beefy Vault"
+  },
+  "aura-wsteth-reth-sfrxeth-v2": {
+    "apy": 0.02783564328397186,
+    "type": "Aura Beefy Vault"
+  },
+  "0xb535b34609F23173257d196f96C34cf55961BAC2": {
+    "apy": 0.000017461683928354788,
+    "type": "Aura Beefy Vault"
+  },
+  "aura-r-dai": {
+    "apy": 0.12301888257173776,
+    "type": "Aura Beefy Vault"
+  },
+  "0x98a054435D0A55582b5B0eC7180eaf3e66553070": {
+    "apy": 0.006283986204906888,
+    "type": "Aura Beefy Vault"
+  },
+  "aura-aurabal": { "apy": 0.319180389749375, "type": "Aura Beefy Vault" },
+  "pslp": { "apy": 0.007555294144932872, "type": "Yearn Vault" },
+  "yvecrv-dao": { "apy": 0.0616940193549114, "type": "Yearn Vault" },
+  "yusdc": {
+    "apy": 8.75544081679891e-12,
+    "type": "Yearn Vault"
+  },
+  "yydai+yusdc+yusdt+ytusd": {
+    "apy": 361285.6644975189,
+    "type": "Yearn Vault"
+  },
+  "ytusd": { "apy": 0.04968339241426767, "type": "Yearn Vault" },
+  "ydai": {
+    "apy": 0.05421338246892393,
+    "type": "Yearn Vault"
+  },
+  "yusdt": {
+    "apy": 0.03628979231094287,
+    "type": "Yearn Vault"
+  },
+  "yyfi": { "apy": 0.005550739950790806, "type": "Yearn Vault" },
+  "yydai+yusdc+yusdt+ybusd": {
+    "apy": 0.18018873436109395,
+    "type": "Yearn Vault"
+  },
+  "ycrvrenwsbtc": { "apy": 0.001744557714407735, "type": "Yearn Vault" },
+  "yweth": {
+    "apy": 0.005174036073500421,
+    "type": "Yearn Vault"
+  },
+  "y3crv": { "apy": 0.015357775918339645, "type": "Yearn Vault" },
+  "ygusd": { "apy": -1, "type": "Yearn Vault" },
+  "yvcdai+cusdc": { "apy": 0.04393142141486717, "type": "Yearn Vault" },
+  "yvmusd3crv": { "apy": 0.06741591108656331, "type": "Yearn Vault" },
+  "yvgusd3crv": { "apy": 0.07147139449578055, "type": "Yearn Vault" },
+  "yveurscrv": { "apy": 0.0064703873633791265, "type": "Yearn Vault" },
+  "yvmusd": { "apy": 0.23396461389271095, "type": "Yearn Vault" },
+  "yvcrvrenwbtc": { "apy": 0.0033333431628594923, "type": "Yearn Vault" },
+  "yvusdn3crv": { "apy": 0.00017687700237534187, "type": "Yearn Vault" },
+  "yvust3crv": { "apy": 0.00032076457115026713, "type": "Yearn Vault" },
+  "yvbbtc/sbtccrv": { "apy": 0.001686145370941139, "type": "Yearn Vault" },
+  "yvtbtc/sbtccrv": { "apy": 0.00020041514441970776, "type": "Yearn Vault" },
+  "yvobtc/sbtccrv": { "apy": 0.00005571169995000069, "type": "Yearn Vault" },
+  "yvpbtc/sbtccrv": { "apy": 0.000172766191283813, "type": "Yearn Vault" },
+  "yvhcrv": { "apy": 0.017828426975125655, "type": "Yearn Vault" },
+  "yvcrvplain3andsusd": { "apy": 0.023036737590886425, "type": "Yearn Vault" },
+  "yvhusd3crv": { "apy": 0.0002080689485370879, "type": "Yearn Vault" },
+  "yvdusd3crv": { "apy": 0.0363265778689843, "type": "Yearn Vault" },
+  "yva3crv": { "apy": 0.029993930500403554, "type": "Yearn Vault" },
+  "yvankrcrv": { "apy": 0.004875566333365722, "type": "Yearn Vault" },
+  "yvsacrv": { "apy": 0.02485439606337403, "type": "Yearn Vault" },
+  "yvusdp3crv": { "apy": 0.005460783944361891, "type": "Yearn Vault" },
+  "yvlinkcrv": { "apy": 0.002906716945311416, "type": "Yearn Vault" },
+  "yvdai": { "apy": 0.05129176213238651, "type": "Yearn Vault" },
+  "yvusdc": { "apy": 0.03203102453074247, "type": "Yearn Vault" },
+  "yvhegic": { "apy": 0.0028335181058742887, "type": "Yearn Vault" },
+  "yvcurve-steth": { "apy": 0.0011025908727151368, "type": "Yearn Vault" },
+  "yvwbtc": { "apy": 0.0029224658481301624, "type": "Yearn Vault" },
+  "yvcurve-seth": { "apy": -0.005670694989386438, "type": "Yearn Vault" },
+  "yvweth": { "apy": 0.027744035988108928, "type": "Yearn Vault" },
+  "yvyfi": { "apy": 0, "type": "Yearn Vault" },
+  "yv1inch": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-ironbank": { "apy": 0.06058761883987995, "type": "Yearn Vault" },
+  "yvcurve-hbtc": { "apy": 0.00885355721709935, "type": "Yearn Vault" },
+  "yvboost": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-sbtc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-renbtc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-saave": { "apy": 0.004170578134856662, "type": "Yearn Vault" },
+  "yvcurve-obtc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-pbtc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-lusd": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-bbtc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-tbtc": { "apy": 0, "type": "Yearn Vault" },
+  "yvusdt": { "apy": 0.025913058714889914, "type": "Yearn Vault" },
+  "yvcurve-frax": { "apy": 0.0014114781715113267, "type": "Yearn Vault" },
+  "yvuni": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-ybusd": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-compound": { "apy": 0.023506595451890044, "type": "Yearn Vault" },
+  "yvcurve-gusd": { "apy": 0.026864781585119735, "type": "Yearn Vault" },
+  "yusd": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-3pool": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-tusd": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-busd": { "apy": 0.004759763778120041, "type": "Yearn Vault" },
+  "yvcurve-dusd": { "apy": 0.0010262532282241388, "type": "Yearn Vault" },
+  "yvcurve-ust": { "apy": 0.09914190969083303, "type": "Yearn Vault" },
+  "yvcurve-musd": { "apy": 0.016788745063834876, "type": "Yearn Vault" },
+  "yvsusd": { "apy": 0, "type": "Yearn Vault" },
+  "yvsnx": { "apy": 0.0215138087994462, "type": "Yearn Vault" },
+  "yvcurve-susd": { "apy": 0.0029928181552052457, "type": "Yearn Vault" },
+  "yvcurve-link": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-usdn": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-usdp": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-alusd": { "apy": 0.01491231368588597, "type": "Yearn Vault" },
+  "yvcurve-reth": { "apy": 0.059901814935178876, "type": "Yearn Vault" },
+  "yvcurve-ankreth": { "apy": 0.004383597544630913, "type": "Yearn Vault" },
+  "yvcurve-aave": { "apy": 0.009552883042583504, "type": "Yearn Vault" },
+  "yvcurve-husd": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-eurs": { "apy": 0, "type": "Yearn Vault" },
+  "yvlink": { "apy": 0.006784200080946823, "type": "Yearn Vault" },
+  "yvrai": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-tricrypto": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-pax": { "apy": 1.0051303355805792, "type": "Yearn Vault" },
+  "yvcurve-usdt": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-usdk": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-rsv": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-3crypto": { "apy": 0.05010057573955895, "type": "Yearn Vault" },
+  "yvaave": { "apy": 0.0006652076304958232, "type": "Yearn Vault" },
+  "yvcomp": { "apy": 0, "type": "Yearn Vault" },
+  "yvsushi": { "apy": 0.0002465109074374361, "type": "Yearn Vault" },
+  "yvtusd": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-eurt": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-mim": { "apy": 0.10598354692563805, "type": "Yearn Vault" },
+  "yvcurve-cvxcrv": { "apy": 0.0011501003398337595, "type": "Yearn Vault" },
+  "yvcurve-ibeur": { "apy": 0.009651092251693472, "type": "Yearn Vault" },
+  "yvcurve-ibkrw": { "apy": 0.02767610444265789, "type": "Yearn Vault" },
+  "yvcurve-ibgbp": { "apy": 0.018315090467566186, "type": "Yearn Vault" },
+  "yvcurve-ibaud": { "apy": 0.03870209049627826, "type": "Yearn Vault" },
+  "yvcurve-ibchf": { "apy": 0.03564170240789233, "type": "Yearn Vault" },
+  "yvcurve-ibjpy": { "apy": 0.027746566860170185, "type": "Yearn Vault" },
+  "yvcurve-usdm": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-aleth": { "apy": 0.029957880774052148, "type": "Yearn Vault" },
+  "yvcurve-eurn": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-mimust": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-ousd": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-ibbtc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-d3pool": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-eurtusd": { "apy": 0.0165103273856837, "type": "Yearn Vault" },
+  "yvcurve-eursusdc": { "apy": 0.001818580622850341, "type": "Yearn Vault" },
+  "yvlusd": { "apy": 0.022693254166753718, "type": "Yearn Vault" },
+  "yvcurve-3eur": { "apy": 0.04204195882119022, "type": "Yearn Vault" },
+  "yvcurve-crveth": { "apy": 0.18649918863722292, "type": "Yearn Vault" },
+  "yvcurve-cvxeth": { "apy": 0.06627847809977139, "type": "Yearn Vault" },
+  "yvcurve-rai": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-dola": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-yfieth": { "apy": 0.04957150117359532, "type": "Yearn Vault" },
+  "yvcurve-rethwsteth": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-steth-weth": { "apy": 0.00604403756080818, "type": "Yearn Vault" },
+  "yvkp3reth-f": { "apy": 0.027813903717149202, "type": "Yearn Vault" },
+  "yvcurve-ibkrw-usdc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-ibjpy-usdc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-ibeur-usdc": { "apy": 0.04926574783150417, "type": "Yearn Vault" },
+  "yvcurve-ibchf-usdc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-ibgbp-usdc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-ibaud-usdc": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-stg-usdc": { "apy": 0, "type": "Yearn Vault" },
+  "yvbalancer-boostedaaveusd": { "apy": 0, "type": "Yearn Vault" },
+  "st-ycrv": { "apy": 0.2632108286447217, "type": "Yearn Vault" },
+  "lp-ycrv": { "apy": 0.00681504364712282, "type": "Yearn Vault" },
+  "yvblpfud": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-steth-f": { "apy": 0.021334706062529518, "type": "Yearn Vault" },
+  "yvcurve-ageur-euroc-f": {
+    "apy": 0.09332168315667166,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-cbeth-f": { "apy": 0.2354390085186011, "type": "Yearn Vault" },
+  "yvcurve-lusd-f": { "apy": 0.014000121700247892, "type": "Yearn Vault" },
+  "yvcurve-3crypto-f": { "apy": 0.07913367126322779, "type": "Yearn Vault" },
+  "yvcurve-ibeur-f": { "apy": 0.033427588111969, "type": "Yearn Vault" },
+  "yvcurve-cvx-eth-f": { "apy": 0.08778929081639375, "type": "Yearn Vault" },
+  "yvcurve-mim-f": { "apy": 0.14259200876256806, "type": "Yearn Vault" },
+  "yvcurve-fraxbp-f": { "apy": 0.03596978091173231, "type": "Yearn Vault" },
+  "yvcurve-ironbank-f": { "apy": 0.08359731025707706, "type": "Yearn Vault" },
+  "yvcurve-usdn-f": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-crv-eth-f": { "apy": 0.21038615821277373, "type": "Yearn Vault" },
+  "yvcurve-susd-f": { "apy": 0.025189847949637523, "type": "Yearn Vault" },
+  "yvcurve-seth-f": { "apy": 0.021956420798591614, "type": "Yearn Vault" },
+  "yvcurve-3eur-f": { "apy": 0.06307271135047543, "type": "Yearn Vault" },
+  "yvcurve-frax-f": { "apy": 0.023948429412081085, "type": "Yearn Vault" },
+  "yvcurve-alusd-f": { "apy": 0.039307394990190536, "type": "Yearn Vault" },
+  "yvcurve-dola-frxbp-f": { "apy": 0.2518312597815904, "type": "Yearn Vault" },
+  "yvcurve-multibtc-f": { "apy": 0.19922417982188834, "type": "Yearn Vault" },
+  "yvcurve-blusd-f": { "apy": 0.08021253229142467, "type": "Yearn Vault" },
+  "yvcurve-sdyfi-f": { "apy": 0.007709846365226536, "type": "Yearn Vault" },
+  "yvcurve-apeusd-fbp-f": {
+    "apy": 0.0001920469823055715,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-xai-fraxbp-f": { "apy": 0.07433971450157428, "type": "Yearn Vault" },
+  "yvcurve-gear-eth-f": { "apy": 0.4178769473041013, "type": "Yearn Vault" },
+  "yvcurve-sbtcv2-f": { "apy": 0.01694291732216624, "type": "Yearn Vault" },
+  "yvcurve-sdcrv-f": { "apy": 0.16438664896737887, "type": "Yearn Vault" },
+  "yvcurve-sdangle-f": { "apy": 0.0003474325524985833, "type": "Yearn Vault" },
+  "yvcurve-sdfxs-f": { "apy": 0.06567428239879325, "type": "Yearn Vault" },
+  "yvcurve-tryb-f": { "apy": 0.007363270343079931, "type": "Yearn Vault" },
+  "yvcurve-clev-eth-f": { "apy": 0.9231210444894056, "type": "Yearn Vault" },
+  "yvcurve-ohm-fraxbp-f": {
+    "apy": 0.022001074087177885,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-tbtc-f": { "apy": 0.023951103260970052, "type": "Yearn Vault" },
+  "yvcurve-btrfly-eth-f": { "apy": 0.01747266891725796, "type": "Yearn Vault" },
+  "yvcurve-matic-eth-f": { "apy": 0.003893067857781096, "type": "Yearn Vault" },
+  "yvcurve-peth-f": { "apy": 0.21050856817715946, "type": "Yearn Vault" },
+  "yvcurve-ibeur-usdc-f": { "apy": 0.1429489144573135, "type": "Yearn Vault" },
+  "yvcurve-msusd-fraxbp-f": {
+    "apy": 0.23834680236136707,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-dydx-eth-f": { "apy": 0.0353343611915391, "type": "Yearn Vault" },
+  "yvcurve-ibgbp-f": { "apy": 0.04328507416310412, "type": "Yearn Vault" },
+  "yvcurve-ibkrw-f": { "apy": 0.05394157775292374, "type": "Yearn Vault" },
+  "yvcurve-ibchf-f": { "apy": 0.06301784842323288, "type": "Yearn Vault" },
+  "yvcurve-stg-fraxbp-f": { "apy": 0.0928607935125716, "type": "Yearn Vault" },
+  "yvwsteth": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-fxs-eth-f": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-t-eth-f": { "apy": 0.4977602684978486, "type": "Yearn Vault" },
+  "yvcurve-3crv-f": { "apy": 0.01702124897856261, "type": "Yearn Vault" },
+  "yvcurve-jpeg-peth-f": { "apy": 0.55668772876587, "type": "Yearn Vault" },
+  "yvcurve-cvxfxs-f": { "apy": 0.11181807044659253, "type": "Yearn Vault" },
+  "yvcurve-ctr-eth-f": { "apy": 0.436678658596116, "type": "Yearn Vault" },
+  "yvcurve-usdp-f": { "apy": 0.003840399701770192, "type": "Yearn Vault" },
+  "yvcurve-pal-eth-f": { "apy": 0.6595736182631258, "type": "Yearn Vault" },
+  "yvcurve-clevcvx-f": { "apy": 0.3337740069194166, "type": "Yearn Vault" },
+  "yvcurve-ldo-eth-f": { "apy": 0.239494545672861, "type": "Yearn Vault" },
+  "yvcurve-ohm-eth-f": { "apy": 0.1764240576544298, "type": "Yearn Vault" },
+  "st-ybal": { "apy": 0, "type": "Yearn Vault" },
+  "lp-ybal": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-compound-f": { "apy": 0.046410776046324154, "type": "Yearn Vault" },
+  "yvcurve-cvxcrvv2-f": { "apy": 0.338289681427687, "type": "Yearn Vault" },
+  "yvcurve-cbeth-frxeth-f": {
+    "apy": 0.0532083982613929,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-aleth-frxeth-f": {
+    "apy": 0.12552659040114156,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-ankreth-frxeth-f": {
+    "apy": 0.034260434086829106,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-reth-frxeth-f": {
+    "apy": 0.029371239179049047,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-steth-frxeth-f": {
+    "apy": 0.07985402642674266,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-stethv2-f": { "apy": 0.04893295199505343, "type": "Yearn Vault" },
+  "yvcurve-alusd-fraxbp-f": {
+    "apy": 0.08881721371995166,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-frxeth-f": { "apy": 0.03810426105312126, "type": "Yearn Vault" },
+  "lp-ycrvv2": { "apy": 0.26914057220277177, "type": "Yearn Vault" },
+  "yvbal-steth-f": { "apy": 0, "type": "Yearn Vault" },
+  "yvbal-reth-f": { "apy": 0, "type": "Yearn Vault" },
+  "yvbal-wsteth-reth-sfrxeth-f": { "apy": 0, "type": "Yearn Vault" },
+  "yvbal-cbeth-wsteth-f": { "apy": 0, "type": "Yearn Vault" },
+  "yvbal-bb-a-usd-f": { "apy": 0, "type": "Yearn Vault" },
+  "yvbal-aurabal-f": { "apy": 0, "type": "Yearn Vault" },
+  "yvbal-dola-usdc-f": { "apy": 0, "type": "Yearn Vault" },
+  "yvbal-stafieth-f": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-oeth-f": { "apy": 0.06524096576747906, "type": "Yearn Vault" },
+  "yvcurve-3cryptousdt-f": { "apy": 0.1446340727421902, "type": "Yearn Vault" },
+  "yvcurve-3cryptousdc-f": {
+    "apy": 0.14372298362003666,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-usdc-crvusd-f": {
+    "apy": 0.23850192942493553,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-usdt-crvusd-f": { "apy": 0.2730940373653019, "type": "Yearn Vault" },
+  "yvcurve-usdp-crvusd-f": { "apy": 0.1427429813287462, "type": "Yearn Vault" },
+  "yvcurve-hyusd-eusd-f": { "apy": 0.17802573220145113, "type": "Yearn Vault" },
+  "yvcurve-eth+-f": { "apy": 0.1467712392310716, "type": "Yearn Vault" },
+  "yvcurve-rsr-fraxbp-f": { "apy": 0.03903198294863297, "type": "Yearn Vault" },
+  "yvcurve-stafi-reth-f": { "apy": 0.08585083564225138, "type": "Yearn Vault" },
+  "yvcurve-frax-crvusd-f": {
+    "apy": 0.09516674488280774,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-stbt-f": { "apy": 0.12400799534458495, "type": "Yearn Vault" },
+  "yvcurve-deth-f": { "apy": 0.6863417372952809, "type": "Yearn Vault" },
+  "yvbal-usdc-dai-usdt-f": { "apy": 0, "type": "Yearn Vault" },
+  "ylqty": { "apy": 0, "type": "Yearn Vault" },
+  "yvcurve-veur-ageur-f": { "apy": 2.6485024359003115, "type": "Yearn Vault" },
+  "yvcurve-tricryptollama-f": {
+    "apy": 0.5068679274982124,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-tusd-crvusd-f": {
+    "apy": 0.12091088123899363,
+    "type": "Yearn Vault"
+  },
+  "yvcurve-susd-crvusd-f": { "apy": 0.1095726157772865, "type": "Yearn Vault" }
+}

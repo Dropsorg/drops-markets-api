@@ -5,7 +5,6 @@ const isDev = process.env.NODE_ENV === 'development';
 
 const storeStatusData = async (statusData, network = 1) => {
   if (isDev) {
-    //  TODO, comment before merge
     await fs.writeFileSync(
       `src/data/status${network}.json`,
       JSON.stringify(statusData, null, '\t')
