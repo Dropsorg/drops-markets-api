@@ -1,7 +1,8 @@
-const { default: axios } = require('axios');
 const fs = require('fs');
-const BLOCKS_PER_DAY = 5 * 60 * 24;
+const { default: axios } = require('axios');
+const { marketNameToVaultAPYKey } = require('./constant');
 
+const BLOCKS_PER_DAY = 5 * 60 * 24;
 const isDev = process.env.NODE_ENV === 'development';
 
 const updateVaultAPY = async (network) => {
@@ -42,30 +43,28 @@ const updateVaultAPY = async (network) => {
   return data;
 };
 
-const getVaultAPY = async (market, network) => {
-  try {
-    const path = isDev
-      ? `src/data/vaultAPY${network}.json`
-      : `${process.cwd()}/data/vaultAPY${network}.json`;
-    const apyData = await fs.readFileSync(path, {
-      encoding: 'utf8',
-    });
+const readVaultAPYData = async (network) => {
+  const path = isDev
+    ? `src/data/vaultAPY${network}.json`
+    : `${process.cwd()}/data/vaultAPY${network}.json`;
 
-    const apys = JSON.parse(apyData);
-    const keys = Object.keys(apys);
+  const apyData = await fs.readFileSync(path, {
+    encoding: 'utf8',
+  });
 
-    const mns = market.name.split(' ');
-    const marketName = mns[mns.length - 1].toLowerCase();
-    const keyIndex = keys.findIndex((key) => key === marketName);
-    if (keyIndex > -1) {
-      return Number(apys[keys[keyIndex]].apy);
-    }
-  } catch (err) {}
+  return JSON.parse(apyData);
+};
 
+const getMarketVaultAPY = (market, apys) => {
+  const apyKey = marketNameToVaultAPYKey[market.name];
+
+  if (apys && apys[apyKey]) {
+    return apys[apyKey].apy.toFixed(8);
+  }
   return 0;
 };
 
-const getDropsAPY = (market) => {
+const getDropsAPY = (market, dopPriceInUSD) => {
   const {
     compSupplySpeeds,
     compBorrowSpeeds,
@@ -118,9 +117,10 @@ const getInterestAPY = (market) => {
   };
 };
 
-const getAPYs = async (market, dopPriceInUSD, network = 1) => {
-  const vaultAPY = await getVaultAPY(market, network);
-  const dropsAPY = getDropsAPY(market);
+const getAPYs = (market, dopPriceInUSD, vaultAPYData) => {
+  const vaultAPY = parseFloat(getMarketVaultAPY(market, vaultAPYData));
+
+  const dropsAPY = getDropsAPY(market, dopPriceInUSD);
   const interestAPY = getInterestAPY(market);
   const netSupplyAPY =
     (1 + vaultAPY) * (1 + interestAPY.supplyAPY) - 1 + dropsAPY.supply;
@@ -137,9 +137,9 @@ const getAPYs = async (market, dopPriceInUSD, network = 1) => {
   const borrowRates = {
     apy: interestAPY.borrowAPY,
     apr: interestAPY.borrowAPR,
-    vaultAPY,
     dopAPY: dropsAPY.borrow,
     netAPY: netBorrowAPY,
+    vaultAPY,
   };
 
   return {
@@ -150,6 +150,6 @@ const getAPYs = async (market, dopPriceInUSD, network = 1) => {
 
 module.exports = {
   updateVaultAPY,
-  getVaultAPY,
   getAPYs,
+  readVaultAPYData,
 };

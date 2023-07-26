@@ -4,10 +4,9 @@ const {
   updateProtocolStatusData,
   getWETHPrice,
   getDOPPrice,
-  generateComptrollerData,
   storeStatusData,
   updateVaultAPY,
-  getMarketData,
+  generateComptrollerData,
 } = require('../helper');
 
 const saveSnapshot = async (network) => {
@@ -19,11 +18,12 @@ const saveSnapshot = async (network) => {
     const ethPriceInUSD = await getWETHPrice();
     const dopPriceInUSD = await getDOPPrice(ethPriceInUSD);
     const allMarkets = await updateMarketData(
-      network,
       ethPriceInUSD,
-      dopPriceInUSD
+      dopPriceInUSD,
+      network
     );
-    const statusData = await updateProtocolStatusData(allMarkets, network);
+
+    const statusData = updateProtocolStatusData(allMarkets, network);
     await storeStatusData(statusData);
   } catch (err) {
     console.log(`failed to process data on network=${network} error=${err}`);

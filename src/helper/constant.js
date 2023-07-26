@@ -45,9 +45,20 @@ const unsupportedMarkets = {
 
 const DOP = '0x6bb61215298f296c55b19ad842d3df69021da2ef';
 
+const marketNameToVaultAPYKey = {
+  'Drops-6 aura-wstETH-ETH': 'aura-wsteth-eth',
+  'Drops-6 Drops Aura wstETH-rETH-sfrxETH': 'aura-wsteth-reth-sfrxeth-v2',
+  'Drops-6 Drops Aura rETH-ETH': 'aura-reth-weth',
+  'Drops-6 DAI yVault': 'yvdai',
+  'Drops-6 WETH yVault': 'yvweth',
+  'Drops-6 USDT yVault': 'yvusdt',
+  'Drops-6 yvUSDC': 'yvusdc',
+};
+
 module.exports = {
   E18,
   prodBuildPaths,
   unsupportedMarkets,
   DOP,
+  marketNameToVaultAPYKey,
 };

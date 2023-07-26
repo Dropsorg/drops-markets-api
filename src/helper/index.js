@@ -1,4 +1,10 @@
-const { E18, paths, unsupportedMarkets, DOP } = require('./constant');
+const {
+  E18,
+  paths,
+  unsupportedMarkets,
+  DOP,
+  marketNameToVaultAPYKey,
+} = require('./constant');
 const { generateComptrollerData } = require('./comptroller');
 const { generatingSymbol } = require('./generatingText');
 const { updateMarketData, getMarketData } = require('./market');
@@ -22,4 +28,5 @@ module.exports = {
   storeStatusData,
   storeMarketData,
   updateVaultAPY,
+  marketNameToVaultAPYKey,
 };
