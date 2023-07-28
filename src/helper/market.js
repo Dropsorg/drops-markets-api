@@ -167,7 +167,7 @@ const getMarketData = async (
     const apys = getAPYs(row, dopPriceInUSD, vaultAPYData, network);
     row.apys = apys;
 
-    if (i === 6 && underlyingSymbol !== 'gOHM') {
+    if (symbol.toLowerCase().includes('d6') && underlyingSymbol !== 'gOHM') {
       try {
         const AuraContract = new Contract(marketAddr, MigratorABI, provider);
         const migrator = await AuraContract.migrator();
