@@ -9,6 +9,11 @@ const {
   ComptrollerABI,
   ComptrollerABI2,
   PriceOracleABI,
+  AuraERC20ABI,
+  AuraMigrationABI,
+  YearnMigrationABI,
+  YearnERC20ABI,
+  MigratorABI,
 } = require('../abis');
 const { getAPYs, readVaultAPYData } = require('./apy');
 
@@ -161,6 +166,33 @@ const getMarketData = async (
     };
     const apys = getAPYs(row, dopPriceInUSD, vaultAPYData, network);
     row.apys = apys;
+
+    if (i === 6 && underlyingSymbol !== 'gOHM') {
+      try {
+        const AuraContract = new Contract(marketAddr, MigratorABI, provider);
+        const migrator = await AuraContract.migrator();
+        const isAura = name.toLowerCase().includes('aura');
+        const migratorABI = isAura ? AuraMigrationABI : YearnMigrationABI;
+        const migratorContract = new Contract(migrator, migratorABI, provider);
+        const regularTokenAddress = isAura ? await migratorContract.auraRewardPool() : await migratorContract.token();
+        const regularTokenContract = new Contract(regularTokenAddress, AuraERC20ABI, provider);
+        const regularName = await regularTokenContract.name();
+        const regularSymbol = await regularTokenContract.symbol();
+
+        row.regularAddress = regularTokenAddress;
+        row.regularName = regularName;
+        row.regularSymbol = regularSymbol;
+        row.pricePerShare = undefined;
+
+        const underlyingContract = new Contract(underlyingAddress, isAura ? AuraERC20ABI : YearnERC20ABI, provider);
+        // It will be error about aura-wstETH-ETH token
+        const pricePerShare = isAura ? await underlyingContract.getPricePerFullShare() : await underlyingContract.pricePerShare();
+
+        row.pricePerShare = pricePerShare.toString();
+      } catch (error) {
+        console.log('aura markets error', error);
+      }
+    }
 
     data.push(row);
   }
