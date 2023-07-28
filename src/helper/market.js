@@ -16,6 +16,7 @@ const {
   MigratorABI,
 } = require('../abis');
 const { getAPYs, readVaultAPYData } = require('./apy');
+const { default: BigNumber } = require('bignumber.js');
 
 const provider = new providers.MulticallProvider(
   new ethersProviders.JsonRpcProvider('https://cloudflare-eth.com/')
@@ -179,16 +180,19 @@ const getMarketData = async (
         const regularName = await regularTokenContract.name();
         const regularSymbol = await regularTokenContract.symbol();
 
+        row.migrator = migrator;
         row.regularAddress = regularTokenAddress;
         row.regularName = regularName;
         row.regularSymbol = regularSymbol;
-        row.pricePerShare = undefined;
+        row.pricePerShare = 1;
 
         const underlyingContract = new Contract(underlyingAddress, isAura ? AuraERC20ABI : YearnERC20ABI, provider);
         // It will be error about aura-wstETH-ETH token
         const pricePerShare = isAura ? await underlyingContract.getPricePerFullShare() : await underlyingContract.pricePerShare();
 
-        row.pricePerShare = pricePerShare.toString();
+        if (pricePerShare) {
+          row.pricePerShare = (new BigNumber(pricePerShare.toString()).dividedBy(new BigNumber(10).pow(underlyingDecimals))).toNumber();
+        }
       } catch (error) {
         console.log('aura markets error', error);
       }
