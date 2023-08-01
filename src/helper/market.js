@@ -1,9 +1,9 @@
-const { providers: ethersProviders, Contract } = require('ethers');
-const { providers } = require('@0xsequence/multicall');
+const { providers: ethersProviders, Contract } = require("ethers");
+const { providers } = require("@0xsequence/multicall");
 
-const { E18 } = require('./constant');
-const comptrollerData = require('../data/comptroller.json');
-const { storeMarketData } = require('./store');
+const { E18 } = require("./constant");
+const comptrollerData = require("../data/comptroller.json");
+const { storeMarketData } = require("./store");
 const {
   CERC20ABI,
   ComptrollerABI,
@@ -14,12 +14,12 @@ const {
   YearnMigrationABI,
   YearnERC20ABI,
   MigratorABI,
-} = require('../abis');
-const { getAPYs, readVaultAPYData } = require('./apy');
-const { default: BigNumber } = require('bignumber.js');
+} = require("../abis");
+const { getAPYs, readVaultAPYData } = require("./apy");
+const { default: BigNumber } = require("bignumber.js");
 
 const provider = new providers.MulticallProvider(
-  new ethersProviders.JsonRpcProvider('https://cloudflare-eth.com/')
+  new ethersProviders.JsonRpcProvider("https://cloudflare-eth.com/")
 );
 
 const getTokenPriceBySymbol = async (
@@ -32,17 +32,12 @@ const getTokenPriceBySymbol = async (
 ) => {
   const OracleContract = new Contract(oracleAddr, PriceOracleABI, provider);
 
-  if (
-    underlyingSymbol === 'USDC' ||
-    underlyingSymbol === 'DAI' ||
-    underlyingSymbol === 'USDT'
-  ) {
+  if (underlyingSymbol === "USDC" || underlyingSymbol === "DAI" || underlyingSymbol === "USDT") {
     underlyingPriceUSD = 1;
-  } else if (underlyingSymbol === 'DOP') {
+  } else if (underlyingSymbol === "DOP") {
     underlyingPriceUSD = dopPriceInUSD;
   } else {
-    underlyingPriceUSD =
-      Number(await OracleContract.getUnderlyingPriceView(marketAddr)) / E18;
+    underlyingPriceUSD = Number(await OracleContract.getUnderlyingPriceView(marketAddr)) / E18;
     if (underlyingDecimals < 18) {
       underlyingPriceUSD = underlyingPriceUSD / 10 ** (18 - underlyingDecimals);
     }
@@ -121,16 +116,13 @@ const getMarketData = async (
       ? compBorrowSpeeds
       : Number(await marketData[i][11]);
 
-    const collateralFactor =
-      Number((await marketData[i][8]).collateralFactorMantissa) / E18;
+    const collateralFactor = Number((await marketData[i][8]).collateralFactorMantissa) / E18;
     const borrowRate = (Number(await marketData[i][0]) * 2628000) / E18;
     const supplyRate = (Number(await marketData[i][3]) * 2628000) / E18;
-    const exchangeRate =
-      Number(await marketData[i][1]) / 10 ** (10 + underlyingDecimals);
+    const exchangeRate = Number(await marketData[i][1]) / 10 ** (10 + underlyingDecimals);
     const reserves = Number(await marketData[i][2]) / 10 ** underlyingDecimals;
     const cash = Number(await marketData[i][6]) / 10 ** underlyingDecimals;
-    const totalBorrows =
-      Number(await marketData[i][4]) / 10 ** underlyingDecimals;
+    const totalBorrows = Number(await marketData[i][4]) / 10 ** underlyingDecimals;
     const totalSupply = Number(await marketData[i][5]) / 10 ** 8;
     const reserveFactor = Number(await marketData[i][7]);
 
@@ -145,13 +137,10 @@ const getMarketData = async (
       comptroller,
       id: marketAddr,
       symbol,
-      name: name.replace('Drops NFT Loans', '').trim(),
+      name: name.replace("Drops NFT Loans", "").trim(),
       underlyingAddress,
       underlyingName,
-      underlyingSymbol: underlyingSymbol
-        .replace('(rinkeby)', '')
-        .replace(/mock/gi, '')
-        .trim(),
+      underlyingSymbol: underlyingSymbol.replace("(rinkeby)", "").replace(/mock/gi, "").trim(),
       underlyingDecimals,
       underlyingPriceUSD,
       underlyingPriceETH,
@@ -168,14 +157,16 @@ const getMarketData = async (
     const apys = getAPYs(row, dopPriceInUSD, vaultAPYData, network);
     row.apys = apys;
 
-    if (symbol.toLowerCase().includes('d6') && underlyingSymbol !== 'gOHM') {
+    if (symbol.toLowerCase().includes("d6") && underlyingSymbol !== "gOHM") {
       try {
         const AuraContract = new Contract(marketAddr, MigratorABI, provider);
         const migrator = await AuraContract.migrator();
-        const isAura = name.toLowerCase().includes('aura');
+        const isAura = name.toLowerCase().includes("aura");
         const migratorABI = isAura ? AuraMigrationABI : YearnMigrationABI;
         const migratorContract = new Contract(migrator, migratorABI, provider);
-        const regularTokenAddress = isAura ? await migratorContract.auraRewardPool() : await migratorContract.token();
+        const regularTokenAddress = isAura
+          ? await migratorContract.auraRewardPool()
+          : await migratorContract.token();
         const regularTokenContract = new Contract(regularTokenAddress, AuraERC20ABI, provider);
         const regularName = await regularTokenContract.name();
         const regularSymbol = await regularTokenContract.symbol();
@@ -186,15 +177,26 @@ const getMarketData = async (
         row.regularSymbol = regularSymbol;
         row.pricePerShare = 1;
 
-        const underlyingContract = new Contract(underlyingAddress, isAura ? AuraERC20ABI : YearnERC20ABI, provider);
+        const underlyingContract = new Contract(
+          underlyingAddress,
+          isAura ? AuraERC20ABI : YearnERC20ABI,
+          provider
+        );
         // It will be error about aura-wstETH-ETH token
-        const pricePerShare = isAura ? await underlyingContract.getPricePerFullShare() : await underlyingContract.pricePerShare();
+        const pricePerShare =
+          underlyingName !== "Drops Aura wstETH-ETH"
+            ? isAura
+              ? await underlyingContract.getPricePerFullShare()
+              : await underlyingContract.pricePerShare()
+            : 1;
 
         if (pricePerShare) {
-          row.pricePerShare = (new BigNumber(pricePerShare.toString()).dividedBy(new BigNumber(10).pow(underlyingDecimals))).toNumber();
+          row.pricePerShare = new BigNumber(pricePerShare.toString())
+            .dividedBy(new BigNumber(10).pow(underlyingDecimals))
+            .toNumber();
         }
       } catch (error) {
-        console.log('aura markets error', error);
+        console.log("aura markets error", error);
       }
     }
 
