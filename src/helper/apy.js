@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { default: axios } = require('axios');
 const { marketNameToVaultAPYKey } = require('./constant');
+const { default: BigNumber } = require('bignumber.js');
 
 const BLOCKS_PER_DAY = 5 * 60 * 24;
 const isDev = process.env.NODE_ENV === 'development';
@@ -75,22 +76,22 @@ const getDropsAPY = (market, dopPriceInUSD) => {
   } = market;
 
   let supplyDopApy = 0;
-  if (compSupplySpeeds > 0 && supply > 0) {
+  if (compSupplySpeeds > 0 && totalSupply > 0) {
     supplyDopApy = new BigNumber(compSupplySpeeds)
-      .mul(365)
-      .mul(BLOCKS_PER_DAY)
-      .mul(dopPriceInUSD)
+      .times(365)
+      .times(BLOCKS_PER_DAY)
+      .times(dopPriceInUSD)
       .div(
         new BigNumber(totalSupply).times(exchangeRate).times(underlyingPriceUSD)
       );
   }
 
   let borrowDopApy = 0;
-  if (compBorrowSpeeds > 0 && marketBorrows > 0) {
+  if (compBorrowSpeeds > 0 && totalBorrows > 0) {
     borrowDopApy = new BigNumber(compBorrowSpeeds)
       .times(365)
-      .times(blocksPerDay)
-      .mul(dopPriceInUSD)
+      .times(BLOCKS_PER_DAY)
+      .times(dopPriceInUSD)
       .div(new BigNumber(totalBorrows).times(underlyingPriceUSD));
   }
   return {
