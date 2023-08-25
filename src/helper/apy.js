@@ -131,9 +131,9 @@ const getAPYs = (market, dopPriceInUSD, vaultAPYData) => {
   const lendRates = {
     apy: interestAPY.supplyAPY,
     apr: interestAPY.supplyAPR,
-    vaultAPY,
-    dopAPY: dropsAPY.supply,
-    netAPY: netSupplyAPY,
+    vaultAPY: Number(vaultAPY),
+    dopAPY: Number(dropsAPY.supply),
+    netAPY: Number(netSupplyAPY),
   };
   const borrowRates = {
     apy: interestAPY.borrowAPY,
