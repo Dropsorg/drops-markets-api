@@ -326,7 +326,7 @@
       "name": "Drops-1 USDC",
       "underlyingAddress": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
       "underlyingName": "Coin USDC",
-      "underlyingSymbol": "USD",
+      "underlyingSymbol": "USDC",
       "underlyingDecimals": 6,
       "underlyingPriceUSD": 1,
       "underlyingPriceETH": 0.0005348985851164271,
