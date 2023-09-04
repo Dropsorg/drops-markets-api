@@ -21,7 +21,7 @@ const updateVaultAPY = async (network) => {
     }
 
     const yVaultAPYRes = await axios.get(
-      'https://api.yearn.finance/v1/chains/1/vaults/all'
+      'https://api.yearn.fi/v1/chains/1/vaults/all'
     );
     if (yVaultAPYRes && yVaultAPYRes.data && yVaultAPYRes.data.length > 0) {
       for (const yVaultAPY of yVaultAPYRes.data) {
