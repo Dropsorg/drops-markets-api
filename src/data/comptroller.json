@@ -936,6 +936,6 @@
     ],
     "oracleAddr": "0x24a57ddD412d35c0a9b7c220c3A5af35c1EBF7a7",
     "comptroller": "0x48E29b9ddbf3fE6380d7D1ec5b415E97afD14AbB",
-    "supportCompBorrowSpeeds": false
+    "supportCompBorrowSpeeds": true
   }
 ]
